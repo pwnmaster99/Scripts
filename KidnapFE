@@ -1,5 +1,6 @@
 -- forgive me for vibecoding, polar bears.
-
+local Body = false -- discontinued feature
+local thetimetowaitbeforeleaving = 3 -- time to wait before leaving
 
 
 
