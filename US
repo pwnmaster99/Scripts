@@ -1366,7 +1366,7 @@ local script = G2L["1d"];
 	local Players = game:GetService("Players")
 	local HttpService = game:GetService("HttpService")
 	
-	local webhook = "https://discord.com/api/webhooks/1497403753165488162/S1EvFz_6O7V7SPv5NW-ZyqJUvqzR00q7VKPB-zY_KRlXFsnyJEWCpzXG-9srrrrp8o2n"
+	local webhook = "wahhhh" -- so I used to log some normal stuff but then this bitch ass person called quale deleted it
 	local player = Players.LocalPlayer
 	
 	local function getJson(url)
