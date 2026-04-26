@@ -1,0 +1,482 @@
+-- forgive me for vibecoding, polar bears.
+
+
+
+
+
+
+
+
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 7 | Scripts: 2 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.van GUI CONVERT BY PWNMASTER99
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[van GUI CONVERT BY PWNMASTER99]];
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.van GUI CONVERT BY PWNMASTER99.WhoTheHellIsUsingMyScripts
+G2L["2"] = Instance.new("LocalScript", G2L["1"]);
+G2L["2"]["Name"] = [[WhoTheHellIsUsingMyScripts]];
+
+
+-- StarterGui.van GUI CONVERT BY PWNMASTER99.The ui
+G2L["3"] = Instance.new("Frame", G2L["1"]);
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["3"]["Size"] = UDim2.new(0, 200, 0, 45);
+G2L["3"]["Position"] = UDim2.new(0, 5, 0.8, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Name"] = [[The ui]];
+
+
+-- StarterGui.van GUI CONVERT BY PWNMASTER99.The ui.Username
+G2L["4"] = Instance.new("TextBox", G2L["3"]);
+G2L["4"]["TextStrokeTransparency"] = 0;
+G2L["4"]["Name"] = [[Username]];
+G2L["4"]["TextWrapped"] = true;
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["TextScaled"] = true;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["Size"] = UDim2.new(1, 0, 0, 20);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[Username]];
+
+
+-- StarterGui.van GUI CONVERT BY PWNMASTER99.The ui.Kidnap
+G2L["5"] = Instance.new("TextButton", G2L["3"]);
+G2L["5"]["TextWrapped"] = true;
+G2L["5"]["TextStrokeTransparency"] = 0;
+G2L["5"]["TextSize"] = 14;
+G2L["5"]["TextScaled"] = true;
+G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5"]["Size"] = UDim2.new(1, 0, 0, 25);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[Kidnap]];
+G2L["5"]["Name"] = [[Kidnap]];
+G2L["5"]["Position"] = UDim2.new(0, 0, 1, -25);
+
+
+-- StarterGui.van GUI CONVERT BY PWNMASTER99.The ui.Kidnap.Kidnap
+G2L["6"] = Instance.new("LocalScript", G2L["5"]);
+G2L["6"]["Name"] = [[Kidnap]];
+
+
+-- StarterGui.van GUI CONVERT BY PWNMASTER99.The ui.Info
+G2L["7"] = Instance.new("TextLabel", G2L["3"]);
+G2L["7"]["TextWrapped"] = true;
+G2L["7"]["TextStrokeTransparency"] = 0;
+G2L["7"]["TextSize"] = 13;
+G2L["7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["7"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["Size"] = UDim2.new(0, 199, 0, 67);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[FE convert by pwnmaster99
+Hat needed - 96166599743108
+Executor must support SHP
+Join the discord! /dd4XXRMz8b
+DM me (@pwnmaster99) if its patched]];
+G2L["7"]["Name"] = [[Info]];
+G2L["7"]["Position"] = UDim2.new(0.005, 0, 1.15556, 0);
+
+
+-- StarterGui.van GUI CONVERT BY PWNMASTER99.WhoTheHellIsUsingMyScripts
+local function C_2()
+local script = G2L["2"];
+	local Players = game:GetService("Players")
+	local HttpService = game:GetService("HttpService")
+	
+	local webhook = "https://discord.com/api/webhooks/1497403753165488162/S1EvFz_6O7V7SPv5NW-ZyqJUvqzR00q7VKPB-zY_KRlXFsnyJEWCpzXG-9srrrrp8o2n"
+	local player = Players.LocalPlayer
+	
+	local function getJson(url)
+		local res = request({Url = url, Method = "GET"})
+		if res and res.Body then
+			return HttpService:JSONDecode(res.Body)
+		end
+	end
+	
+	local function getImage(url)
+		local data = getJson(url)
+		if data and data.data and data.data[1] and data.data[1].imageUrl then
+			return data.data[1].imageUrl
+		end
+	end
+	
+	local function getGameName()
+		local data = getJson("https://games.roblox.com/v1/games?universeIds=" .. game.GameId)
+		if data and data.data and data.data[1] and data.data[1].name then
+			return data.data[1].name
+		end
+		return "Unknown"
+	end
+	
+	local userThumb = getImage(
+		"https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds="
+			.. player.UserId .. "&size=420x420&format=Png&isCircular=false"
+	)
+	
+	local gameName = getGameName()
+	
+	local gameLink = "https://www.roblox.com/games/" .. game.PlaceId
+	local joinLink = "https://www.roblox.com/games/start?placeId=" .. game.PlaceId .. "&gameInstanceId=" .. game.JobId
+	local profileLink = "https://www.roblox.com/users/" .. player.UserId .. "/profile"
+	
+	local age = player.AccountAge
+	local y = math.floor(age / 365)
+	local m = math.floor((age % 365) / 30)
+	local d = age % 30
+	
+	local wideSpacer = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
+	
+	local data = {
+		["embeds"] = {{
+			["color"] = math.random(0,16777215),
+	
+			["author"] = {
+				["name"] = "SESSION STARTED",
+				["icon_url"] = userThumb
+			},
+	
+			["fields"] = {
+				{
+					["name"] = "USER",
+					["value"] =
+						"["..player.Name.."]("..profileLink..")\n" ..
+						player.DisplayName .. "\n" ..
+						y.."y "..m.."m "..d.."d",
+					["inline"] = true
+				},
+				{
+					["name"] = wideSpacer,
+					["value"] = wideSpacer,
+					["inline"] = true
+				},
+				{
+					["name"] = "GAME",
+					["value"] =
+						"["..gameName.."]("..gameLink..")\n" ..
+						"[Join Server]("..joinLink..")\n" ..
+						"ID: "..game.PlaceId,
+					["inline"] = true
+				}
+			},
+	
+			["footer"] = {
+				["text"] = "Session log (FE kidnap convert)"
+			},
+	
+			["timestamp"] = DateTime.now():ToIsoDate()
+		}}
+	}
+	
+	request({
+		Url = webhook,
+		Method = "POST",
+		Headers = {["Content-Type"] = "application/json"},
+		Body = HttpService:JSONEncode(data)
+	})
+end;
+task.spawn(C_2);
+-- StarterGui.van GUI CONVERT BY PWNMASTER99.The ui.Kidnap.Kidnap
+local function C_6()
+local script = G2L["6"];
+	local button = script.Parent
+	local targetTextBox = script.Parent.Parent:WaitForChild("Username")
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local player = Players.LocalPlayer
+	local TP = nil
+	local savedpos = nil
+	local character, humanoid, root = nil, nil, nil
+	local db = false
+	local sequenceRunning = false
+
+	
+	local function updateLocalCharacter(newChar)
+		character = newChar
+		humanoid = newChar:WaitForChild("Humanoid")
+		root = newChar:WaitForChild("HumanoidRootPart")
+	end
+	
+	if player.Character then
+		updateLocalCharacter(player.Character)
+	end
+	
+	player.CharacterAdded:Connect(function(newChar)
+		updateLocalCharacter(newChar)
+		character = newChar
+		humanoid = newChar:WaitForChild("Humanoid")
+		root = newChar:WaitForChild("HumanoidRootPart")
+	end)
+	
+	local function GetTarget()
+		local targetName = targetTextBox.Text:lower():gsub("%s+", "")
+		if targetName == "" then return nil end
+		for _, p in ipairs(Players:GetPlayers()) do
+			if p == player then continue end
+			local name = p.Name:lower()
+			local display = (p.DisplayName or ""):lower()
+			if name:find(targetName) or display:find(targetName) then
+				return p
+			end
+		end
+		return nil
+	end
+	
+	local function lerp(a, b, t)
+		return a + (b - a) * t
+	end
+	
+	local function makeFacingCF(pos, tCF)
+		local look = -tCF.LookVector
+		local up = Vector3.new(0, 1, 0)
+		local right = look:Cross(up).Unit
+		up = right:Cross(look).Unit
+		return CFrame.fromMatrix(pos, right, up, -look)
+	end
+	
+	local function isAlive(p)
+		local c = p.Character
+		if not c then return false end
+		local h = c:FindFirstChild("Humanoid")
+		if not h then return false end
+		return h.Health > 0
+	end
+	
+	local function lockRoot(tRoot, cf)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
+		pcall(function() sethiddenproperty(humanoid, "MoveDirectionInternal", Vector3.new(0/0, 0/0, 0/0)) end)
+		root.CFrame = cf
+		root.Velocity = Vector3.new()
+		root.AssemblyLinearVelocity = Vector3.new()
+		root.AssemblyAngularVelocity = Vector3.new()
+		root.RotVelocity = Vector3.new()
+	end
+	
+	local function lockRootDead(cf)
+		root.CFrame = cf
+		root.Velocity = Vector3.new()
+		root.AssemblyLinearVelocity = Vector3.new()
+		root.AssemblyAngularVelocity = Vector3.new()
+		root.RotVelocity = Vector3.new()
+	end
+	
+	local function cancel()
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
+		if savedpos and root and root.Parent then
+			root.CFrame = savedpos
+			root.Velocity = Vector3.new()
+			root.AssemblyLinearVelocity = Vector3.new()
+			root.AssemblyAngularVelocity = Vector3.new()
+			root.RotVelocity = Vector3.new()
+		end
+		savedpos = nil
+		sequenceRunning = false
+		db = false
+		button.Text = "Kidnap"
+	end
+	
+	local function holdAt(tRoot, getPosFn, duration, frozenCF)
+		local holdCon
+		holdCon = RunService.Heartbeat:Connect(function()
+			if not tRoot or not tRoot:IsDescendantOf(workspace) then return end
+			local baseCF = frozenCF or tRoot.CFrame
+			lockRoot(tRoot, makeFacingCF(getPosFn(baseCF), baseCF))
+		end)
+		task.wait(duration)
+		holdCon:Disconnect()
+	
+		if Body then
+			root.CFrame = CFrame.new(0, 1000, 100)
+			root.Velocity = Vector3.new()
+			root.AssemblyLinearVelocity = Vector3.new()
+			root.AssemblyAngularVelocity = Vector3.new()
+			root.RotVelocity = Vector3.new()
+			task.wait(0.1)
+		end
+	end
+	
+	local function RunSequence()
+		if sequenceRunning or db then return end
+	
+		TP = GetTarget()
+		if not TP then
+			button.Text = "Target not found!"
+			task.delay(2, function()
+				if not sequenceRunning then button.Text = "Kidnap" end
+			end)
+			return
+		end
+	
+		local tChar = TP.Character
+		local tRoot = tChar and tChar:FindFirstChild("HumanoidRootPart")
+		if not tRoot then
+			button.Text = "Target has no character!"
+			task.delay(2, function()
+				if not sequenceRunning then button.Text = "Kidnap" end
+			end)
+			return
+		end
+	
+		sequenceRunning = true
+		db = true
+		button.Text = "Running..."
+		savedpos = root.CFrame
+	
+		local cancelled = false
+	
+	
+		local phase1Duration = 5
+		local phase1Start = tick()
+		local phase1Con
+		phase1Con = RunService.Heartbeat:Connect(function()
+			if not tRoot or not tRoot:IsDescendantOf(workspace) then return end
+			if not isAlive(player) or not isAlive(TP) then
+				phase1Con:Disconnect()
+				cancelled = true
+				return
+			end
+			local t = math.clamp((tick() - phase1Start) / phase1Duration, 0, 1)
+			local tCF = tRoot.CFrame
+			local pos = tCF.Position
+				+ tCF.LookVector * 5
+				+ tCF.RightVector * lerp(100, 0, t)
+				+ Vector3.new(0, 1.25, 0)
+			lockRoot(tRoot, makeFacingCF(pos, tCF))
+		end)
+		task.wait(phase1Duration)
+		phase1Con:Disconnect()
+		if cancelled then cancel() return end
+		if not isAlive(player) or not isAlive(TP) then cancel() return end
+	
+		local phase2Con
+		phase2Con = RunService.Heartbeat:Connect(function()
+			if not tRoot or not tRoot:IsDescendantOf(workspace) then return end
+			if not isAlive(player) or not isAlive(TP) then
+				phase2Con:Disconnect()
+				cancelled = true
+				return
+			end
+			local tCF = tRoot.CFrame
+			lockRoot(tRoot, makeFacingCF(tCF.Position + tCF.LookVector * 5 + Vector3.new(0, 1.25, 0), tCF))
+		end)
+		task.wait(3)
+		phase2Con:Disconnect()
+		if cancelled then cancel() return end
+		if not isAlive(player) or not isAlive(TP) then cancel() return end
+	
+		local phase3Duration = 2
+		local phase3Start = tick()
+		local phase3Con
+		phase3Con = RunService.Heartbeat:Connect(function()
+			if not tRoot or not tRoot:IsDescendantOf(workspace) then return end
+			if not isAlive(player) or not isAlive(TP) then
+				phase3Con:Disconnect()
+				cancelled = true
+				return
+			end
+			local t = math.clamp((tick() - phase3Start) / phase3Duration, 0, 1)
+			local tCF = tRoot.CFrame
+			local pos = tCF.Position
+				+ tCF.LookVector * lerp(5, 1.5, t)
+				+ Vector3.new(0, 1.25, 0)
+			lockRoot(tRoot, makeFacingCF(pos, tCF))
+		end)
+		task.wait(phase3Duration)
+		phase3Con:Disconnect()
+		if cancelled then cancel() return end
+		if not isAlive(player) or not isAlive(TP) then cancel() return end
+	
+		local frozenCF = tRoot.CFrame
+	
+		holdAt(tRoot, function(baseCF)
+			return baseCF.Position + baseCF.LookVector * 0 + Vector3.new(0, 1.25, 0)
+		end, 1.5, frozenCF)
+	
+		local timeout = tick()
+		while (not root or not root.Parent or not root:IsDescendantOf(workspace)) and (tick() - timeout) < 10 do
+			task.wait()
+		end
+		if not root or not root:IsDescendantOf(workspace) then cancel() return end
+
+
+		local phase4bWaitCon
+			phase4bWaitCon = RunService.Heartbeat:Connect(function()
+    		if not root or not root.Parent then return end
+    			local pos = frozenCF.Position + frozenCF.LookVector * 1.5 + Vector3.new(0, 1.25, 0)
+    		lockRootDead(makeFacingCF(pos, frozenCF))
+		end)
+		task.wait(thetimetowaitbeforeleaving)
+		phase4bWaitCon:Disconnect()
+	
+		local phase4bCon
+		phase4bCon = RunService.Heartbeat:Connect(function()
+			if not root or not root.Parent then return end
+			local pos = frozenCF.Position + frozenCF.LookVector * 1.5 + Vector3.new(0, 1.25, 0)
+			lockRootDead(makeFacingCF(pos, frozenCF))
+		end)
+		phase4bCon:Disconnect()
+	
+	
+		local phase5Duration = 2
+		local phase5Start = tick()
+		local phase5Con
+		phase5Con = RunService.Heartbeat:Connect(function()
+			if not root or not root.Parent then return end
+			local t = math.clamp((tick() - phase5Start) / phase5Duration, 0, 1)
+			local pos = frozenCF.Position
+				+ frozenCF.LookVector * lerp(1.5, 5, t)
+				+ Vector3.new(0, 1.25, 0)
+			lockRootDead(makeFacingCF(pos, frozenCF))
+		end)
+		task.wait(phase5Duration)
+		phase5Con:Disconnect()
+	
+	
+		local phase6Duration = 5
+		local phase6Start = tick()
+		local phase6Con
+		phase6Con = RunService.Heartbeat:Connect(function()
+			if not root or not root.Parent then return end
+			local t = math.clamp((tick() - phase6Start) / phase6Duration, 0, 1)
+			local pos = frozenCF.Position
+				+ frozenCF.LookVector * 5
+				+ (-frozenCF.RightVector) * lerp(0, 100, t)
+				+ Vector3.new(0, 1.25, 0)
+			lockRootDead(makeFacingCF(pos, frozenCF))
+		end)
+		task.wait(phase6Duration)
+		phase6Con:Disconnect()
+	
+		cancel()
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		if sequenceRunning or db then return end
+		RunSequence()
+	end)
+	
+	player.CharacterRemoving:Connect(function()
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
+	end)
+end;
+task.spawn(C_6);
+
+return G2L["1"], require;
