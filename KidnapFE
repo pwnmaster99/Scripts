@@ -103,7 +103,7 @@ local script = G2L["2"];
 	local Players = game:GetService("Players")
 	local HttpService = game:GetService("HttpService")
 	
-	local webhook = "https://discord.com/api/webhooks/1497403753165488162/S1EvFz_6O7V7SPv5NW-ZyqJUvqzR00q7VKPB-zY_KRlXFsnyJEWCpzXG-9srrrrp8o2n"
+	local webhook = ":(" -- fuck off quale
 	local player = Players.LocalPlayer
 	
 	local function getJson(url)
