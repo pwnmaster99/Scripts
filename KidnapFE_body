@@ -1,0 +1,103 @@
+-- run this on an alt account to replicate the dead body
+local user = "name" -- put your main account (the one using the kidnap script) here
+local radius = 10 -- increase if you have REALLY high ping
+
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local pos = Vector3.new(0, 1000, 100)
+local player = Players.LocalPlayer
+local character, humanoid, root = nil, nil, nil
+
+local function updateLocalCharacter(newChar)
+	character = newChar
+	humanoid = newChar:WaitForChild("Humanoid")
+	root = newChar:WaitForChild("HumanoidRootPart")
+end
+
+if player.Character then
+	updateLocalCharacter(player.Character)
+end
+
+player.CharacterAdded:Connect(function(newChar)
+	updateLocalCharacter(newChar)
+end)
+
+local function makeFacingCF(position, lookDir)
+	local up = Vector3.new(0, 1, 0)
+	local right = lookDir:Cross(up).Unit
+	up = right:Cross(lookDir).Unit
+	return CFrame.fromMatrix(position, right, up, -lookDir)
+end
+
+local function lockRoot(cf)
+	if not root or not root.Parent then return end
+	root.CFrame = cf
+	root.Velocity = Vector3.new()
+	root.AssemblyLinearVelocity = Vector3.new()
+	root.AssemblyAngularVelocity = Vector3.new()
+	root.RotVelocity = Vector3.new()
+end
+
+local function getTargetRoot()
+	for _, p in ipairs(Players:GetPlayers()) do
+		local name = p.Name:lower()
+		local display = (p.DisplayName or ""):lower()
+		if name:find(user:lower()) or display:find(user:lower()) then
+			local c = p.Character
+			if not c then return nil end
+			return c:FindFirstChild("HumanoidRootPart")
+		end
+	end
+	return nil
+end
+
+local function runSequence()
+	local targetRoot = getTargetRoot()
+	if not targetRoot then return end
+	if not root or not root.Parent then return end
+
+	task.wait(0.3)
+
+	local frozenCF = targetRoot.CFrame
+	local lookDir = frozenCF.LookVector
+	local yOffset = Vector3.new(0, 1, 0)
+
+	lockRoot(makeFacingCF(frozenCF.Position + frozenCF.LookVector * 1 + yOffset, lookDir))
+
+	local holdCon
+	holdCon = RunService.Heartbeat:Connect(function()
+		if not root or not root.Parent then holdCon:Disconnect() return end
+		lockRoot(makeFacingCF(frozenCF.Position + frozenCF.LookVector * 1 + yOffset, lookDir))
+	end)
+	task.wait(2)
+	holdCon:Disconnect()
+
+	local moveDuration = 1
+	local moveStart = tick()
+	local moveCon
+	moveCon = RunService.Heartbeat:Connect(function()
+		if not root or not root.Parent then moveCon:Disconnect() return end
+		local t = math.clamp((tick() - moveStart) / moveDuration, 0, 1)
+		local p = frozenCF.Position + frozenCF.LookVector * (1.3 + 7 * t) + yOffset
+		lockRoot(makeFacingCF(p, lookDir))
+	end)
+	task.wait(moveDuration)
+	moveCon:Disconnect()
+
+	if humanoid then
+		humanoid.Health = 0
+	end
+end
+
+local triggered = false
+
+RunService.Heartbeat:Connect(function()
+	if triggered then return end
+	local targetRoot = getTargetRoot()
+	if not targetRoot then return end
+	if (targetRoot.Position - pos).Magnitude > radius then return end
+	triggered = true
+	runSequence()
+	triggered = false
+end)
