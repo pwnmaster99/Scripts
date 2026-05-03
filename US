@@ -1,15 +1,13 @@
 pcall(function()
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "join the discord or im gonna touch you";
-        Text = ".gg/RB5aZ6pxjy";
+        Text = ".gg/dd4XXRMz8b";
         Duration = 60;
     })
-end)
-
-pcall(function()
+    
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Notification";
-        Text = "theres also a copy button at the bottom of the gui";
+        Text = "theres also a button to copy it at the bottom of the GUI";
         Duration = 30;
     })
 end)
