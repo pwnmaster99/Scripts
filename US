@@ -1,6 +1,6 @@
 pcall(function()
     game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "join the discord or im gonna touch you";
+        Title = "join the discord fat skid";
         Text = ".gg/dd4XXRMz8b";
         Duration = 60;
     })
