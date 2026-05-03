@@ -1,5 +1,18 @@
+pcall(function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "join the discord or im gonna touch you";
+        Text = ".gg/RB5aZ6pxjy";
+        Duration = 60;
+    })
+end)
 
-
+pcall(function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Notification";
+        Text = "theres also a copy button at the bottom of the gui";
+        Duration = 30;
+    })
+end)
 
 --[=[
  d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
