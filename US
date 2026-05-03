@@ -1,3 +1,19 @@
+
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Join the discord or im gonna touch you";
+    Text = ".gg/dd4XXRMz8b";
+    Duration = 60;
+})
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Notification";
+    Text = "theres also a button to copy it at the bottom of the gui";
+    Duration = 30;
+})
+
+
+
 --[=[
  d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
 88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
@@ -1010,7 +1026,7 @@ local script = G2L["3"];
 	local Workspace = game:GetService("Workspace")
 	
 	local targets = {
-		["nightly_2222"] = "noway!!! the guy who made this script is in this server!!! my name is nightly_2222."
+		["roblox"] = "roblox" -- roblox
 	}
 	
 	local function notify(name)
