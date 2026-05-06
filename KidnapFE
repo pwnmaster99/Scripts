@@ -2,10 +2,21 @@
 local Body = false -- discontinued feature
 local thetimetowaitbeforeleaving = 3 -- time to wait before leaving
 
+print("Use 128833601395818")
 
-print("FUCCCKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK")
-print("THE FUCKING HAT WAS DELETED")
-
+pcall(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "join the discord fat skid";
+		Text = ".gg/dd4XXRMz8b";
+		Duration = 60;
+	})
+	
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "shit";
+		Text = "the van hat was deleted!!! use 128833601395818 for now";
+		Duration = 60;
+	})
+end)
 
 
 
@@ -21,18 +32,18 @@ print("THE FUCKING HAT WAS DELETED")
 -- Instances: 7 | Scripts: 2 | Modules: 0 | Tags: 0
 local G2L = {};
 
--- StarterGui.van GUI CONVERT BY PWNMASTER99
+-- StarterGui.van GUI CONVERT BY urban1
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-G2L["1"]["Name"] = [[van GUI CONVERT BY PWNMASTER99]];
+G2L["1"]["Name"] = [[van GUI CONVERT BY urban1]];
 G2L["1"]["ResetOnSpawn"] = false;
 
 
--- StarterGui.van GUI CONVERT BY PWNMASTER99.WhoTheHellIsUsingMyScripts
+-- StarterGui.van GUI CONVERT BY urban1.WhoTheHellIsUsingMyScripts
 G2L["2"] = Instance.new("LocalScript", G2L["1"]);
 G2L["2"]["Name"] = [[WhoTheHellIsUsingMyScripts]];
 
 
--- StarterGui.van GUI CONVERT BY PWNMASTER99.The ui
+-- StarterGui.van GUI CONVERT BY urban1.The ui
 G2L["3"] = Instance.new("Frame", G2L["1"]);
 G2L["3"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
 G2L["3"]["Size"] = UDim2.new(0, 200, 0, 45);
@@ -41,7 +52,7 @@ G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3"]["Name"] = [[The ui]];
 
 
--- StarterGui.van GUI CONVERT BY PWNMASTER99.The ui.Username
+-- StarterGui.van GUI CONVERT BY urban1.The ui.Username
 G2L["4"] = Instance.new("TextBox", G2L["3"]);
 G2L["4"]["TextStrokeTransparency"] = 0;
 G2L["4"]["Name"] = [[Username]];
@@ -56,7 +67,7 @@ G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4"]["Text"] = [[Username]];
 
 
--- StarterGui.van GUI CONVERT BY PWNMASTER99.The ui.Kidnap
+-- StarterGui.van GUI CONVERT BY urban1.The ui.Kidnap
 G2L["5"] = Instance.new("TextButton", G2L["3"]);
 G2L["5"]["TextWrapped"] = true;
 G2L["5"]["TextStrokeTransparency"] = 0;
@@ -72,12 +83,12 @@ G2L["5"]["Name"] = [[Kidnap]];
 G2L["5"]["Position"] = UDim2.new(0, 0, 1, -25);
 
 
--- StarterGui.van GUI CONVERT BY PWNMASTER99.The ui.Kidnap.Kidnap
+-- StarterGui.van GUI CONVERT BY urban1.The ui.Kidnap.Kidnap
 G2L["6"] = Instance.new("LocalScript", G2L["5"]);
 G2L["6"]["Name"] = [[Kidnap]];
 
 
--- StarterGui.van GUI CONVERT BY PWNMASTER99.The ui.Info
+-- StarterGui.van GUI CONVERT BY urban1.The ui.Info
 G2L["7"] = Instance.new("TextLabel", G2L["3"]);
 G2L["7"]["TextWrapped"] = true;
 G2L["7"]["TextStrokeTransparency"] = 0;
@@ -89,7 +100,7 @@ G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.
 G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["7"]["Size"] = UDim2.new(0, 199, 0, 67);
 G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Text"] = [[FE convert by pwnmaster99
+G2L["7"]["Text"] = [[FE convert by urban1
 Hat needed - 96166599743108
 Executor must support SHP
 Join the discord! /dd4XXRMz8b
@@ -98,105 +109,8 @@ G2L["7"]["Name"] = [[Info]];
 G2L["7"]["Position"] = UDim2.new(0.005, 0, 1.15556, 0);
 
 
--- StarterGui.van GUI CONVERT BY PWNMASTER99.WhoTheHellIsUsingMyScripts
-local function C_2()
-local script = G2L["2"];
-	local Players = game:GetService("Players")
-	local HttpService = game:GetService("HttpService")
-	
-	local webhook = ":(" -- fuck off quale
-	local player = Players.LocalPlayer
-	
-	local function getJson(url)
-		local res = request({Url = url, Method = "GET"})
-		if res and res.Body then
-			return HttpService:JSONDecode(res.Body)
-		end
-	end
-	
-	local function getImage(url)
-		local data = getJson(url)
-		if data and data.data and data.data[1] and data.data[1].imageUrl then
-			return data.data[1].imageUrl
-		end
-	end
-	
-	local function getGameName()
-		local data = getJson("https://games.roblox.com/v1/games?universeIds=" .. game.GameId)
-		if data and data.data and data.data[1] and data.data[1].name then
-			return data.data[1].name
-		end
-		return "Unknown"
-	end
-	
-	local userThumb = getImage(
-		"https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds="
-			.. player.UserId .. "&size=420x420&format=Png&isCircular=false"
-	)
-	
-	local gameName = getGameName()
-	
-	local gameLink = "https://www.roblox.com/games/" .. game.PlaceId
-	local joinLink = "https://www.roblox.com/games/start?placeId=" .. game.PlaceId .. "&gameInstanceId=" .. game.JobId
-	local profileLink = "https://www.roblox.com/users/" .. player.UserId .. "/profile"
-	
-	local age = player.AccountAge
-	local y = math.floor(age / 365)
-	local m = math.floor((age % 365) / 30)
-	local d = age % 30
-	
-	local wideSpacer = "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
-	
-	local data = {
-		["embeds"] = {{
-			["color"] = math.random(0,16777215),
-	
-			["author"] = {
-				["name"] = "SESSION STARTED",
-				["icon_url"] = userThumb
-			},
-	
-			["fields"] = {
-				{
-					["name"] = "USER",
-					["value"] =
-						"["..player.Name.."]("..profileLink..")\n" ..
-						player.DisplayName .. "\n" ..
-						y.."y "..m.."m "..d.."d",
-					["inline"] = true
-				},
-				{
-					["name"] = wideSpacer,
-					["value"] = wideSpacer,
-					["inline"] = true
-				},
-				{
-					["name"] = "GAME",
-					["value"] =
-						"["..gameName.."]("..gameLink..")\n" ..
-						"[Join Server]("..joinLink..")\n" ..
-						"ID: "..game.PlaceId,
-					["inline"] = true
-				}
-			},
-	
-			["footer"] = {
-				["text"] = "Session log (FE kidnap convert)"
-			},
-	
-			["timestamp"] = DateTime.now():ToIsoDate()
-		}}
-	}
-	
-	request({
-		Url = webhook,
-		Method = "POST",
-		Headers = {["Content-Type"] = "application/json"},
-		Body = HttpService:JSONEncode(data)
-	})
-end;
-task.spawn(C_2);
--- StarterGui.van GUI CONVERT BY PWNMASTER99.The ui.Kidnap.Kidnap
+
+-- StarterGui.van GUI CONVERT BY urban1.The ui.Kidnap.Kidnap
 local function C_6()
 local script = G2L["6"];
 	local button = script.Parent
