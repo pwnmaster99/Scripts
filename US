@@ -10,204 +10,190 @@
 -- Instances: 98 | Scripts: 25 | Modules: 0 | Tags: 0
 local G2L = {};
 
--- StarterGui.pwnmaster99's universal stuffs
+-- StarterGui.urban1's universal GUI
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["IgnoreGuiInset"] = true;
 G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.None;
-G2L["1"]["Name"] = [[pwnmaster99's universal stuffs]];
+G2L["1"]["Name"] = [[urban1's universal GUI]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
 
 
--- StarterGui.pwnmaster99's universal stuffs.SimulationRadius
+-- StarterGui.urban1's universal GUI.SimulationRadius
 G2L["2"] = Instance.new("LocalScript", G2L["1"]);
 G2L["2"]["Name"] = [[SimulationRadius]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar
-G2L["3"] = Instance.new("Frame", G2L["1"]);
-G2L["3"]["ZIndex"] = 5;
-G2L["3"]["BorderSizePixel"] = 3;
-G2L["3"]["BackgroundColor3"] = Color3.fromRGB(41, 51, 64);
-G2L["3"]["Size"] = UDim2.new(0, 377, 0, 41);
-G2L["3"]["Position"] = UDim2.new(0.4, 0, 0.1, 1);
-G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3"]["Name"] = [[TopBar]];
+-- StarterGui.urban1's universal GUI.plug the discord
+G2L["3"] = Instance.new("LocalScript", G2L["1"]);
+G2L["3"]["Name"] = [[plug the discord]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.Smooth GUI Dragging
-G2L["4"] = Instance.new("LocalScript", G2L["3"]);
-G2L["4"]["Name"] = [[Smooth GUI Dragging]];
+-- StarterGui.urban1's universal GUI.TopBar
+G2L["4"] = Instance.new("Frame", G2L["1"]);
+G2L["4"]["ZIndex"] = 5;
+G2L["4"]["BorderSizePixel"] = 3;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(41, 51, 64);
+G2L["4"]["Size"] = UDim2.new(0, 377, 0, 41);
+G2L["4"]["Position"] = UDim2.new(0.4, 0, 0.1, 1);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Name"] = [[TopBar]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.Title
-G2L["5"] = Instance.new("TextLabel", G2L["3"]);
-G2L["5"]["TextWrapped"] = true;
-G2L["5"]["ZIndex"] = 3;
-G2L["5"]["BorderSizePixel"] = 0;
-G2L["5"]["TextSize"] = 54;
-G2L["5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["5"]["TextScaled"] = true;
-G2L["5"]["BackgroundColor3"] = Color3.fromRGB(168, 235, 255);
-G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5"]["BackgroundTransparency"] = 1;
-G2L["5"]["Size"] = UDim2.new(0, 274, 0, 28);
-G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5"]["Text"] = [[pwnmaster99's universal stuffs]];
-G2L["5"]["Name"] = [[Title]];
-G2L["5"]["Position"] = UDim2.new(0.00289, 0, 0.14848, 0);
+-- StarterGui.urban1's universal GUI.TopBar.Smooth GUI Dragging
+G2L["5"] = Instance.new("LocalScript", G2L["4"]);
+G2L["5"]["Name"] = [[Smooth GUI Dragging]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MinimizeZindexFix
-G2L["6"] = Instance.new("Frame", G2L["3"]);
-G2L["6"]["ZIndex"] = 2;
+-- StarterGui.urban1's universal GUI.TopBar.Title
+G2L["6"] = Instance.new("TextLabel", G2L["4"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["ZIndex"] = 3;
 G2L["6"]["BorderSizePixel"] = 0;
-G2L["6"]["BackgroundColor3"] = Color3.fromRGB(41, 51, 64);
-G2L["6"]["Size"] = UDim2.new(0, 377, 0, 38);
-G2L["6"]["Position"] = UDim2.new(-0.00131, 0, 0.02653, 0);
+G2L["6"]["TextSize"] = 54;
+G2L["6"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(168, 235, 255);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Size"] = UDim2.new(0, 274, 0, 28);
 G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6"]["Name"] = [[MinimizeZindexFix]];
+G2L["6"]["Text"] = [[urban1's universal GUI]];
+G2L["6"]["Name"] = [[Title]];
+G2L["6"]["Position"] = UDim2.new(0.00289, 0, 0.14848, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MinimizeZindexFix.UICorner
-G2L["7"] = Instance.new("UICorner", G2L["6"]);
+-- StarterGui.urban1's universal GUI.TopBar.MinimizeZindexFix
+G2L["7"] = Instance.new("Frame", G2L["4"]);
+G2L["7"]["ZIndex"] = 2;
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(41, 51, 64);
+G2L["7"]["Size"] = UDim2.new(0, 377, 0, 38);
+G2L["7"]["Position"] = UDim2.new(-0.00131, 0, 0.02653, 0);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Name"] = [[MinimizeZindexFix]];
 
 
-
--- StarterGui.pwnmaster99's universal stuffs.TopBar.Minimize
-G2L["8"] = Instance.new("TextButton", G2L["3"]);
-G2L["8"]["TextWrapped"] = true;
-G2L["8"]["BorderSizePixel"] = 0;
-G2L["8"]["TextSize"] = 44;
-G2L["8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["8"]["ZIndex"] = 2;
-G2L["8"]["Size"] = UDim2.new(0, 90, 0, 37);
-G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["Text"] = [[]];
-G2L["8"]["Name"] = [[Minimize]];
-G2L["8"]["Position"] = UDim2.new(0.75862, 0, 0.02653, 0);
-
-
--- StarterGui.pwnmaster99's universal stuffs.TopBar.Minimize.LocalScript
-G2L["9"] = Instance.new("LocalScript", G2L["8"]);
+-- StarterGui.urban1's universal GUI.TopBar.MinimizeZindexFix.UICorner
+G2L["8"] = Instance.new("UICorner", G2L["7"]);
 
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.Minimize.UICorner
-G2L["a"] = Instance.new("UICorner", G2L["8"]);
-G2L["a"]["CornerRadius"] = UDim.new(100, 100);
+-- StarterGui.urban1's universal GUI.TopBar.Minimize
+G2L["9"] = Instance.new("TextButton", G2L["4"]);
+G2L["9"]["TextWrapped"] = true;
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 44;
+G2L["9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["ZIndex"] = 2;
+G2L["9"]["Size"] = UDim2.new(0, 90, 0, 37);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[]];
+G2L["9"]["Name"] = [[Minimize]];
+G2L["9"]["Position"] = UDim2.new(0.75862, 0, 0.02653, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame
-G2L["b"] = Instance.new("Frame", G2L["3"]);
-G2L["b"]["BorderSizePixel"] = 3;
-G2L["b"]["BackgroundColor3"] = Color3.fromRGB(41, 51, 64);
-G2L["b"]["Size"] = UDim2.new(0, 377, 0, 260);
-G2L["b"]["Position"] = UDim2.new(-0.00131, 0, -0.00592, 0);
-G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["Name"] = [[MainFrame]];
-
-
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.UICorner
-G2L["c"] = Instance.new("UICorner", G2L["b"]);
+-- StarterGui.urban1's universal GUI.TopBar.Minimize.LocalScript
+G2L["a"] = Instance.new("LocalScript", G2L["9"]);
 
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.Glow3
-G2L["d"] = Instance.new("UIStroke", G2L["b"]);
-G2L["d"]["Transparency"] = 0.7;
-G2L["d"]["Thickness"] = 15;
-G2L["d"]["Color"] = Color3.fromRGB(41, 51, 64);
-G2L["d"]["Name"] = [[Glow3]];
+-- StarterGui.urban1's universal GUI.TopBar.Minimize.UICorner
+G2L["b"] = Instance.new("UICorner", G2L["9"]);
+G2L["b"]["CornerRadius"] = UDim.new(100, 100);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.Glow2
-G2L["e"] = Instance.new("UIStroke", G2L["b"]);
-G2L["e"]["ZIndex"] = 2;
-G2L["e"]["Transparency"] = 0.6;
-G2L["e"]["Thickness"] = 11;
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame
+G2L["c"] = Instance.new("Frame", G2L["4"]);
+G2L["c"]["BorderSizePixel"] = 3;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(41, 51, 64);
+G2L["c"]["Size"] = UDim2.new(0, 377, 0, 260);
+G2L["c"]["Position"] = UDim2.new(-0.00131, 0, -0.00592, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Name"] = [[MainFrame]];
+
+
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["c"]);
+
+
+
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.Glow3
+G2L["e"] = Instance.new("UIStroke", G2L["c"]);
+G2L["e"]["Transparency"] = 0.7;
+G2L["e"]["Thickness"] = 15;
 G2L["e"]["Color"] = Color3.fromRGB(41, 51, 64);
-G2L["e"]["Name"] = [[Glow2]];
+G2L["e"]["Name"] = [[Glow3]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.Outline
-G2L["f"] = Instance.new("UIStroke", G2L["b"]);
-G2L["f"]["ZIndex"] = 4;
-G2L["f"]["Thickness"] = 1.7;
-G2L["f"]["Name"] = [[Outline]];
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.Glow2
+G2L["f"] = Instance.new("UIStroke", G2L["c"]);
+G2L["f"]["ZIndex"] = 2;
+G2L["f"]["Transparency"] = 0.6;
+G2L["f"]["Thickness"] = 11;
+G2L["f"]["Color"] = Color3.fromRGB(41, 51, 64);
+G2L["f"]["Name"] = [[Glow2]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain
-G2L["10"] = Instance.new("ScrollingFrame", G2L["b"]);
-G2L["10"]["Active"] = true;
-G2L["10"]["BorderSizePixel"] = 0;
-G2L["10"]["CanvasSize"] = UDim2.new(0, 0, 3.5, 0);
-G2L["10"]["CanvasPosition"] = Vector2.new(0, 692);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.Outline
+G2L["10"] = Instance.new("UIStroke", G2L["c"]);
+G2L["10"]["ZIndex"] = 4;
+G2L["10"]["Thickness"] = 1.7;
+G2L["10"]["Name"] = [[Outline]];
+
+
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain
+G2L["11"] = Instance.new("ScrollingFrame", G2L["c"]);
+G2L["11"]["Active"] = true;
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["CanvasSize"] = UDim2.new(0, 0, 3.5, 0);
+G2L["11"]["CanvasPosition"] = Vector2.new(0, 200);
 -- [ERROR] cannot convert TopImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["10"]["TopImage"] = [[]];
-G2L["10"]["Name"] = [[ScrollingMain]];
-G2L["10"]["BackgroundColor3"] = Color3.fromRGB(41, 51, 64);
-G2L["10"]["MidImage"] = [[]];
+G2L["11"]["TopImage"] = [[]];
+G2L["11"]["Name"] = [[ScrollingMain]];
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(41, 51, 64);
+G2L["11"]["MidImage"] = [[]];
 -- [ERROR] cannot convert MidImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 -- [ERROR] cannot convert BottomImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["10"]["BottomImage"] = [[]];
-G2L["10"]["Size"] = UDim2.new(0, 377, 0, 218);
-G2L["10"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10"]["Position"] = UDim2.new(0, 0, 0.16, 0);
-G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.ForceJump
-G2L["11"] = Instance.new("TextButton", G2L["10"]);
-G2L["11"]["TextWrapped"] = true;
-G2L["11"]["BorderSizePixel"] = 0;
-G2L["11"]["TextSize"] = 28;
-G2L["11"]["TextScaled"] = true;
-G2L["11"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["11"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["11"]["BottomImage"] = [[]];
+G2L["11"]["Size"] = UDim2.new(0, 377, 0, 218);
+G2L["11"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Position"] = UDim2.new(0, 0, 0.16, 0);
 G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["Text"] = [[Jump]];
-G2L["11"]["Name"] = [[ForceJump]];
-G2L["11"]["Position"] = UDim2.new(0.036, 0, 0.692, 0);
+G2L["11"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.ForceJump.Forcejump
-G2L["12"] = Instance.new("LocalScript", G2L["11"]);
-G2L["12"]["Name"] = [[Forcejump]];
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.ForceJump
+G2L["12"] = Instance.new("TextButton", G2L["11"]);
+G2L["12"]["TextWrapped"] = true;
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextSize"] = 28;
+G2L["12"]["TextScaled"] = true;
+G2L["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["12"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[Jump]];
+G2L["12"]["Name"] = [[ForceJump]];
+G2L["12"]["Position"] = UDim2.new(0.036, 0, 0.692, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.ForceJump.UICorner
-G2L["13"] = Instance.new("UICorner", G2L["11"]);
-G2L["13"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.ForceJump.Forcejump
+G2L["13"] = Instance.new("LocalScript", G2L["12"]);
+G2L["13"]["Name"] = [[Forcejump]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Version
-G2L["14"] = Instance.new("TextLabel", G2L["10"]);
-G2L["14"]["TextWrapped"] = true;
-G2L["14"]["ZIndex"] = 2;
-G2L["14"]["BorderSizePixel"] = 0;
-G2L["14"]["TextSize"] = 54;
-G2L["14"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["14"]["TextScaled"] = true;
-G2L["14"]["BackgroundColor3"] = Color3.fromRGB(168, 235, 255);
-G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["14"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14"]["BackgroundTransparency"] = 1;
-G2L["14"]["Size"] = UDim2.new(0, 47, 0, 17);
-G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14"]["Text"] = [[v 0.2.1]];
-G2L["14"]["Name"] = [[Version]];
-G2L["14"]["Position"] = UDim2.new(0.035, 0, 0.97, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.ForceJump.UICorner
+G2L["14"] = Instance.new("UICorner", G2L["12"]);
+G2L["14"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Credits
-G2L["15"] = Instance.new("TextLabel", G2L["10"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Version
+G2L["15"] = Instance.new("TextLabel", G2L["11"]);
 G2L["15"]["TextWrapped"] = true;
 G2L["15"]["ZIndex"] = 2;
 G2L["15"]["BorderSizePixel"] = 0;
@@ -218,92 +204,93 @@ G2L["15"]["BackgroundColor3"] = Color3.fromRGB(168, 235, 255);
 G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
 G2L["15"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["15"]["BackgroundTransparency"] = 1;
-G2L["15"]["Size"] = UDim2.new(0, 139, 0, 23);
+G2L["15"]["Size"] = UDim2.new(0, 47, 0, 17);
 G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15"]["Text"] = [[by pwnmaster99 (duhhh)]];
-G2L["15"]["Name"] = [[Credits]];
-G2L["15"]["Position"] = UDim2.new(0.032, 0, 0.954, 0);
+G2L["15"]["Text"] = [[v 0.2.1]];
+G2L["15"]["Name"] = [[Version]];
+G2L["15"]["Position"] = UDim2.new(0.035, 0, 0.97, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.InfoToggle
-G2L["16"] = Instance.new("TextButton", G2L["10"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Credits
+G2L["16"] = Instance.new("TextLabel", G2L["11"]);
 G2L["16"]["TextWrapped"] = true;
+G2L["16"]["ZIndex"] = 2;
 G2L["16"]["BorderSizePixel"] = 0;
-G2L["16"]["TextSize"] = 34;
+G2L["16"]["TextSize"] = 54;
+G2L["16"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["16"]["TextScaled"] = true;
-G2L["16"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(168, 235, 255);
 G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["16"]["Size"] = UDim2.new(0, 21, 0, 21);
+G2L["16"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["Size"] = UDim2.new(0, 139, 0, 23);
 G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["Text"] = [[i]];
-G2L["16"]["Name"] = [[InfoToggle]];
-G2L["16"]["Position"] = UDim2.new(0.41934, 0, 0.00392, 0);
+G2L["16"]["Text"] = [[by urban1 AKA pwnmaster99]];
+G2L["16"]["Name"] = [[Credits]];
+G2L["16"]["Position"] = UDim2.new(0.032, 0, 0.954, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.InfoToggle.Size
-G2L["17"] = Instance.new("LocalScript", G2L["16"]);
-G2L["17"]["Name"] = [[Size]];
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.InfoToggle
+G2L["17"] = Instance.new("TextButton", G2L["11"]);
+G2L["17"]["TextWrapped"] = true;
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextSize"] = 34;
+G2L["17"]["TextScaled"] = true;
+G2L["17"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["17"]["Size"] = UDim2.new(0, 21, 0, 21);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[i]];
+G2L["17"]["Name"] = [[InfoToggle]];
+G2L["17"]["Position"] = UDim2.new(0.41934, 0, 0.00392, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.InfoToggle.UICorner
-G2L["18"] = Instance.new("UICorner", G2L["16"]);
-G2L["18"]["CornerRadius"] = UDim.new(1, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.InfoToggle.Size
+G2L["18"] = Instance.new("LocalScript", G2L["17"]);
+G2L["18"]["Name"] = [[Size]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.InfoToggle.Info
-G2L["19"] = Instance.new("TextLabel", G2L["16"]);
-G2L["19"]["TextWrapped"] = true;
-G2L["19"]["BorderSizePixel"] = 0;
-G2L["19"]["TextSize"] = 1;
-G2L["19"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["19"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["BackgroundTransparency"] = 1;
-G2L["19"]["Size"] = UDim2.new(0, 185, 0, 77);
-G2L["19"]["Visible"] = false;
-G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["Text"] = [[Weld abuse lets you move another person on the serverside. These scripts are MUCH more stable if the target is either in shiftlock or holding a tool!]];
-G2L["19"]["Name"] = [[Info]];
-G2L["19"]["Position"] = UDim2.new(1.23267, 0, -0.01477, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.InfoToggle.UICorner
+G2L["19"] = Instance.new("UICorner", G2L["17"]);
+G2L["19"]["CornerRadius"] = UDim.new(1, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.SplitThing
-G2L["1a"] = Instance.new("TextLabel", G2L["10"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.InfoToggle.Info
+G2L["1a"] = Instance.new("TextLabel", G2L["17"]);
+G2L["1a"]["TextWrapped"] = true;
 G2L["1a"]["BorderSizePixel"] = 0;
 G2L["1a"]["TextSize"] = 1;
+G2L["1a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1a"]["TextYAlignment"] = Enum.TextYAlignment.Top;
 G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a"]["Size"] = UDim2.new(0, 168, 0, 2);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["BackgroundTransparency"] = 1;
+G2L["1a"]["Size"] = UDim2.new(0, 185, 0, 77);
+G2L["1a"]["Visible"] = false;
 G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a"]["Text"] = [[ ]];
-G2L["1a"]["Name"] = [[SplitThing]];
-G2L["1a"]["Position"] = UDim2.new(0.03183, 0, 0.03162, 0);
+G2L["1a"]["Text"] = [[Weld abuse lets you move another person on the serverside. These scripts are MUCH more stable if the target is either in shiftlock or holding a tool!]];
+G2L["1a"]["Name"] = [[Info]];
+G2L["1a"]["Position"] = UDim2.new(1.23267, 0, -0.01477, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Title
-G2L["1b"] = Instance.new("TextLabel", G2L["10"]);
-G2L["1b"]["TextWrapped"] = true;
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.SplitThing
+G2L["1b"] = Instance.new("TextLabel", G2L["11"]);
 G2L["1b"]["BorderSizePixel"] = 0;
-G2L["1b"]["TextSize"] = 34;
-G2L["1b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1b"]["TextScaled"] = true;
+G2L["1b"]["TextSize"] = 1;
 G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b"]["BackgroundTransparency"] = 1;
-G2L["1b"]["Size"] = UDim2.new(0, 154, 0, 31);
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Size"] = UDim2.new(0, 168, 0, 2);
 G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1b"]["Text"] = [[Weld abuse]];
-G2L["1b"]["Name"] = [[Title]];
-G2L["1b"]["Position"] = UDim2.new(0.02966, 0, -0.00154, 0);
+G2L["1b"]["Text"] = [[ ]];
+G2L["1b"]["Name"] = [[SplitThing]];
+G2L["1b"]["Position"] = UDim2.new(0.03183, 0, 0.03162, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Target
-G2L["1c"] = Instance.new("TextLabel", G2L["10"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Title
+G2L["1c"] = Instance.new("TextLabel", G2L["11"]);
 G2L["1c"]["TextWrapped"] = true;
 G2L["1c"]["BorderSizePixel"] = 0;
 G2L["1c"]["TextSize"] = 34;
@@ -313,670 +300,683 @@ G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
 G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1c"]["BackgroundTransparency"] = 1;
-G2L["1c"]["Size"] = UDim2.new(0, 75, 0, 30);
+G2L["1c"]["Size"] = UDim2.new(0, 154, 0, 31);
 G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["Text"] = [[target:]];
-G2L["1c"]["Name"] = [[Target]];
-G2L["1c"]["Position"] = UDim2.new(0.03, 0, 0.045, 0);
+G2L["1c"]["Text"] = [[Weld abuse]];
+G2L["1c"]["Name"] = [[Title]];
+G2L["1c"]["Position"] = UDim2.new(0.02966, 0, -0.00154, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.TargetName
-G2L["1d"] = Instance.new("TextBox", G2L["10"]);
-G2L["1d"]["Name"] = [[TargetName]];
-G2L["1d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Target
+G2L["1d"] = Instance.new("TextLabel", G2L["11"]);
+G2L["1d"]["TextWrapped"] = true;
 G2L["1d"]["BorderSizePixel"] = 0;
 G2L["1d"]["TextSize"] = 34;
-G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["1d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1d"]["TextScaled"] = true;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["1d"]["ClipsDescendants"] = true;
-G2L["1d"]["Size"] = UDim2.new(0, 98, 0, 30);
-G2L["1d"]["Position"] = UDim2.new(0.21, 0, 0.045, 0);
+G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["BackgroundTransparency"] = 1;
+G2L["1d"]["Size"] = UDim2.new(0, 75, 0, 30);
 G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d"]["Text"] = [[]];
+G2L["1d"]["Text"] = [[target:]];
+G2L["1d"]["Name"] = [[Target]];
+G2L["1d"]["Position"] = UDim2.new(0.03, 0, 0.045, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.TargetName.UICorner
-G2L["1e"] = Instance.new("UICorner", G2L["1d"]);
-G2L["1e"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.TargetName
+G2L["1e"] = Instance.new("TextBox", G2L["11"]);
+G2L["1e"]["Name"] = [[TargetName]];
+G2L["1e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextSize"] = 34;
+G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["1e"]["ClipsDescendants"] = true;
+G2L["1e"]["Size"] = UDim2.new(0, 98, 0, 30);
+G2L["1e"]["Position"] = UDim2.new(0.21, 0, 0.045, 0);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Text"] = [[]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.NoJump
-G2L["1f"] = Instance.new("TextButton", G2L["10"]);
-G2L["1f"]["TextWrapped"] = true;
-G2L["1f"]["BorderSizePixel"] = 0;
-G2L["1f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1f"]["TextSize"] = 28;
-G2L["1f"]["TextScaled"] = true;
-G2L["1f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["1f"]["Size"] = UDim2.new(0, 166, 0, 44);
-G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f"]["Text"] = [[NoJump                              OFF]];
-G2L["1f"]["Name"] = [[NoJump]];
-G2L["1f"]["Position"] = UDim2.new(0.031, 0, 0.203, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.TargetName.UICorner
+G2L["1f"] = Instance.new("UICorner", G2L["1e"]);
+G2L["1f"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.NoJump.NoJump
-G2L["20"] = Instance.new("LocalScript", G2L["1f"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.NoJump
+G2L["20"] = Instance.new("TextButton", G2L["11"]);
+G2L["20"]["TextWrapped"] = true;
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["20"]["TextSize"] = 28;
+G2L["20"]["TextScaled"] = true;
+G2L["20"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["20"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Text"] = [[NoJump                              OFF]];
 G2L["20"]["Name"] = [[NoJump]];
+G2L["20"]["Position"] = UDim2.new(0.031, 0, 0.203, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.NoJump.UICorner
-G2L["21"] = Instance.new("UICorner", G2L["1f"]);
-G2L["21"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.NoJump.NoJump
+G2L["21"] = Instance.new("LocalScript", G2L["20"]);
+G2L["21"]["Name"] = [[NoJump]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.UIStroke
-G2L["22"] = Instance.new("UIStroke", G2L["10"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.NoJump.UICorner
+G2L["22"] = Instance.new("UICorner", G2L["20"]);
+G2L["22"]["CornerRadius"] = UDim.new(0, 4);
+
+
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.UIStroke
+G2L["23"] = Instance.new("UIStroke", G2L["11"]);
 
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.UICorner
-G2L["23"] = Instance.new("UICorner", G2L["10"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.UICorner
+G2L["24"] = Instance.new("UICorner", G2L["11"]);
 
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Elevator
-G2L["24"] = Instance.new("TextButton", G2L["10"]);
-G2L["24"]["TextWrapped"] = true;
-G2L["24"]["BorderSizePixel"] = 0;
-G2L["24"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["24"]["TextSize"] = 28;
-G2L["24"]["TextScaled"] = true;
-G2L["24"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["24"]["Size"] = UDim2.new(0, 166, 0, 44);
-G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24"]["Text"] = [[Elevator                              OFF]];
-G2L["24"]["Name"] = [[Elevator]];
-G2L["24"]["Position"] = UDim2.new(0.031, 0, 0.252, 0);
-
-
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Elevator.Elevator
-G2L["25"] = Instance.new("LocalScript", G2L["24"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Elevator
+G2L["25"] = Instance.new("TextButton", G2L["11"]);
+G2L["25"]["TextWrapped"] = true;
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["25"]["TextSize"] = 28;
+G2L["25"]["TextScaled"] = true;
+G2L["25"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["25"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[Elevator                              OFF]];
 G2L["25"]["Name"] = [[Elevator]];
+G2L["25"]["Position"] = UDim2.new(0.031, 0, 0.252, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Elevator.UICorner
-G2L["26"] = Instance.new("UICorner", G2L["24"]);
-G2L["26"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Elevator.Elevator
+G2L["26"] = Instance.new("LocalScript", G2L["25"]);
+G2L["26"]["Name"] = [[Elevator]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.InfiniteJump
-G2L["27"] = Instance.new("TextButton", G2L["10"]);
-G2L["27"]["TextWrapped"] = true;
-G2L["27"]["BorderSizePixel"] = 0;
-G2L["27"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["27"]["TextSize"] = 28;
-G2L["27"]["TextScaled"] = true;
-G2L["27"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["27"]["Size"] = UDim2.new(0, 166, 0, 44);
-G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["Text"] = [[InfJump                              OFF]];
-G2L["27"]["Name"] = [[InfiniteJump]];
-G2L["27"]["Position"] = UDim2.new(0.031, 0, 0.302, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Elevator.UICorner
+G2L["27"] = Instance.new("UICorner", G2L["25"]);
+G2L["27"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.InfiniteJump.InfJump
-G2L["28"] = Instance.new("LocalScript", G2L["27"]);
-G2L["28"]["Name"] = [[InfJump]];
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.InfiniteJump
+G2L["28"] = Instance.new("TextButton", G2L["11"]);
+G2L["28"]["TextWrapped"] = true;
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["28"]["TextSize"] = 28;
+G2L["28"]["TextScaled"] = true;
+G2L["28"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["28"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[InfJump                              OFF]];
+G2L["28"]["Name"] = [[InfiniteJump]];
+G2L["28"]["Position"] = UDim2.new(0.031, 0, 0.302, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.InfiniteJump.UICorner
-G2L["29"] = Instance.new("UICorner", G2L["27"]);
-G2L["29"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.InfiniteJump.InfJump
+G2L["29"] = Instance.new("LocalScript", G2L["28"]);
+G2L["29"]["Name"] = [[InfJump]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Magic Carpet
-G2L["2a"] = Instance.new("TextButton", G2L["10"]);
-G2L["2a"]["TextWrapped"] = true;
-G2L["2a"]["BorderSizePixel"] = 0;
-G2L["2a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["2a"]["TextSize"] = 28;
-G2L["2a"]["TextScaled"] = true;
-G2L["2a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["2a"]["Size"] = UDim2.new(0, 166, 0, 44);
-G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a"]["Text"] = [[Magic Carpet                              OFF]];
-G2L["2a"]["Name"] = [[Magic Carpet]];
-G2L["2a"]["Position"] = UDim2.new(0.031, 0, 0.351, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.InfiniteJump.UICorner
+G2L["2a"] = Instance.new("UICorner", G2L["28"]);
+G2L["2a"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Magic Carpet.MagicCarpet
-G2L["2b"] = Instance.new("LocalScript", G2L["2a"]);
-G2L["2b"]["Name"] = [[MagicCarpet]];
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Magic Carpet
+G2L["2b"] = Instance.new("TextButton", G2L["11"]);
+G2L["2b"]["TextWrapped"] = true;
+G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2b"]["TextSize"] = 28;
+G2L["2b"]["TextScaled"] = true;
+G2L["2b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["2b"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Text"] = [[Magic Carpet                              OFF]];
+G2L["2b"]["Name"] = [[Magic Carpet]];
+G2L["2b"]["Position"] = UDim2.new(0.031, 0, 0.351, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Magic Carpet.UICorner
-G2L["2c"] = Instance.new("UICorner", G2L["2a"]);
-G2L["2c"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Magic Carpet.MagicCarpet
+G2L["2c"] = Instance.new("LocalScript", G2L["2b"]);
+G2L["2c"]["Name"] = [[MagicCarpet]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.HeadSit
-G2L["2d"] = Instance.new("TextButton", G2L["10"]);
-G2L["2d"]["TextWrapped"] = true;
-G2L["2d"]["BorderSizePixel"] = 0;
-G2L["2d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["2d"]["TextSize"] = 28;
-G2L["2d"]["TextScaled"] = true;
-G2L["2d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["2d"]["Size"] = UDim2.new(0, 166, 0, 44);
-G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["Text"] = [[HeadSit                              OFF]];
-G2L["2d"]["Name"] = [[HeadSit]];
-G2L["2d"]["Position"] = UDim2.new(0.031, 0, 0.401, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Magic Carpet.UICorner
+G2L["2d"] = Instance.new("UICorner", G2L["2b"]);
+G2L["2d"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.HeadSit.Headsit
-G2L["2e"] = Instance.new("LocalScript", G2L["2d"]);
-G2L["2e"]["Name"] = [[Headsit]];
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.HeadSit
+G2L["2e"] = Instance.new("TextButton", G2L["11"]);
+G2L["2e"]["TextWrapped"] = true;
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2e"]["TextSize"] = 28;
+G2L["2e"]["TextScaled"] = true;
+G2L["2e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["2e"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Text"] = [[HeadSit                              OFF]];
+G2L["2e"]["Name"] = [[HeadSit]];
+G2L["2e"]["Position"] = UDim2.new(0.031, 0, 0.401, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.HeadSit.UICorner
-G2L["2f"] = Instance.new("UICorner", G2L["2d"]);
-G2L["2f"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.HeadSit.Headsit
+G2L["2f"] = Instance.new("LocalScript", G2L["2e"]);
+G2L["2f"]["Name"] = [[Headsit]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Platform
-G2L["30"] = Instance.new("TextButton", G2L["10"]);
-G2L["30"]["TextWrapped"] = true;
-G2L["30"]["BorderSizePixel"] = 0;
-G2L["30"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["30"]["TextSize"] = 28;
-G2L["30"]["TextScaled"] = true;
-G2L["30"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["30"]["Size"] = UDim2.new(0, 166, 0, 44);
-G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["Text"] = [[Platform Fly                              OFF]];
-G2L["30"]["Name"] = [[Platform]];
-G2L["30"]["Position"] = UDim2.new(0.029, 0, 0.45, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.HeadSit.UICorner
+G2L["30"] = Instance.new("UICorner", G2L["2e"]);
+G2L["30"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Platform.LocalScript
-G2L["31"] = Instance.new("LocalScript", G2L["30"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Platform
+G2L["31"] = Instance.new("TextButton", G2L["11"]);
+G2L["31"]["TextWrapped"] = true;
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["31"]["TextSize"] = 28;
+G2L["31"]["TextScaled"] = true;
+G2L["31"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["31"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Text"] = [[Platform Fly                              OFF]];
+G2L["31"]["Name"] = [[Platform]];
+G2L["31"]["Position"] = UDim2.new(0.029, 0, 0.45, 0);
+
+
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Platform.LocalScript
+G2L["32"] = Instance.new("LocalScript", G2L["31"]);
 
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Platform.UICorner
-G2L["32"] = Instance.new("UICorner", G2L["30"]);
-G2L["32"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Platform.UICorner
+G2L["33"] = Instance.new("UICorner", G2L["31"]);
+G2L["33"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Jumpscare
-G2L["33"] = Instance.new("TextButton", G2L["10"]);
-G2L["33"]["TextWrapped"] = true;
-G2L["33"]["BorderSizePixel"] = 0;
-G2L["33"]["TextSize"] = 28;
-G2L["33"]["TextScaled"] = true;
-G2L["33"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["33"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["33"]["Size"] = UDim2.new(0, 166, 0, 44);
-G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["33"]["Text"] = [[Jumpscare (first person only)]];
-G2L["33"]["Name"] = [[Jumpscare]];
-G2L["33"]["Position"] = UDim2.new(0.036, 0, 0.84, 0);
-
-
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Jumpscare.Jumpscare
-G2L["34"] = Instance.new("LocalScript", G2L["33"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Jumpscare
+G2L["34"] = Instance.new("TextButton", G2L["11"]);
+G2L["34"]["TextWrapped"] = true;
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["TextSize"] = 28;
+G2L["34"]["TextScaled"] = true;
+G2L["34"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["34"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Text"] = [[Jumpscare (first person only)]];
 G2L["34"]["Name"] = [[Jumpscare]];
+G2L["34"]["Position"] = UDim2.new(0.036, 0, 0.84, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Jumpscare.UICorner
-G2L["35"] = Instance.new("UICorner", G2L["33"]);
-G2L["35"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Jumpscare.Jumpscare
+G2L["35"] = Instance.new("LocalScript", G2L["34"]);
+G2L["35"]["Name"] = [[Jumpscare]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Speed
-G2L["36"] = Instance.new("TextBox", G2L["10"]);
-G2L["36"]["Name"] = [[Speed]];
-G2L["36"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["36"]["BorderSizePixel"] = 0;
-G2L["36"]["TextSize"] = 34;
-G2L["36"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["36"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["36"]["Size"] = UDim2.new(0, 91, 0, 30);
-G2L["36"]["Position"] = UDim2.new(0.231, 0, 0.559, 0);
-G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["36"]["Text"] = [[]];
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Jumpscare.UICorner
+G2L["36"] = Instance.new("UICorner", G2L["34"]);
+G2L["36"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Speed.UICorner
-G2L["37"] = Instance.new("UICorner", G2L["36"]);
-G2L["37"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Speed
+G2L["37"] = Instance.new("TextBox", G2L["11"]);
+G2L["37"]["Name"] = [[Speed]];
+G2L["37"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["TextSize"] = 34;
+G2L["37"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["37"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["37"]["Size"] = UDim2.new(0, 91, 0, 30);
+G2L["37"]["Position"] = UDim2.new(0.231, 0, 0.559, 0);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Text"] = [[]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Speed
-G2L["38"] = Instance.new("TextLabel", G2L["10"]);
-G2L["38"]["TextWrapped"] = true;
-G2L["38"]["BorderSizePixel"] = 0;
-G2L["38"]["TextSize"] = 34;
-G2L["38"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["38"]["TextScaled"] = true;
-G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["38"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["38"]["BackgroundTransparency"] = 1;
-G2L["38"]["Size"] = UDim2.new(0, 75, 0, 30);
-G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["38"]["Text"] = [[Speed:]];
-G2L["38"]["Name"] = [[Speed]];
-G2L["38"]["Position"] = UDim2.new(0.035, 0, 0.559, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Speed.UICorner
+G2L["38"] = Instance.new("UICorner", G2L["37"]);
+G2L["38"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.SpeedBoost
-G2L["39"] = Instance.new("TextButton", G2L["10"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Speed
+G2L["39"] = Instance.new("TextLabel", G2L["11"]);
 G2L["39"]["TextWrapped"] = true;
 G2L["39"]["BorderSizePixel"] = 0;
+G2L["39"]["TextSize"] = 34;
 G2L["39"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["39"]["TextSize"] = 28;
 G2L["39"]["TextScaled"] = true;
-G2L["39"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["39"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["39"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["39"]["BackgroundTransparency"] = 1;
+G2L["39"]["Size"] = UDim2.new(0, 75, 0, 30);
 G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["39"]["Text"] = [[SpeedBoost                              OFF]];
-G2L["39"]["Name"] = [[SpeedBoost]];
-G2L["39"]["Position"] = UDim2.new(0.036, 0, 0.593, 0);
+G2L["39"]["Text"] = [[Speed:]];
+G2L["39"]["Name"] = [[Speed]];
+G2L["39"]["Position"] = UDim2.new(0.035, 0, 0.559, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.SpeedBoost.LocalScript
-G2L["3a"] = Instance.new("LocalScript", G2L["39"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.SpeedBoost
+G2L["3a"] = Instance.new("TextButton", G2L["11"]);
+G2L["3a"]["TextWrapped"] = true;
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["3a"]["TextSize"] = 28;
+G2L["3a"]["TextScaled"] = true;
+G2L["3a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["3a"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Text"] = [[SpeedBoost                              OFF]];
+G2L["3a"]["Name"] = [[SpeedBoost]];
+G2L["3a"]["Position"] = UDim2.new(0.036, 0, 0.593, 0);
+
+
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.SpeedBoost.LocalScript
+G2L["3b"] = Instance.new("LocalScript", G2L["3a"]);
 
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.SpeedBoost.UICorner
-G2L["3b"] = Instance.new("UICorner", G2L["39"]);
-G2L["3b"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.SpeedBoost.UICorner
+G2L["3c"] = Instance.new("UICorner", G2L["3a"]);
+G2L["3c"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.InvertMovement
-G2L["3c"] = Instance.new("TextButton", G2L["10"]);
-G2L["3c"]["TextWrapped"] = true;
-G2L["3c"]["BorderSizePixel"] = 0;
-G2L["3c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["3c"]["TextSize"] = 28;
-G2L["3c"]["TextScaled"] = true;
-G2L["3c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["3c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["3c"]["Size"] = UDim2.new(0, 166, 0, 44);
-G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3c"]["Text"] = [[Invert Movement                              OFF]];
-G2L["3c"]["Name"] = [[InvertMovement]];
-G2L["3c"]["Position"] = UDim2.new(0.036, 0, 0.642, 0);
-
-
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.InvertMovement.InvertMovement
-G2L["3d"] = Instance.new("LocalScript", G2L["3c"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.InvertMovement
+G2L["3d"] = Instance.new("TextButton", G2L["11"]);
+G2L["3d"]["TextWrapped"] = true;
+G2L["3d"]["BorderSizePixel"] = 0;
+G2L["3d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["3d"]["TextSize"] = 28;
+G2L["3d"]["TextScaled"] = true;
+G2L["3d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["3d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["3d"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3d"]["Text"] = [[Invert Movement                              OFF]];
 G2L["3d"]["Name"] = [[InvertMovement]];
+G2L["3d"]["Position"] = UDim2.new(0.036, 0, 0.642, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.InvertMovement.UICorner
-G2L["3e"] = Instance.new("UICorner", G2L["3c"]);
-G2L["3e"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.InvertMovement.InvertMovement
+G2L["3e"] = Instance.new("LocalScript", G2L["3d"]);
+G2L["3e"]["Name"] = [[InvertMovement]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Rocket
-G2L["3f"] = Instance.new("TextButton", G2L["10"]);
-G2L["3f"]["TextWrapped"] = true;
-G2L["3f"]["BorderSizePixel"] = 0;
-G2L["3f"]["TextSize"] = 28;
-G2L["3f"]["TextScaled"] = true;
-G2L["3f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["3f"]["Size"] = UDim2.new(0, 166, 0, 44);
-G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3f"]["Text"] = [[Rocket]];
-G2L["3f"]["Name"] = [[Rocket]];
-G2L["3f"]["Position"] = UDim2.new(0.036, 0, 0.741, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.InvertMovement.UICorner
+G2L["3f"] = Instance.new("UICorner", G2L["3d"]);
+G2L["3f"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Rocket.Rocket
-G2L["40"] = Instance.new("LocalScript", G2L["3f"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Rocket
+G2L["40"] = Instance.new("TextButton", G2L["11"]);
+G2L["40"]["TextWrapped"] = true;
+G2L["40"]["BorderSizePixel"] = 0;
+G2L["40"]["TextSize"] = 28;
+G2L["40"]["TextScaled"] = true;
+G2L["40"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["40"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["40"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["40"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["40"]["Text"] = [[Rocket]];
 G2L["40"]["Name"] = [[Rocket]];
+G2L["40"]["Position"] = UDim2.new(0.036, 0, 0.741, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Rocket.UICorner
-G2L["41"] = Instance.new("UICorner", G2L["3f"]);
-G2L["41"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Rocket.Rocket
+G2L["41"] = Instance.new("LocalScript", G2L["40"]);
+G2L["41"]["Name"] = [[Rocket]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Bang
-G2L["42"] = Instance.new("TextButton", G2L["10"]);
-G2L["42"]["TextWrapped"] = true;
-G2L["42"]["BorderSizePixel"] = 0;
-G2L["42"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["42"]["TextSize"] = 28;
-G2L["42"]["TextScaled"] = true;
-G2L["42"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["42"]["Size"] = UDim2.new(0, 166, 0, 44);
-G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42"]["Text"] = [[Bang                                OFF]];
-G2L["42"]["Name"] = [[Bang]];
-G2L["42"]["Position"] = UDim2.new(0.029, 0, 0.5, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Rocket.UICorner
+G2L["42"] = Instance.new("UICorner", G2L["40"]);
+G2L["42"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Bang.Banglol
-G2L["43"] = Instance.new("LocalScript", G2L["42"]);
-G2L["43"]["Name"] = [[Banglol]];
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Bang
+G2L["43"] = Instance.new("TextButton", G2L["11"]);
+G2L["43"]["TextWrapped"] = true;
+G2L["43"]["BorderSizePixel"] = 0;
+G2L["43"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["43"]["TextSize"] = 28;
+G2L["43"]["TextScaled"] = true;
+G2L["43"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["43"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"]["Text"] = [[Bang                                OFF]];
+G2L["43"]["Name"] = [[Bang]];
+G2L["43"]["Position"] = UDim2.new(0.029, 0, 0.5, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Bang.UICorner
-G2L["44"] = Instance.new("UICorner", G2L["42"]);
-G2L["44"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Bang.Banglol
+G2L["44"] = Instance.new("LocalScript", G2L["43"]);
+G2L["44"]["Name"] = [[Banglol]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Jumpscare All
-G2L["45"] = Instance.new("TextButton", G2L["10"]);
-G2L["45"]["TextWrapped"] = true;
-G2L["45"]["BorderSizePixel"] = 0;
-G2L["45"]["TextSize"] = 28;
-G2L["45"]["TextScaled"] = true;
-G2L["45"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["45"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["45"]["Size"] = UDim2.new(0, 166, 0, 44);
-G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["45"]["Text"] = [[Jumpscare All]];
-G2L["45"]["Name"] = [[Jumpscare All]];
-G2L["45"]["Position"] = UDim2.new(0.036, 0, 0.89, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Bang.UICorner
+G2L["45"] = Instance.new("UICorner", G2L["43"]);
+G2L["45"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Jumpscare All.JumpscareAll
-G2L["46"] = Instance.new("LocalScript", G2L["45"]);
-G2L["46"]["Name"] = [[JumpscareAll]];
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Jumpscare All
+G2L["46"] = Instance.new("TextButton", G2L["11"]);
+G2L["46"]["TextWrapped"] = true;
+G2L["46"]["BorderSizePixel"] = 0;
+G2L["46"]["TextSize"] = 28;
+G2L["46"]["TextScaled"] = true;
+G2L["46"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["46"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["46"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["46"]["Text"] = [[Jumpscare All]];
+G2L["46"]["Name"] = [[Jumpscare All]];
+G2L["46"]["Position"] = UDim2.new(0.036, 0, 0.89, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Jumpscare All.UICorner
-G2L["47"] = Instance.new("UICorner", G2L["45"]);
-G2L["47"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Jumpscare All.JumpscareAll
+G2L["47"] = Instance.new("LocalScript", G2L["46"]);
+G2L["47"]["Name"] = [[JumpscareAll]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Slam
-G2L["48"] = Instance.new("TextButton", G2L["10"]);
-G2L["48"]["TextWrapped"] = true;
-G2L["48"]["BorderSizePixel"] = 0;
-G2L["48"]["TextSize"] = 28;
-G2L["48"]["TextScaled"] = true;
-G2L["48"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["48"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["48"]["Size"] = UDim2.new(0, 166, 0, 44);
-G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["48"]["Text"] = [[Slam]];
-G2L["48"]["Name"] = [[Slam]];
-G2L["48"]["Position"] = UDim2.new(0.036, 0, 0.791, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Jumpscare All.UICorner
+G2L["48"] = Instance.new("UICorner", G2L["46"]);
+G2L["48"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Slam.SendToHell
-G2L["49"] = Instance.new("LocalScript", G2L["48"]);
-G2L["49"]["Name"] = [[SendToHell]];
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Slam
+G2L["49"] = Instance.new("TextButton", G2L["11"]);
+G2L["49"]["TextWrapped"] = true;
+G2L["49"]["BorderSizePixel"] = 0;
+G2L["49"]["TextSize"] = 28;
+G2L["49"]["TextScaled"] = true;
+G2L["49"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["49"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["49"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["Text"] = [[Slam]];
+G2L["49"]["Name"] = [[Slam]];
+G2L["49"]["Position"] = UDim2.new(0.036, 0, 0.791, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Slam.UICorner
-G2L["4a"] = Instance.new("UICorner", G2L["48"]);
-G2L["4a"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Slam.SendToHell
+G2L["4a"] = Instance.new("LocalScript", G2L["49"]);
+G2L["4a"]["Name"] = [[SendToHell]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.SplitThing
-G2L["4b"] = Instance.new("TextLabel", G2L["10"]);
-G2L["4b"]["BorderSizePixel"] = 0;
-G2L["4b"]["TextSize"] = 1;
-G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4b"]["Size"] = UDim2.new(0, 168, 0, 2);
-G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4b"]["Text"] = [[ ]];
-G2L["4b"]["Name"] = [[SplitThing]];
-G2L["4b"]["Position"] = UDim2.new(0.49867, 0, 0.09536, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Slam.UICorner
+G2L["4b"] = Instance.new("UICorner", G2L["49"]);
+G2L["4b"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Title
-G2L["4c"] = Instance.new("TextLabel", G2L["10"]);
-G2L["4c"]["TextWrapped"] = true;
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.SplitThing
+G2L["4c"] = Instance.new("TextLabel", G2L["11"]);
 G2L["4c"]["BorderSizePixel"] = 0;
-G2L["4c"]["TextSize"] = 34;
-G2L["4c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["4c"]["TextScaled"] = true;
+G2L["4c"]["TextSize"] = 1;
 G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["4c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4c"]["BackgroundTransparency"] = 1;
-G2L["4c"]["Size"] = UDim2.new(0, 178, 0, 31);
+G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["Size"] = UDim2.new(0, 168, 0, 2);
 G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4c"]["Text"] = [[Control Player (PC)]];
-G2L["4c"]["Name"] = [[Title]];
-G2L["4c"]["Position"] = UDim2.new(0.4965, 0, 0.10285, 0);
+G2L["4c"]["Text"] = [[ ]];
+G2L["4c"]["Name"] = [[SplitThing]];
+G2L["4c"]["Position"] = UDim2.new(0.49867, 0, 0.09536, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Control
-G2L["4d"] = Instance.new("TextButton", G2L["10"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Title
+G2L["4d"] = Instance.new("TextLabel", G2L["11"]);
 G2L["4d"]["TextWrapped"] = true;
 G2L["4d"]["BorderSizePixel"] = 0;
+G2L["4d"]["TextSize"] = 34;
 G2L["4d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["4d"]["TextSize"] = 28;
 G2L["4d"]["TextScaled"] = true;
-G2L["4d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["4d"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["4d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4d"]["BackgroundTransparency"] = 1;
+G2L["4d"]["Size"] = UDim2.new(0, 178, 0, 31);
 G2L["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4d"]["Text"] = [[OFF]];
-G2L["4d"]["Name"] = [[Control]];
-G2L["4d"]["Position"] = UDim2.new(0.49787, 0, 0.14474, 0);
+G2L["4d"]["Text"] = [[Control Player (PC)]];
+G2L["4d"]["Name"] = [[Title]];
+G2L["4d"]["Position"] = UDim2.new(0.4965, 0, 0.10285, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Control.Control
-G2L["4e"] = Instance.new("LocalScript", G2L["4d"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Control
+G2L["4e"] = Instance.new("TextButton", G2L["11"]);
+G2L["4e"]["TextWrapped"] = true;
+G2L["4e"]["BorderSizePixel"] = 0;
+G2L["4e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4e"]["TextSize"] = 28;
+G2L["4e"]["TextScaled"] = true;
+G2L["4e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["4e"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["Text"] = [[OFF]];
 G2L["4e"]["Name"] = [[Control]];
+G2L["4e"]["Position"] = UDim2.new(0.49787, 0, 0.14474, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Control.UICorner
-G2L["4f"] = Instance.new("UICorner", G2L["4d"]);
-G2L["4f"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Control.Control
+G2L["4f"] = Instance.new("LocalScript", G2L["4e"]);
+G2L["4f"]["Name"] = [[Control]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.SplitThing
-G2L["50"] = Instance.new("TextLabel", G2L["10"]);
-G2L["50"]["BorderSizePixel"] = 0;
-G2L["50"]["TextSize"] = 1;
-G2L["50"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["50"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["50"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["50"]["Size"] = UDim2.new(0, 168, 0, 2);
-G2L["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["50"]["Text"] = [[ ]];
-G2L["50"]["Name"] = [[SplitThing]];
-G2L["50"]["Position"] = UDim2.new(0.49867, 0, 0.20964, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Control.UICorner
+G2L["50"] = Instance.new("UICorner", G2L["4e"]);
+G2L["50"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Title
-G2L["51"] = Instance.new("TextLabel", G2L["10"]);
-G2L["51"]["TextWrapped"] = true;
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.SplitThing
+G2L["51"] = Instance.new("TextLabel", G2L["11"]);
 G2L["51"]["BorderSizePixel"] = 0;
-G2L["51"]["TextSize"] = 34;
-G2L["51"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["51"]["TextScaled"] = true;
+G2L["51"]["TextSize"] = 1;
 G2L["51"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["51"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["51"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["51"]["BackgroundTransparency"] = 1;
-G2L["51"]["Size"] = UDim2.new(0, 154, 0, 31);
+G2L["51"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["51"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["51"]["Size"] = UDim2.new(0, 168, 0, 2);
 G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["51"]["Text"] = [[NaNflinging]];
-G2L["51"]["Name"] = [[Title]];
-G2L["51"]["Position"] = UDim2.new(0.4965, 0, 0.21604, 0);
+G2L["51"]["Text"] = [[ ]];
+G2L["51"]["Name"] = [[SplitThing]];
+G2L["51"]["Position"] = UDim2.new(0.49867, 0, 0.20964, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Fling Target
-G2L["52"] = Instance.new("TextButton", G2L["10"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Title
+G2L["52"] = Instance.new("TextLabel", G2L["11"]);
 G2L["52"]["TextWrapped"] = true;
 G2L["52"]["BorderSizePixel"] = 0;
+G2L["52"]["TextSize"] = 34;
 G2L["52"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["52"]["TextSize"] = 28;
 G2L["52"]["TextScaled"] = true;
-G2L["52"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["52"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["52"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["52"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["52"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["52"]["BackgroundTransparency"] = 1;
+G2L["52"]["Size"] = UDim2.new(0, 154, 0, 31);
 G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["52"]["Text"] = [[Fling Target]];
-G2L["52"]["Name"] = [[Fling Target]];
-G2L["52"]["Position"] = UDim2.new(0.49519, 0, 0.25685, 0);
+G2L["52"]["Text"] = [[NaNflinging]];
+G2L["52"]["Name"] = [[Title]];
+G2L["52"]["Position"] = UDim2.new(0.4965, 0, 0.21604, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Fling Target.LocalScript
-G2L["53"] = Instance.new("LocalScript", G2L["52"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Fling Target
+G2L["53"] = Instance.new("TextButton", G2L["11"]);
+G2L["53"]["TextWrapped"] = true;
+G2L["53"]["BorderSizePixel"] = 0;
+G2L["53"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["53"]["TextSize"] = 28;
+G2L["53"]["TextScaled"] = true;
+G2L["53"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["53"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["53"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["53"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["53"]["Text"] = [[Fling Target]];
+G2L["53"]["Name"] = [[Fling Target]];
+G2L["53"]["Position"] = UDim2.new(0.49519, 0, 0.25685, 0);
+
+
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Fling Target.LocalScript
+G2L["54"] = Instance.new("LocalScript", G2L["53"]);
 
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Fling Target.UICorner
-G2L["54"] = Instance.new("UICorner", G2L["52"]);
-G2L["54"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Fling Target.UICorner
+G2L["55"] = Instance.new("UICorner", G2L["53"]);
+G2L["55"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.ClickPlayer
-G2L["55"] = Instance.new("TextButton", G2L["10"]);
-G2L["55"]["TextWrapped"] = true;
-G2L["55"]["BorderSizePixel"] = 0;
-G2L["55"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["55"]["TextSize"] = 28;
-G2L["55"]["TextScaled"] = true;
-G2L["55"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["55"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["55"]["Size"] = UDim2.new(0, 166, 0, 22);
-G2L["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["55"]["Text"] = [[(E) Select...]];
-G2L["55"]["Name"] = [[ClickPlayer]];
-G2L["55"]["Position"] = UDim2.new(0.031, 0, 0.079, 0);
-
-
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.ClickPlayer.ClickPlayer
-G2L["56"] = Instance.new("LocalScript", G2L["55"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.ClickPlayer
+G2L["56"] = Instance.new("TextButton", G2L["11"]);
+G2L["56"]["TextWrapped"] = true;
+G2L["56"]["BorderSizePixel"] = 0;
+G2L["56"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["56"]["TextSize"] = 28;
+G2L["56"]["TextScaled"] = true;
+G2L["56"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["56"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["56"]["Size"] = UDim2.new(0, 166, 0, 22);
+G2L["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["56"]["Text"] = [[(E) Select...]];
 G2L["56"]["Name"] = [[ClickPlayer]];
+G2L["56"]["Position"] = UDim2.new(0.031, 0, 0.079, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.ClickPlayer.UICorner
-G2L["57"] = Instance.new("UICorner", G2L["55"]);
-G2L["57"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.ClickPlayer.ClickPlayer
+G2L["57"] = Instance.new("LocalScript", G2L["56"]);
+G2L["57"]["Name"] = [[ClickPlayer]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.TextButton
-G2L["58"] = Instance.new("TextButton", G2L["10"]);
-G2L["58"]["TextWrapped"] = true;
-G2L["58"]["BorderSizePixel"] = 0;
-G2L["58"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["58"]["TextSize"] = 14;
-G2L["58"]["TextScaled"] = true;
-G2L["58"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["58"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["58"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["58"]["BackgroundTransparency"] = 1;
-G2L["58"]["Size"] = UDim2.new(0, 139, 0, 23);
-G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["58"]["Text"] = [[discord.gg/RB5aZ6pxjy]];
-G2L["58"]["Position"] = UDim2.new(0.6, 0, 0.965, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.ClickPlayer.UICorner
+G2L["58"] = Instance.new("UICorner", G2L["56"]);
+G2L["58"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.TextButton.LocalScript
-G2L["59"] = Instance.new("LocalScript", G2L["58"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.TextButton
+G2L["59"] = Instance.new("TextButton", G2L["11"]);
+G2L["59"]["TextWrapped"] = true;
+G2L["59"]["BorderSizePixel"] = 0;
+G2L["59"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["59"]["TextSize"] = 14;
+G2L["59"]["TextScaled"] = true;
+G2L["59"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["59"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["59"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["59"]["BackgroundTransparency"] = 1;
+G2L["59"]["Size"] = UDim2.new(0, 139, 0, 23);
+G2L["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["59"]["Text"] = [[discord.gg/RB5aZ6pxjy]];
+G2L["59"]["Position"] = UDim2.new(0.6, 0, 0.965, 0);
+
+
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.TextButton.LocalScript
+G2L["5a"] = Instance.new("LocalScript", G2L["59"]);
 
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Annoy
-G2L["5a"] = Instance.new("TextButton", G2L["10"]);
-G2L["5a"]["TextWrapped"] = true;
-G2L["5a"]["BorderSizePixel"] = 0;
-G2L["5a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["5a"]["TextSize"] = 28;
-G2L["5a"]["TextScaled"] = true;
-G2L["5a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["5a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["5a"]["Size"] = UDim2.new(0, 166, 0, 44);
-G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5a"]["Text"] = [[Annoy                              OFF]];
-G2L["5a"]["Name"] = [[Annoy]];
-G2L["5a"]["Position"] = UDim2.new(0.031, 0, 0.153, 0);
-
-
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Annoy.Annoy
-G2L["5b"] = Instance.new("LocalScript", G2L["5a"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Annoy
+G2L["5b"] = Instance.new("TextButton", G2L["11"]);
+G2L["5b"]["TextWrapped"] = true;
+G2L["5b"]["BorderSizePixel"] = 0;
+G2L["5b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["5b"]["TextSize"] = 28;
+G2L["5b"]["TextScaled"] = true;
+G2L["5b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["5b"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5b"]["Text"] = [[Annoy                              OFF]];
 G2L["5b"]["Name"] = [[Annoy]];
+G2L["5b"]["Position"] = UDim2.new(0.031, 0, 0.153, 0);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Annoy.UICorner
-G2L["5c"] = Instance.new("UICorner", G2L["5a"]);
-G2L["5c"]["CornerRadius"] = UDim.new(0, 4);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Annoy.Annoy
+G2L["5c"] = Instance.new("LocalScript", G2L["5b"]);
+G2L["5c"]["Name"] = [[Annoy]];
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Fling all
-G2L["5d"] = Instance.new("TextButton", G2L["10"]);
-G2L["5d"]["TextWrapped"] = true;
-G2L["5d"]["BorderSizePixel"] = 0;
-G2L["5d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["5d"]["TextSize"] = 28;
-G2L["5d"]["TextScaled"] = true;
-G2L["5d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
-G2L["5d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["5d"]["Size"] = UDim2.new(0, 166, 0, 44);
-G2L["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5d"]["Text"] = [[Fling All]];
-G2L["5d"]["Name"] = [[Fling all]];
-G2L["5d"]["Position"] = UDim2.new(0.49519, 0, 0.3063, 0);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Annoy.UICorner
+G2L["5d"] = Instance.new("UICorner", G2L["5b"]);
+G2L["5d"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Fling all.LocalScript
-G2L["5e"] = Instance.new("LocalScript", G2L["5d"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Fling all
+G2L["5e"] = Instance.new("TextButton", G2L["11"]);
+G2L["5e"]["TextWrapped"] = true;
+G2L["5e"]["BorderSizePixel"] = 0;
+G2L["5e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["5e"]["TextSize"] = 28;
+G2L["5e"]["TextScaled"] = true;
+G2L["5e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(66, 83, 103);
+G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["5e"]["Size"] = UDim2.new(0, 166, 0, 44);
+G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5e"]["Text"] = [[Fling All]];
+G2L["5e"]["Name"] = [[Fling all]];
+G2L["5e"]["Position"] = UDim2.new(0.49519, 0, 0.3063, 0);
 
 
-
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Fling all.UICorner
-G2L["5f"] = Instance.new("UICorner", G2L["5d"]);
-G2L["5f"]["CornerRadius"] = UDim.new(0, 4);
-
-
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.Glow1
-G2L["60"] = Instance.new("UIStroke", G2L["b"]);
-G2L["60"]["ZIndex"] = 3;
-G2L["60"]["Transparency"] = 0.5;
-G2L["60"]["Thickness"] = 7;
-G2L["60"]["Color"] = Color3.fromRGB(41, 51, 64);
-G2L["60"]["Name"] = [[Glow1]];
-
-
--- StarterGui.pwnmaster99's universal stuffs.TopBar.UICorner
-G2L["61"] = Instance.new("UICorner", G2L["3"]);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Fling all.LocalScript
+G2L["5f"] = Instance.new("LocalScript", G2L["5e"]);
 
 
 
--- StarterGui.pwnmaster99's universal stuffs.plug the discord
-G2L["62"] = Instance.new("LocalScript", G2L["1"]);
-G2L["62"]["Name"] = [[plug the discord]];
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Fling all.UICorner
+G2L["60"] = Instance.new("UICorner", G2L["5e"]);
+G2L["60"]["CornerRadius"] = UDim.new(0, 4);
 
 
--- StarterGui.pwnmaster99's universal stuffs.SimulationRadius
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.Glow1
+G2L["61"] = Instance.new("UIStroke", G2L["c"]);
+G2L["61"]["ZIndex"] = 3;
+G2L["61"]["Transparency"] = 0.5;
+G2L["61"]["Thickness"] = 7;
+G2L["61"]["Color"] = Color3.fromRGB(41, 51, 64);
+G2L["61"]["Name"] = [[Glow1]];
+
+
+-- StarterGui.urban1's universal GUI.TopBar.UICorner
+G2L["62"] = Instance.new("UICorner", G2L["4"]);
+
+
+
+-- StarterGui.urban1's universal GUI.SimulationRadius
 local function C_2()
 local script = G2L["2"];
 	local Players = game:GetService("Players")
@@ -999,9 +999,27 @@ local script = G2L["2"];
 	
 end;
 task.spawn(C_2);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.Smooth GUI Dragging
-local function C_4()
-local script = G2L["4"];
+-- StarterGui.urban1's universal GUI.plug the discord
+local function C_3()
+local script = G2L["3"];
+	pcall(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "join the discord fat skid";
+			Text = ".gg/dd4XXRMz8b";
+			Duration = 60;
+		})
+	
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Notification";
+			Text = "theres also a button to copy it at the bottom of the GUI";
+			Duration = 30;
+		})
+	end)
+end;
+task.spawn(C_3);
+-- StarterGui.urban1's universal GUI.TopBar.Smooth GUI Dragging
+local function C_5()
+local script = G2L["5"];
 	local UserInputService = game:GetService("UserInputService")
 	local runService = (game:GetService("RunService"));
 	
@@ -1057,10 +1075,10 @@ local script = G2L["4"];
 	runService.Heartbeat:Connect(Update)
 	
 end;
-task.spawn(C_4);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.Minimize.LocalScript
-local function C_9()
-local script = G2L["9"];
+task.spawn(C_5);
+-- StarterGui.urban1's universal GUI.TopBar.Minimize.LocalScript
+local function C_a()
+local script = G2L["a"];
 	local b = script.Parent
 	local mini = false
 	local RunService = game:GetService("RunService")
@@ -1119,10 +1137,10 @@ local script = G2L["9"];
 		end)
 	end)
 end;
-task.spawn(C_9);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.ForceJump.Forcejump
-local function C_12()
-local script = G2L["12"];
+task.spawn(C_a);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.ForceJump.Forcejump
+local function C_13()
+local script = G2L["13"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	
@@ -1286,10 +1304,10 @@ local script = G2L["12"];
 		if con then con:Disconnect() end
 	end)
 end;
-task.spawn(C_12);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.InfoToggle.Size
-local function C_17()
-local script = G2L["17"];
+task.spawn(C_13);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.InfoToggle.Size
+local function C_18()
+local script = G2L["18"];
 	-- hi so feel free to change the info, I dont have a really good way of explaining it in less than 10 sentances
 	
 	local button = script.Parent
@@ -1323,10 +1341,10 @@ local script = G2L["17"];
 		animating = false
 	end)
 end;
-task.spawn(C_17);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.NoJump.NoJump
-local function C_20()
-local script = G2L["20"];
+task.spawn(C_18);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.NoJump.NoJump
+local function C_21()
+local script = G2L["21"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	
@@ -1482,10 +1500,10 @@ local script = G2L["20"];
 		if con then con:Disconnect() end
 	end)
 end;
-task.spawn(C_20);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Elevator.Elevator
-local function C_25()
-local script = G2L["25"];
+task.spawn(C_21);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Elevator.Elevator
+local function C_26()
+local script = G2L["26"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	
@@ -1641,10 +1659,10 @@ local script = G2L["25"];
 		if con then con:Disconnect() end
 	end)
 end;
-task.spawn(C_25);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.InfiniteJump.InfJump
-local function C_28()
-local script = G2L["28"];
+task.spawn(C_26);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.InfiniteJump.InfJump
+local function C_29()
+local script = G2L["29"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	
@@ -1800,10 +1818,10 @@ local script = G2L["28"];
 		if con then con:Disconnect() end
 	end)
 end;
-task.spawn(C_28);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Magic Carpet.MagicCarpet
-local function C_2b()
-local script = G2L["2b"];
+task.spawn(C_29);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Magic Carpet.MagicCarpet
+local function C_2c()
+local script = G2L["2c"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	
@@ -1959,10 +1977,10 @@ local script = G2L["2b"];
 		if con then con:Disconnect() end
 	end)
 end;
-task.spawn(C_2b);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.HeadSit.Headsit
-local function C_2e()
-local script = G2L["2e"];
+task.spawn(C_2c);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.HeadSit.Headsit
+local function C_2f()
+local script = G2L["2f"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	
@@ -2122,10 +2140,10 @@ local script = G2L["2e"];
 		if con then con:Disconnect() end
 	end)
 end;
-task.spawn(C_2e);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Platform.LocalScript
-local function C_31()
-local script = G2L["31"];
+task.spawn(C_2f);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Platform.LocalScript
+local function C_32()
+local script = G2L["32"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	
@@ -2283,10 +2301,10 @@ local script = G2L["31"];
 		if con then con:Disconnect() end
 	end)
 end;
-task.spawn(C_31);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Jumpscare.Jumpscare
-local function C_34()
-local script = G2L["34"];
+task.spawn(C_32);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Jumpscare.Jumpscare
+local function C_35()
+local script = G2L["35"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	
@@ -2448,10 +2466,10 @@ local script = G2L["34"];
 		if con then con:Disconnect() end
 	end)
 end;
-task.spawn(C_34);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.SpeedBoost.LocalScript
-local function C_3a()
-local script = G2L["3a"];
+task.spawn(C_35);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.SpeedBoost.LocalScript
+local function C_3b()
+local script = G2L["3b"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	local speedTextBox = script.Parent.Parent:WaitForChild("Speed")
@@ -2643,10 +2661,10 @@ local script = G2L["3a"];
 		if con then con:Disconnect() end
 	end)
 end;
-task.spawn(C_3a);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.InvertMovement.InvertMovement
-local function C_3d()
-local script = G2L["3d"];
+task.spawn(C_3b);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.InvertMovement.InvertMovement
+local function C_3e()
+local script = G2L["3e"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	
@@ -2801,10 +2819,10 @@ local script = G2L["3d"];
 		if con then con:Disconnect() end
 	end)
 end;
-task.spawn(C_3d);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Rocket.Rocket
-local function C_40()
-local script = G2L["40"];
+task.spawn(C_3e);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Rocket.Rocket
+local function C_41()
+local script = G2L["41"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	
@@ -2966,10 +2984,10 @@ local script = G2L["40"];
 		if con then con:Disconnect() end
 	end)
 end;
-task.spawn(C_40);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Bang.Banglol
-local function C_43()
-local script = G2L["43"];
+task.spawn(C_41);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Bang.Banglol
+local function C_44()
+local script = G2L["44"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	
@@ -3182,10 +3200,10 @@ local script = G2L["43"];
 		StopAnimations()
 	end)
 end;
-task.spawn(C_43);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Jumpscare All.JumpscareAll
-local function C_46()
-local script = G2L["46"];
+task.spawn(C_44);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Jumpscare All.JumpscareAll
+local function C_47()
+local script = G2L["47"];
 	local button = script.Parent
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
@@ -3425,10 +3443,10 @@ local script = G2L["46"];
 		end
 	end
 end;
-task.spawn(C_46);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Slam.SendToHell
-local function C_49()
-local script = G2L["49"];
+task.spawn(C_47);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Slam.SendToHell
+local function C_4a()
+local script = G2L["4a"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	
@@ -3590,10 +3608,10 @@ local script = G2L["49"];
 		if con then con:Disconnect() end
 	end)
 end;
-task.spawn(C_49);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Control.Control
-local function C_4e()
-local script = G2L["4e"];
+task.spawn(C_4a);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Control.Control
+local function C_4f()
+local script = G2L["4f"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	local Players = game:GetService("Players")
@@ -3807,10 +3825,10 @@ local script = G2L["4e"];
 		if con then con:Disconnect() end
 	end)
 end;
-task.spawn(C_4e);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Fling Target.LocalScript
-local function C_53()
-local script = G2L["53"];
+task.spawn(C_4f);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Fling Target.LocalScript
+local function C_54()
+local script = G2L["54"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	local Players = game:GetService("Players")
@@ -4010,10 +4028,10 @@ local script = G2L["53"];
 		end
 	end)
 end;
-task.spawn(C_53);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.ClickPlayer.ClickPlayer
-local function C_56()
-local script = G2L["56"];
+task.spawn(C_54);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.ClickPlayer.ClickPlayer
+local function C_57()
+local script = G2L["57"];
 	local button = script.Parent
 	local NameBox = script.Parent.Parent:WaitForChild("TargetName")
 	local Players = game:GetService("Players")
@@ -4089,10 +4107,10 @@ local script = G2L["56"];
 		end
 	end)
 end;
-task.spawn(C_56);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.TextButton.LocalScript
-local function C_59()
-local script = G2L["59"];
+task.spawn(C_57);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.TextButton.LocalScript
+local function C_5a()
+local script = G2L["5a"];
 	local button = script.Parent
 	local link = button.Text
 	button.MouseButton1Click:Connect(function()
@@ -4104,10 +4122,10 @@ local script = G2L["59"];
 	
 	
 end;
-task.spawn(C_59);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Annoy.Annoy
-local function C_5b()
-local script = G2L["5b"];
+task.spawn(C_5a);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Annoy.Annoy
+local function C_5c()
+local script = G2L["5c"];
 	local button = script.Parent
 	local targetTextBox = script.Parent.Parent:WaitForChild("TargetName")
 	
@@ -4244,10 +4262,10 @@ local script = G2L["5b"];
 		if con then con:Disconnect() end
 	end)
 end;
-task.spawn(C_5b);
--- StarterGui.pwnmaster99's universal stuffs.TopBar.MainFrame.ScrollingMain.Fling all.LocalScript
-local function C_5e()
-local script = G2L["5e"];
+task.spawn(C_5c);
+-- StarterGui.urban1's universal GUI.TopBar.MainFrame.ScrollingMain.Fling all.LocalScript
+local function C_5f()
+local script = G2L["5f"];
 	local button = script.Parent
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
@@ -4515,24 +4533,6 @@ local script = G2L["5e"];
 		end
 	end
 end;
-task.spawn(C_5e);
--- StarterGui.pwnmaster99's universal stuffs.plug the discord
-local function C_62()
-local script = G2L["62"];
-	pcall(function()
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "join the discord fat skid";
-			Text = ".gg/dd4XXRMz8b";
-			Duration = 60;
-		})
-	
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Notification";
-			Text = "theres also a button to copy it at the bottom of the GUI";
-			Duration = 30;
-		})
-	end)
-end;
-task.spawn(C_62);
+task.spawn(C_5f);
 
 return G2L["1"], require;
