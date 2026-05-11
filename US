@@ -1003,16 +1003,23 @@ task.spawn(C_2);
 local function C_3()
 local script = G2L["3"];
 	pcall(function()
+
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "join the discord fat skid";
+			Title = "HEY LISTEN HERE";
+			Text = "THIS SCRIPT IS DISCONTINUED!! get the new one (OPF:R) where this will ALL be migrated.";
+			Duration = 120;
+		})
+
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "THIS IS WHERE THE NEW SCRIPT WILL BE / SCRIPTBLOX TOO";
 			Text = ".gg/dd4XXRMz8b";
-			Duration = 60;
+			Duration = 120;
 		})
 	
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "Notification";
 			Text = "theres also a button to copy it at the bottom of the GUI";
-			Duration = 30;
+			Duration = 120;
 		})
 	end)
 end;
