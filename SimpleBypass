@@ -1,0 +1,316 @@
+-- anything but releasing opfinality revived yo 🤑🤑🤑
+
+local G2L = {};
+
+-- StarterGui.SimpleBypass
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.None;
+G2L["1"]["Name"] = [[SimpleBypass]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.SimpleBypass.plug the discord
+G2L["2"] = Instance.new("LocalScript", G2L["1"]);
+G2L["2"]["Name"] = [[plug the discord]];
+
+
+-- StarterGui.SimpleBypass.TopBar
+G2L["3"] = Instance.new("Frame", G2L["1"]);
+G2L["3"]["ZIndex"] = 5;
+G2L["3"]["BorderSizePixel"] = 3;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(41, 51, 64);
+G2L["3"]["Size"] = UDim2.new(0, 373, 0, 41);
+G2L["3"]["Position"] = UDim2.new(0.35556, 0, 0.49284, 1);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Name"] = [[TopBar]];
+
+
+-- StarterGui.SimpleBypass.TopBar.Smooth GUI Dragging
+G2L["4"] = Instance.new("LocalScript", G2L["3"]);
+G2L["4"]["Name"] = [[Smooth GUI Dragging]];
+
+
+-- StarterGui.SimpleBypass.TopBar.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["3"]);
+
+
+
+-- StarterGui.SimpleBypass.TopBar.Title
+G2L["6"] = Instance.new("TextLabel", G2L["3"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["ZIndex"] = 3;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 54;
+G2L["6"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(168, 235, 255);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Size"] = UDim2.new(0, 274, 0, 28);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[SimpleBypass V0.01]];
+G2L["6"]["Name"] = [[Title]];
+G2L["6"]["Position"] = UDim2.new(0.03481, 0, 0.12409, 0);
+
+
+-- StarterGui.SimpleBypass.TopBar.MainFrame
+G2L["7"] = Instance.new("Frame", G2L["3"]);
+G2L["7"]["BorderSizePixel"] = 3;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(128, 0, 7);
+G2L["7"]["Size"] = UDim2.new(0, 377, 0, 161);
+G2L["7"]["Position"] = UDim2.new(-0.00157, 0, -0.03031, 0);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Name"] = [[MainFrame]];
+
+
+-- StarterGui.SimpleBypass.TopBar.MainFrame.Glow1
+G2L["8"] = Instance.new("UIStroke", G2L["7"]);
+G2L["8"]["ZIndex"] = 3;
+G2L["8"]["Transparency"] = 0.5;
+G2L["8"]["Thickness"] = 7;
+G2L["8"]["Color"] = Color3.fromRGB(128, 0, 7);
+G2L["8"]["Name"] = [[Glow1]];
+
+
+-- StarterGui.SimpleBypass.TopBar.MainFrame.UICorner
+G2L["9"] = Instance.new("UICorner", G2L["7"]);
+
+
+
+-- StarterGui.SimpleBypass.TopBar.MainFrame.Glow3
+G2L["a"] = Instance.new("UIStroke", G2L["7"]);
+G2L["a"]["Transparency"] = 0.7;
+G2L["a"]["Thickness"] = 15;
+G2L["a"]["Color"] = Color3.fromRGB(128, 0, 7);
+G2L["a"]["Name"] = [[Glow3]];
+
+
+-- StarterGui.SimpleBypass.TopBar.MainFrame.Glow2
+G2L["b"] = Instance.new("UIStroke", G2L["7"]);
+G2L["b"]["ZIndex"] = 2;
+G2L["b"]["Transparency"] = 0.6;
+G2L["b"]["Thickness"] = 11;
+G2L["b"]["Color"] = Color3.fromRGB(128, 0, 7);
+G2L["b"]["Name"] = [[Glow2]];
+
+
+-- StarterGui.SimpleBypass.TopBar.MainFrame.Outline
+G2L["c"] = Instance.new("UIStroke", G2L["7"]);
+G2L["c"]["ZIndex"] = 4;
+G2L["c"]["Thickness"] = 1.7;
+G2L["c"]["Name"] = [[Outline]];
+
+
+-- StarterGui.SimpleBypass.TopBar.MainFrame.TextButton
+G2L["d"] = Instance.new("TextButton", G2L["7"]);
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["TextScaled"] = true;
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["d"]["BackgroundTransparency"] = 1;
+G2L["d"]["Size"] = UDim2.new(0, 148, 0, 23);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[discord.gg/dd4XXRMz8b]];
+G2L["d"]["Position"] = UDim2.new(0.58794, 0, 0.83168, 0);
+
+
+-- StarterGui.SimpleBypass.TopBar.MainFrame.TextButton.LocalScript
+G2L["e"] = Instance.new("LocalScript", G2L["d"]);
+
+
+
+-- StarterGui.SimpleBypass.TopBar.MainFrame.Title
+G2L["f"] = Instance.new("TextLabel", G2L["7"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["ZIndex"] = 3;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextSize"] = 54;
+G2L["f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["f"]["TextScaled"] = true;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(168, 235, 255);
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["BackgroundTransparency"] = 1;
+G2L["f"]["Size"] = UDim2.new(0, 108, 0, 18);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[by urban1]];
+G2L["f"]["Name"] = [[Title]];
+G2L["f"]["Position"] = UDim2.new(0.01061, 0, 0.85123, 0);
+
+
+-- StarterGui.SimpleBypass.TopBar.MainFrame.BypassBox
+G2L["10"] = Instance.new("TextBox", G2L["7"]);
+G2L["10"]["CursorPosition"] = -1;
+G2L["10"]["Name"] = [[BypassBox]];
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["TextSize"] = 34;
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(89, 0, 5);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["ClipsDescendants"] = true;
+G2L["10"]["Size"] = UDim2.new(0, 339, 0, 50);
+G2L["10"]["Position"] = UDim2.new(0.03448, 0, 0.28571, 0);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[frick off diddybluddd]];
+
+
+-- StarterGui.SimpleBypass.TopBar.MainFrame.BypassBox.UICorner
+G2L["11"] = Instance.new("UICorner", G2L["10"]);
+
+
+
+-- StarterGui.SimpleBypass.TopBar.MainFrame.Bypass!
+G2L["12"] = Instance.new("TextButton", G2L["7"]);
+G2L["12"]["TextWrapped"] = true;
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextSize"] = 25;
+G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(89, 0, 5);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["Size"] = UDim2.new(0, 338, 0, 22);
+G2L["12"]["ClipsDescendants"] = true;
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[Bypass!]];
+G2L["12"]["Name"] = [[Bypass!]];
+G2L["12"]["Position"] = UDim2.new(0.03183, 0, 0.64596, 0);
+
+
+-- StarterGui.SimpleBypass.TopBar.MainFrame.Bypass!.UICorner
+G2L["13"] = Instance.new("UICorner", G2L["12"]);
+
+
+
+-- StarterGui.SimpleBypass.TopBar.MainFrame.Bypass!.LocalScript
+G2L["14"] = Instance.new("LocalScript", G2L["12"]);
+
+
+
+-- StarterGui.SimpleBypass.plug the discord
+local function C_2()
+local script = G2L["2"];
+	local StarterGui = game:GetService("StarterGui")
+	
+	for i = 1, 3 do
+		pcall(function()
+			StarterGui:SetCore("SendNotification", {
+				Title = "join the discord NAO!!!",
+				Text = ".gg/dd4XXRMz8b",
+				Duration = 60,
+			})
+		end)
+		task.wait(0.1)
+	end
+end;
+task.spawn(C_2);
+-- StarterGui.SimpleBypass.TopBar.Smooth GUI Dragging
+local function C_4()
+local script = G2L["4"];
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+	
+end;
+task.spawn(C_4);
+-- StarterGui.SimpleBypass.TopBar.MainFrame.TextButton.LocalScript
+local function C_e()
+local script = G2L["e"];
+	local button = script.Parent
+	local link = button.Text
+	button.MouseButton1Click:Connect(function()
+		setclipboard(link)
+		button.Text = "Link copied!"
+		task.wait(1.5)
+		button.Text = link
+	end)
+	
+	
+end;
+task.spawn(C_e);
+-- StarterGui.SimpleBypass.TopBar.MainFrame.Bypass!.LocalScript
+local function C_14()
+local script = G2L["14"];
+	local TextChatService = game:GetService("TextChatService")
+	
+	local charMap = {
+		a = "丹", b = "日", c = "亡", d = "句", e = "ヨ", f = "乍",
+		g = "呂", h = "廾", i = "工", j = "勹", k = "片", l = "し",
+		m = "冊", n = "几", o = "回", p = "尸", q = "甲", r = "尺",
+		s = "己", t = "卞", u = "凵", v = "レ", w = "山", x = "メ",
+		y = "と", z = "乙"
+	}
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local text = script.Parent.Parent.BypassBox.Text
+		if not text or text == "" then return end
+	
+		local result = ""
+		for i = 1, #text do
+			local char = text:sub(i, i):lower()
+			result = result .. (charMap[char] or text:sub(i, i))
+		end
+	
+		TextChatService.TextChannels.RBXGeneral:SendAsync(result)
+	end)
+end;
+task.spawn(C_14);
+
+return G2L["1"], require;
