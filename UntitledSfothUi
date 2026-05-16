@@ -1,0 +1,1952 @@
+--PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC PUBLIC 
+
+-- Instances: 82 | Scripts: 23 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[Untitled SFOTHⁱᵛ UI PUBLIC]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.DisableThatFuckingShopthatIHate
+G2L["2"] = Instance.new("LocalScript", G2L["1"]);
+G2L["2"]["Name"] = [[DisableThatFuckingShopthatIHate]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.Mutemusic
+G2L["3"] = Instance.new("LocalScript", G2L["1"]);
+G2L["3"]["Name"] = [[Mutemusic]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.DeletePinkTP
+G2L["4"] = Instance.new("LocalScript", G2L["1"]);
+G2L["4"]["Name"] = [[DeletePinkTP]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.SimulationRadius
+G2L["5"] = Instance.new("LocalScript", G2L["1"]);
+G2L["5"]["Name"] = [[SimulationRadius]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.plug the discord
+G2L["6"] = Instance.new("LocalScript", G2L["1"]);
+G2L["6"]["Name"] = [[plug the discord]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar
+G2L["7"] = Instance.new("Frame", G2L["1"]);
+G2L["7"]["ZIndex"] = 2;
+G2L["7"]["BorderSizePixel"] = 3;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(168, 235, 255);
+G2L["7"]["Size"] = UDim2.new(0, 377, 0, 41);
+G2L["7"]["Position"] = UDim2.new(0.32495, 0, 0.33417, 0);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Name"] = [[TopBar]];
+G2L["7"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.Smooth GUI Dragging
+G2L["8"] = Instance.new("LocalScript", G2L["7"]);
+G2L["8"]["Name"] = [[Smooth GUI Dragging]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.UICorner
+G2L["9"] = Instance.new("UICorner", G2L["7"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.Title2
+G2L["a"] = Instance.new("TextLabel", G2L["7"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["ZIndex"] = 2;
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextSize"] = 54;
+G2L["a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["a"]["TextScaled"] = true;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(168, 235, 255);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["BackgroundTransparency"] = 1;
+G2L["a"]["Size"] = UDim2.new(0, 12, 0, 34);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[IV]];
+G2L["a"]["Name"] = [[Title2]];
+G2L["a"]["Position"] = UDim2.new(0.39546, 0, -0.14653, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.Title
+G2L["b"] = Instance.new("TextLabel", G2L["7"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["ZIndex"] = 2;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 54;
+G2L["b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["b"]["TextScaled"] = true;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(168, 235, 255);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["BackgroundTransparency"] = 1;
+G2L["b"]["Size"] = UDim2.new(0, 343, 0, 28);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[Untitled SFOTH    UI]];
+G2L["b"]["Name"] = [[Title]];
+G2L["b"]["Position"] = UDim2.new(0.0082, 0, 0.02653, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.Outline
+G2L["c"] = Instance.new("UIStroke", G2L["7"]);
+G2L["c"]["ZIndex"] = 4;
+G2L["c"]["Thickness"] = 1.7;
+G2L["c"]["Name"] = [[Outline]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame
+G2L["d"] = Instance.new("Frame", G2L["7"]);
+G2L["d"]["BorderSizePixel"] = 3;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(168, 235, 255);
+G2L["d"]["Size"] = UDim2.new(0, 377, 0, 260);
+G2L["d"]["Position"] = UDim2.new(-0.00396, 0, 0.01847, 0);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Name"] = [[MainFrame]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.UICorner
+G2L["e"] = Instance.new("UICorner", G2L["d"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.Glow3
+G2L["f"] = Instance.new("UIStroke", G2L["d"]);
+G2L["f"]["Transparency"] = 0.7;
+G2L["f"]["Thickness"] = 15;
+G2L["f"]["Color"] = Color3.fromRGB(171, 255, 255);
+G2L["f"]["Name"] = [[Glow3]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.Glow2
+G2L["10"] = Instance.new("UIStroke", G2L["d"]);
+G2L["10"]["ZIndex"] = 2;
+G2L["10"]["Transparency"] = 0.6;
+G2L["10"]["Thickness"] = 11;
+G2L["10"]["Color"] = Color3.fromRGB(171, 255, 255);
+G2L["10"]["Name"] = [[Glow2]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.Glow1
+G2L["11"] = Instance.new("UIStroke", G2L["d"]);
+G2L["11"]["ZIndex"] = 3;
+G2L["11"]["Transparency"] = 0.5;
+G2L["11"]["Thickness"] = 7;
+G2L["11"]["Color"] = Color3.fromRGB(171, 255, 255);
+G2L["11"]["Name"] = [[Glow1]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.Outline
+G2L["12"] = Instance.new("UIStroke", G2L["d"]);
+G2L["12"]["ZIndex"] = 4;
+G2L["12"]["Thickness"] = 1.7;
+G2L["12"]["Name"] = [[Outline]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain
+G2L["13"] = Instance.new("ScrollingFrame", G2L["d"]);
+G2L["13"]["Active"] = true;
+G2L["13"]["BorderSizePixel"] = 0;
+-- [ERROR] cannot convert TopImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["13"]["TopImage"] = [[]];
+G2L["13"]["Name"] = [[ScrollingMain]];
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(162, 204, 255);
+G2L["13"]["MidImage"] = [[]];
+-- [ERROR] cannot convert MidImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+-- [ERROR] cannot convert BottomImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["13"]["BottomImage"] = [[]];
+G2L["13"]["Size"] = UDim2.new(0, 377, 0, 218);
+G2L["13"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Position"] = UDim2.new(0, 0, 0.16, 0);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.Portalspam
+G2L["14"] = Instance.new("TextButton", G2L["13"]);
+G2L["14"]["TextWrapped"] = true;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["14"]["TextSize"] = 28;
+G2L["14"]["TextScaled"] = true;
+G2L["14"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(141, 185, 255);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["14"]["Size"] = UDim2.new(0, 166, 0, 50);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[Portal Spam                              OFF]];
+G2L["14"]["Name"] = [[Portalspam]];
+G2L["14"]["Position"] = UDim2.new(0.515, 0, 0.07, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.Portalspam.LocalScript
+G2L["15"] = Instance.new("LocalScript", G2L["14"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.Portalspam.UICorner
+G2L["16"] = Instance.new("UICorner", G2L["14"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.KillWobblys
+G2L["17"] = Instance.new("TextButton", G2L["13"]);
+G2L["17"]["TextWrapped"] = true;
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextSize"] = 28;
+G2L["17"]["TextScaled"] = true;
+G2L["17"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(141, 185, 255);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["17"]["Size"] = UDim2.new(0, 166, 0, 50);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[Kill wobblys]];
+G2L["17"]["Name"] = [[KillWobblys]];
+G2L["17"]["Position"] = UDim2.new(0.515, 0, 0.67, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.KillWobblys.KillWobblys
+G2L["18"] = Instance.new("LocalScript", G2L["17"]);
+G2L["18"]["Name"] = [[KillWobblys]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.KillWobblys.UICorner
+G2L["19"] = Instance.new("UICorner", G2L["17"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.ServerDeleteTools
+G2L["1a"] = Instance.new("TextButton", G2L["13"]);
+G2L["1a"]["TextWrapped"] = true;
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1a"]["TextSize"] = 28;
+G2L["1a"]["TextScaled"] = true;
+G2L["1a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(141, 185, 255);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["1a"]["Size"] = UDim2.new(0, 166, 0, 50);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[NoTools                              OFF]];
+G2L["1a"]["Name"] = [[ServerDeleteTools]];
+G2L["1a"]["Position"] = UDim2.new(0.515, 0, 0.57, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.ServerDeleteTools.LocalScript
+G2L["1b"] = Instance.new("LocalScript", G2L["1a"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.ServerDeleteTools.UICorner
+G2L["1c"] = Instance.new("UICorner", G2L["1a"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.Version
+G2L["1d"] = Instance.new("TextLabel", G2L["13"]);
+G2L["1d"]["TextWrapped"] = true;
+G2L["1d"]["ZIndex"] = 2;
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["TextSize"] = 54;
+G2L["1d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1d"]["TextScaled"] = true;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(168, 235, 255);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["1d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["BackgroundTransparency"] = 1;
+G2L["1d"]["Size"] = UDim2.new(0, 47, 0, 17);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Text"] = [[v 1.2.5]];
+G2L["1d"]["Name"] = [[Version]];
+G2L["1d"]["Position"] = UDim2.new(0.035, 0, 0.933, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.Credits
+G2L["1e"] = Instance.new("TextLabel", G2L["13"]);
+G2L["1e"]["TextWrapped"] = true;
+G2L["1e"]["ZIndex"] = 2;
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextSize"] = 54;
+G2L["1e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1e"]["TextScaled"] = true;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(168, 235, 255);
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["1e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["BackgroundTransparency"] = 1;
+G2L["1e"]["Size"] = UDim2.new(0, 139, 0, 23);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Text"] = [[By Moonhad and urban1]];
+G2L["1e"]["Name"] = [[Credits]];
+G2L["1e"]["Position"] = UDim2.new(0.03183, 0, 0.90385, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.UtilityLabel
+G2L["1f"] = Instance.new("TextLabel", G2L["13"]);
+G2L["1f"]["TextWrapped"] = true;
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["TextSize"] = 34;
+G2L["1f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1f"]["TextScaled"] = true;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["1f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["BackgroundTransparency"] = 1;
+G2L["1f"]["Size"] = UDim2.new(0, 92, 0, 31);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Text"] = [[Utility]];
+G2L["1f"]["Name"] = [[UtilityLabel]];
+G2L["1f"]["Position"] = UDim2.new(0.02435, 0, 0.41347, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.InfoToggle
+G2L["20"] = Instance.new("TextButton", G2L["13"]);
+G2L["20"]["TextWrapped"] = true;
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["TextSize"] = 34;
+G2L["20"]["TextScaled"] = true;
+G2L["20"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(141, 185, 255);
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["20"]["Size"] = UDim2.new(0, 21, 0, 21);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Text"] = [[i]];
+G2L["20"]["Name"] = [[InfoToggle]];
+G2L["20"]["Position"] = UDim2.new(0.03207, 0, 0.28386, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.InfoToggle.Size
+G2L["21"] = Instance.new("LocalScript", G2L["20"]);
+G2L["21"]["Name"] = [[Size]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.InfoToggle.UICorner
+G2L["22"] = Instance.new("UICorner", G2L["20"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.InfoToggle.Info
+G2L["23"] = Instance.new("TextLabel", G2L["20"]);
+G2L["23"]["TextWrapped"] = true;
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["TextSize"] = 1;
+G2L["23"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["23"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["23"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["BackgroundTransparency"] = 1;
+G2L["23"]["Size"] = UDim2.new(0, 135, 0, 49);
+G2L["23"]["Visible"] = false;
+G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["Text"] = [[Every step, btp can teleport a part of the map into the void.]];
+G2L["23"]["Name"] = [[Info]];
+G2L["23"]["Position"] = UDim2.new(1.23267, 0, -0.01477, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.Respawn
+G2L["24"] = Instance.new("TextButton", G2L["13"]);
+G2L["24"]["TextWrapped"] = true;
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["TextSize"] = 34;
+G2L["24"]["TextScaled"] = true;
+G2L["24"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(141, 185, 255);
+G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["24"]["Size"] = UDim2.new(0, 170, 0, 18);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Text"] = [[Respawn / Cancel]];
+G2L["24"]["Name"] = [[Respawn]];
+G2L["24"]["Position"] = UDim2.new(0.01615, 0, 0.15388, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.Respawn.LocalScript
+G2L["25"] = Instance.new("LocalScript", G2L["24"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.Respawn.UICorner
+G2L["26"] = Instance.new("UICorner", G2L["24"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.Start
+G2L["27"] = Instance.new("TextButton", G2L["13"]);
+G2L["27"]["TextWrapped"] = true;
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["TextSize"] = 34;
+G2L["27"]["TextScaled"] = true;
+G2L["27"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(141, 185, 255);
+G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["27"]["Size"] = UDim2.new(0, 170, 0, 43);
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Text"] = [[Start!]];
+G2L["27"]["Name"] = [[Start]];
+G2L["27"]["Position"] = UDim2.new(0.01615, 0, 0.06636, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.Start.VoidBTP
+G2L["28"] = Instance.new("LocalScript", G2L["27"]);
+G2L["28"]["Name"] = [[VoidBTP]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.Start.UICorner
+G2L["29"] = Instance.new("UICorner", G2L["27"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.UICorner
+G2L["2a"] = Instance.new("UICorner", G2L["13"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.UIStroke
+G2L["2b"] = Instance.new("UIStroke", G2L["13"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.BadgeGiver
+G2L["2c"] = Instance.new("TextButton", G2L["13"]);
+G2L["2c"]["TextWrapped"] = true;
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["TextSize"] = 28;
+G2L["2c"]["TextScaled"] = true;
+G2L["2c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(141, 185, 255);
+G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["2c"]["Size"] = UDim2.new(0, 166, 0, 50);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Text"] = [[Give John - Loved Of Muses]];
+G2L["2c"]["Name"] = [[BadgeGiver]];
+G2L["2c"]["Position"] = UDim2.new(0.026, 0, 0.5, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.BadgeGiver.Giver
+G2L["2d"] = Instance.new("LocalScript", G2L["2c"]);
+G2L["2d"]["Name"] = [[Giver]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.BadgeGiver.UICorner
+G2L["2e"] = Instance.new("UICorner", G2L["2c"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.StepTimer2
+G2L["2f"] = Instance.new("TextLabel", G2L["13"]);
+G2L["2f"]["TextWrapped"] = true;
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["TextSize"] = 25;
+G2L["2f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["2f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["BackgroundTransparency"] = 1;
+G2L["2f"]["Size"] = UDim2.new(0, 126, 0, 24);
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["Text"] = [[until next step.]];
+G2L["2f"]["Name"] = [[StepTimer2]];
+G2L["2f"]["Position"] = UDim2.new(0.03761, 0, 0.23981, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.InfiniteForceFeild
+G2L["30"] = Instance.new("TextButton", G2L["13"]);
+G2L["30"]["TextWrapped"] = true;
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["30"]["TextSize"] = 28;
+G2L["30"]["TextScaled"] = true;
+G2L["30"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(141, 185, 255);
+G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["30"]["Size"] = UDim2.new(0, 166, 0, 50);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Text"] = [[Infinite Forcefield                              OFF]];
+G2L["30"]["Name"] = [[InfiniteForceFeild]];
+G2L["30"]["Position"] = UDim2.new(0.026, 0, 0.8, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.InfiniteForceFeild.Forcefield
+G2L["31"] = Instance.new("LocalScript", G2L["30"]);
+G2L["31"]["Name"] = [[Forcefield]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.InfiniteForceFeild.UICorner
+G2L["32"] = Instance.new("UICorner", G2L["30"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.AntiVoid
+G2L["33"] = Instance.new("TextButton", G2L["13"]);
+G2L["33"]["TextWrapped"] = true;
+G2L["33"]["BorderSizePixel"] = 0;
+G2L["33"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["33"]["TextSize"] = 28;
+G2L["33"]["TextScaled"] = true;
+G2L["33"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["33"]["BackgroundColor3"] = Color3.fromRGB(141, 185, 255);
+G2L["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["33"]["Size"] = UDim2.new(0, 166, 0, 50);
+G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["33"]["Text"] = [[Antivoid                              ON]];
+G2L["33"]["Name"] = [[AntiVoid]];
+G2L["33"]["Position"] = UDim2.new(0.026, 0, 0.7, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.AntiVoid.Antivoid
+G2L["34"] = Instance.new("LocalScript", G2L["33"]);
+G2L["34"]["Name"] = [[Antivoid]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.AntiVoid.UICorner
+G2L["35"] = Instance.new("UICorner", G2L["33"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.GrabAllTools
+G2L["36"] = Instance.new("TextButton", G2L["13"]);
+G2L["36"]["TextWrapped"] = true;
+G2L["36"]["BorderSizePixel"] = 0;
+G2L["36"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["36"]["TextSize"] = 28;
+G2L["36"]["TextScaled"] = true;
+G2L["36"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(141, 185, 255);
+G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["36"]["Size"] = UDim2.new(0, 166, 0, 50);
+G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["Text"] = [[Grab Tools]];
+G2L["36"]["Name"] = [[GrabAllTools]];
+G2L["36"]["Position"] = UDim2.new(0.026, 0, 0.6, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.GrabAllTools.GrabTools
+G2L["37"] = Instance.new("LocalScript", G2L["36"]);
+G2L["37"]["Name"] = [[GrabTools]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.GrabAllTools.UICorner
+G2L["38"] = Instance.new("UICorner", G2L["36"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.KillAll
+G2L["39"] = Instance.new("TextButton", G2L["13"]);
+G2L["39"]["TextWrapped"] = true;
+G2L["39"]["BorderSizePixel"] = 0;
+G2L["39"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["39"]["TextSize"] = 28;
+G2L["39"]["TextScaled"] = true;
+G2L["39"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39"]["BackgroundColor3"] = Color3.fromRGB(141, 185, 255);
+G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["39"]["Size"] = UDim2.new(0, 166, 0, 50);
+G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39"]["Text"] = [[Kill All                               OFF]];
+G2L["39"]["Name"] = [[KillAll]];
+G2L["39"]["Position"] = UDim2.new(0.515, 0, 0.47, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.KillAll.LocalScript
+G2L["3a"] = Instance.new("LocalScript", G2L["39"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.KillAll.UICorner
+G2L["3b"] = Instance.new("UICorner", G2L["39"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.FlingAll
+G2L["3c"] = Instance.new("TextButton", G2L["13"]);
+G2L["3c"]["TextWrapped"] = true;
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["3c"]["TextSize"] = 28;
+G2L["3c"]["TextScaled"] = true;
+G2L["3c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(141, 185, 255);
+G2L["3c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["3c"]["Size"] = UDim2.new(0, 166, 0, 50);
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["Text"] = [[Windforce Fling All                              OFF]];
+G2L["3c"]["Name"] = [[FlingAll]];
+G2L["3c"]["Position"] = UDim2.new(0.515, 0, 0.37, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.FlingAll.LocalScript
+G2L["3d"] = Instance.new("LocalScript", G2L["3c"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.FlingAll.UICorner
+G2L["3e"] = Instance.new("UICorner", G2L["3c"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.KillStealer
+G2L["3f"] = Instance.new("TextButton", G2L["13"]);
+G2L["3f"]["TextWrapped"] = true;
+G2L["3f"]["BorderSizePixel"] = 0;
+G2L["3f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["3f"]["TextSize"] = 28;
+G2L["3f"]["TextScaled"] = true;
+G2L["3f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(141, 185, 255);
+G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["3f"]["Size"] = UDim2.new(0, 166, 0, 50);
+G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["Text"] = [[Kill Stealer                              OFF]];
+G2L["3f"]["Name"] = [[KillStealer]];
+G2L["3f"]["Position"] = UDim2.new(0.515, 0, 0.27, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.KillStealer.KillSteal
+G2L["40"] = Instance.new("LocalScript", G2L["3f"]);
+G2L["40"]["Name"] = [[KillSteal]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.KillStealer.UICorner
+G2L["41"] = Instance.new("UICorner", G2L["3f"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.ClickKill
+G2L["42"] = Instance.new("TextButton", G2L["13"]);
+G2L["42"]["TextWrapped"] = true;
+G2L["42"]["BorderSizePixel"] = 0;
+G2L["42"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["42"]["TextSize"] = 28;
+G2L["42"]["TextScaled"] = true;
+G2L["42"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["42"]["BackgroundColor3"] = Color3.fromRGB(141, 185, 255);
+G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["42"]["Size"] = UDim2.new(0, 166, 0, 50);
+G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["42"]["Text"] = [[Click Kill                              OFF]];
+G2L["42"]["Name"] = [[ClickKill]];
+G2L["42"]["Position"] = UDim2.new(0.515, 0, 0.17, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.ClickKill.ClickKill
+G2L["43"] = Instance.new("LocalScript", G2L["42"]);
+G2L["43"]["Name"] = [[ClickKill]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.ClickKill.UICorner
+G2L["44"] = Instance.new("UICorner", G2L["42"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.VoidBTPLabel
+G2L["45"] = Instance.new("TextLabel", G2L["13"]);
+G2L["45"]["TextWrapped"] = true;
+G2L["45"]["BorderSizePixel"] = 0;
+G2L["45"]["TextSize"] = 34;
+G2L["45"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["45"]["TextScaled"] = true;
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["45"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["BackgroundTransparency"] = 1;
+G2L["45"]["Size"] = UDim2.new(0, 92, 0, 31);
+G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["Text"] = [[BTP]];
+G2L["45"]["Name"] = [[VoidBTPLabel]];
+G2L["45"]["Position"] = UDim2.new(0.0217, 0, 0.00889, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.StepTimer
+G2L["46"] = Instance.new("TextLabel", G2L["13"]);
+G2L["46"]["TextWrapped"] = true;
+G2L["46"]["BorderSizePixel"] = 0;
+G2L["46"]["TextSize"] = 25;
+G2L["46"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["46"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["46"]["BackgroundTransparency"] = 1;
+G2L["46"]["Size"] = UDim2.new(0, 50, 0, 27);
+G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["46"]["Text"] = [[45.00]];
+G2L["46"]["Name"] = [[StepTimer]];
+G2L["46"]["Position"] = UDim2.new(0.0347, 0, 0.19783, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.StepTimer.Time
+G2L["47"] = Instance.new("LocalScript", G2L["46"]);
+G2L["47"]["Name"] = [[Time]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.StepTimer1
+G2L["48"] = Instance.new("TextLabel", G2L["13"]);
+G2L["48"]["TextWrapped"] = true;
+G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["TextSize"] = 25;
+G2L["48"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["48"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["BackgroundTransparency"] = 1;
+G2L["48"]["Size"] = UDim2.new(0, 70, 0, 38);
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Text"] = [[seconds]];
+G2L["48"]["Name"] = [[StepTimer1]];
+G2L["48"]["Position"] = UDim2.new(0.16326, 0, 0.18731, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.SplitThing
+G2L["49"] = Instance.new("TextLabel", G2L["13"]);
+G2L["49"]["BorderSizePixel"] = 0;
+G2L["49"]["TextSize"] = 1;
+G2L["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["49"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["49"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["Size"] = UDim2.new(0, 168, 0, 2);
+G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["Text"] = [[ ]];
+G2L["49"]["Name"] = [[SplitThing]];
+G2L["49"]["Position"] = UDim2.new(0.03979, 0, 0.38931, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.VoidBTPLabel
+G2L["4a"] = Instance.new("TextLabel", G2L["13"]);
+G2L["4a"]["TextWrapped"] = true;
+G2L["4a"]["BorderSizePixel"] = 0;
+G2L["4a"]["TextSize"] = 34;
+G2L["4a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4a"]["TextScaled"] = true;
+G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["4a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4a"]["BackgroundTransparency"] = 1;
+G2L["4a"]["Size"] = UDim2.new(0, 154, 0, 31);
+G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4a"]["Text"] = [[Server Trolling]];
+G2L["4a"]["Name"] = [[VoidBTPLabel]];
+G2L["4a"]["Position"] = UDim2.new(0.54425, 0, 0.00889, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.Version
+G2L["4b"] = Instance.new("TextLabel", G2L["13"]);
+G2L["4b"]["TextWrapped"] = true;
+G2L["4b"]["ZIndex"] = 2;
+G2L["4b"]["BorderSizePixel"] = 0;
+G2L["4b"]["TextSize"] = 54;
+G2L["4b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4b"]["TextScaled"] = true;
+G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(168, 235, 255);
+G2L["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["4b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["BackgroundTransparency"] = 1;
+G2L["4b"]["Size"] = UDim2.new(0, 66, 0, 17);
+G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["Text"] = [[(PUBLIC)]];
+G2L["4b"]["Name"] = [[Version]];
+G2L["4b"]["Position"] = UDim2.new(0.19415, 0, 0.93492, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.TextButton
+G2L["4c"] = Instance.new("TextButton", G2L["13"]);
+G2L["4c"]["TextWrapped"] = true;
+G2L["4c"]["BorderSizePixel"] = 0;
+G2L["4c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4c"]["TextSize"] = 14;
+G2L["4c"]["TextScaled"] = true;
+G2L["4c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["4c"]["BackgroundTransparency"] = 1;
+G2L["4c"]["Size"] = UDim2.new(0, 139, 0, 23);
+G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["Text"] = [[discord.gg/RB5aZ6pxjy]];
+G2L["4c"]["Position"] = UDim2.new(0.56292, 0, 0.93576, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.TextButton.LocalScript
+G2L["4d"] = Instance.new("LocalScript", G2L["4c"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MinimizeZindexFix
+G2L["4e"] = Instance.new("Frame", G2L["7"]);
+G2L["4e"]["BorderSizePixel"] = 0;
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(168, 235, 255);
+G2L["4e"]["Size"] = UDim2.new(0, 377, 0, 38);
+G2L["4e"]["Position"] = UDim2.new(-0.00396, 0, 0.02653, 0);
+G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["Name"] = [[MinimizeZindexFix]];
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MinimizeZindexFix.UICorner
+G2L["4f"] = Instance.new("UICorner", G2L["4e"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.Minimize
+G2L["50"] = Instance.new("TextButton", G2L["7"]);
+G2L["50"]["TextWrapped"] = true;
+G2L["50"]["BorderSizePixel"] = 0;
+G2L["50"]["TextSize"] = 44;
+G2L["50"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["50"]["BackgroundColor3"] = Color3.fromRGB(141, 185, 255);
+G2L["50"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["50"]["ZIndex"] = 2;
+G2L["50"]["Size"] = UDim2.new(0, 90, 0, 37);
+G2L["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["50"]["Text"] = [[]];
+G2L["50"]["Name"] = [[Minimize]];
+G2L["50"]["Position"] = UDim2.new(0.75597, 0, 0.05092, 0);
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.Minimize.LocalScript
+G2L["51"] = Instance.new("LocalScript", G2L["50"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.Minimize.UICorner
+G2L["52"] = Instance.new("UICorner", G2L["50"]);
+
+
+
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.DisableThatFuckingShopthatIHate
+local function C_2()
+local script = G2L["2"];
+	local player = game:GetService("Players").LocalPlayer
+	
+	while true do
+		task.wait(0)
+		local screenGui = player.PlayerGui:FindFirstChild("ScreenGui")
+		if screenGui then
+			screenGui:Destroy()
+		end
+	end
+end;
+task.spawn(C_2);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.Mutemusic
+local function C_3()
+local script = G2L["3"];
+	local player = game:GetService("Players").LocalPlayer
+	local Music = player:FindFirstChild("BackgroundMusic")
+	
+	if Music then
+		Music.Volume = 0
+	end
+end;
+task.spawn(C_3);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.DeletePinkTP
+local function C_4()
+local script = G2L["4"];
+	local gate = workspace:FindFirstChild("Teleporter")
+	if gate and gate:FindFirstChild("B") and gate.B:FindFirstChild("Gate") then
+		gate.B.Gate:Destroy()
+	end
+end;
+task.spawn(C_4);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.SimulationRadius
+local function C_5()
+local script = G2L["5"];
+	local Players = game:GetService("Players")
+	local Player = Players.LocalPlayer
+	
+	Player.SimulationRadius = 99999
+	Player.MaximumSimulationRadius = 99999
+	
+	
+	pcall(function()
+		setsimulationradius(99999)
+	end)
+	
+	
+	game:GetService("RunService").Heartbeat:Connect(function()
+		Player.SimulationRadius = 99999
+		Player.MaximumSimulationRadius = 99999
+	end)
+	
+	
+end;
+task.spawn(C_5);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.plug the discord
+local function C_6()
+local script = G2L["6"];
+	pcall(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Notification";
+			Text = "By urban and moonhad";
+			Duration = 35;
+		})
+		
+	
+	
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "join the discord twin";
+			Text = ".gg/dd4XXRMz8b";
+			Duration = 35;
+		})
+		
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Notification";
+			Text = "There's a button at the bottom of the GUI to copy the invite";
+			Duration = 35;
+		})
+	end)
+end;
+task.spawn(C_6);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.Smooth GUI Dragging
+local function C_8()
+local script = G2L["8"];
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+	
+end;
+task.spawn(C_8);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.Portalspam.LocalScript
+local function C_15()
+local script = G2L["15"];
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	local On = false
+	local oldpos
+	local running = false
+	
+	button.MouseButton1Click:Connect(function()
+		local character = player.Character or player.CharacterAdded:Wait()
+		local hrp = character:WaitForChild("HumanoidRootPart")
+	
+		On = not On
+	
+		if On then
+			oldpos = hrp.CFrame
+			button.Text = "Portal Spam                              ON"
+	
+			if running then return end
+			running = true
+	
+			task.spawn(function()
+				while On do
+					hrp.CFrame = CFrame.new(0, 103.20000457763672, 32.5)
+					task.wait()
+					hrp.CFrame = CFrame.new(-32.5, 103.20000457763672, 0)
+					task.wait()
+					hrp.CFrame = CFrame.new(0, 103.20000457763672, -32.5)
+					task.wait()
+					hrp.CFrame = CFrame.new(32.5, 103.20000457763672, 0)
+					task.wait()
+				end
+				running = false
+			end)
+		else
+			button.Text = "Portal Spam                              OFF"
+			if oldpos then
+				wait(1)
+				hrp.CFrame = oldpos
+			end
+		end
+	end)
+end;
+task.spawn(C_15);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.KillWobblys.KillWobblys
+local function C_18()
+local script = G2L["18"];
+	local button = script.Parent
+	
+	local function KillWobblys()
+		for i, Wobbly in ipairs(workspace:GetDescendants()) do
+			if Wobbly:IsA("BasePart") and Wobbly.Name == "Wobbly" then
+				local BodyPosition = Wobbly:FindFirstChild("BodyPosition")
+				if BodyPosition then
+					BodyPosition:Destroy()
+				end
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(KillWobblys)
+end;
+task.spawn(C_18);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.ServerDeleteTools.LocalScript
+local function C_1b()
+local script = G2L["1b"];
+	local button = script.Parent
+	local Player = game.Players.LocalPlayer
+	
+	local NoTools = false
+	
+	local RegenModel = workspace:FindFirstChild("Regen")
+	
+	workspace.ChildAdded:Connect(function(child)
+		if child.Name == "Regen" then
+			RegenModel = child
+		end
+	end)
+	
+	local function GetCharacter()
+		return Player.Character
+	end
+	
+	local function GetRoot(char)
+		if char then
+			return char:FindFirstChild("HumanoidRootPart")
+		end
+	end
+	
+	local function FireTouchEvents(part1, part2)
+		pcall(firetouchinterest, part1, part2, 1)
+		pcall(firetouchinterest, part1, part2, 0)
+		pcall(firetouchinterest, part2, part1, 1)
+		pcall(firetouchinterest, part2, part1, 0)
+	end
+	
+	local function ShouldDelete(tool)
+		return tool:IsA("Tool") and tool.Name ~= "Sword" and tool.Name ~= "ShieldSphere"
+	end
+	
+	local function DeleteTool(tool)
+		if not NoTools then return end
+		if tool and ShouldDelete(tool) then
+			pcall(function()
+				tool.Parent = Player.Backpack
+			end)
+			task.defer(function()
+				pcall(function()
+					if tool then
+						tool:Destroy()
+					end
+				end)
+			end)
+		end
+	end
+	
+	Player.Backpack.ChildAdded:Connect(function(tool)
+		if NoTools then
+			DeleteTool(tool)
+		end
+	end)
+	
+	local function HookCharacter(char)
+		char.ChildAdded:Connect(function(child)
+			if NoTools then
+				DeleteTool(child)
+			end
+		end)
+	end
+	
+	if Player.Character then
+		HookCharacter(Player.Character)
+	end
+	
+	Player.CharacterAdded:Connect(HookCharacter)
+	
+	local function Grab()
+		if RegenModel then
+			local root = GetRoot(GetCharacter())
+			if root then
+				for _, child in ipairs(RegenModel:GetChildren()) do
+					if child:IsA("Tool") and child:FindFirstChild("Handle") then
+						FireTouchEvents(root, child.Handle)
+					end
+				end
+			end
+		end
+	end
+	
+	task.spawn(function()
+		while true do
+			task.wait(0.1)
+	
+			if not RegenModel or not RegenModel.Parent then
+				RegenModel = workspace:FindFirstChild("Regen")
+			end
+	
+			if NoTools then
+				Grab()
+			end
+		end
+	end)
+	
+	button.MouseButton1Click:Connect(function()
+		NoTools = not NoTools
+		button.Text = NoTools and "NoTools                              ON" or "NoTools                              OFF"
+	end)
+	
+end;
+task.spawn(C_1b);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.InfoToggle.Size
+local function C_21()
+local script = G2L["21"];
+	-- hi so feel free to change the info, I dont have a really good way of explaining it in less than 10 sentances
+	
+	local button = script.Parent
+	local infoLabel = button:WaitForChild("Info")
+	
+	local Open = false
+	local animating = false
+	
+	button.MouseButton1Click:Connect(function()
+		if animating then return end
+		animating = true
+	
+		Open = not Open
+	
+		if Open then
+			infoLabel.Visible = true
+	
+			for i = 0, 15 do
+				infoLabel.TextSize = i
+				task.wait()
+			end
+		else
+			for i = 15, 0, -1 do
+				infoLabel.TextSize = i
+				task.wait()
+			end
+	
+			infoLabel.Visible = false
+		end
+	
+		animating = false
+	end)
+end;
+task.spawn(C_21);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.Respawn.LocalScript
+local function C_25()
+local script = G2L["25"];
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	button.MouseButton1Click:Connect(function()
+		local character = player.Character
+		if character then
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				humanoid.Health = 0
+			end
+		end
+	end)
+end;
+task.spawn(C_25);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.Start.VoidBTP
+local function C_28()
+local script = G2L["28"];
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		-- moonhads epik btp script ██
+		-- Version █.█.█
+	
+	
+	
+		--UPDATES:
+	
+		-- made the whole script ████ (████ ███ ██ ███ ████ ████) 
+		-- 												^^ actually its ███'██
+	
+		--PLANS FOR THE FUTURE:
+	
+		-- ████ ███ █████████ ███ ██████
+		-- ███ █████ █████ ██ ███ ███
+	
+		--Credits:
+	
+		-- Moonhad (TheManOfTheEpic_Face): coding most of everything
+		-- urban1 (nightly_2222): helped with me learning btp / testing
+		-- C000lM@nn (COO0lMann): testing / ragebaiting people
+	
+		--==================================
+	
+		local Players = game:GetService("Players")
+		local RunService = game:GetService("RunService")
+	
+		local Player = Players.LocalPlayer
+		local Backpack = Player:WaitForChild("Backpack")
+	
+		local Character = Player.Character or Player.CharacterAdded:Wait()
+		local Animate = Character:WaitForChild("Animate")
+	
+		if Animate then
+			Animate.Enabled = false
+		end
+	
+		local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+		local Humanoid = Character:WaitForChild("Humanoid")
+		local Animator = Humanoid:WaitForChild("Animator")
+	
+		local MapBtpDone = false
+		local HasTouchstone = false
+	
+		for i, Tracks in ipairs(Animator:GetPlayingAnimationTracks()) do
+			Tracks:Stop()
+		end
+	
+		task.wait(1)
+	
+		RunService.Stepped:Connect(function()
+			if MapBtpDone then
+				return
+			end
+	
+			for i, AllPlayers in ipairs(Players:GetPlayers()) do
+				local AllPlayersCharacter = AllPlayers.Character
+	
+				if AllPlayersCharacter then
+					for i, Part in ipairs(AllPlayersCharacter:GetChildren()) do
+						if Part:IsA("BasePart") then
+							Part.CanCollide = false
+						end
+					end
+				end
+			end
+		end)
+	
+		HumanoidRootPart.CFrame = CFrame.new(0, 98, 0)
+	
+		local Sword = Backpack:FindFirstChild("Sword")
+	
+		if Sword then
+			Sword.Enabled = false
+	
+			local SwordHandle = Sword:WaitForChild("Handle")
+	
+			Sword.Grip = CFrame.new(-86, 75.6, 99.5) * CFrame.Angles(math.rad(90), 0, 0)
+	
+			task.wait(0.1)
+	
+			Sword.Parent = Character
+			SwordHandle.CanCollide = true
+	
+			local OldDeathPlateTrigger = workspace:WaitForChild("Regen"):WaitForChild("DeathPlateTrigger")
+			local OldBlock = OldDeathPlateTrigger:WaitForChild("Block")
+			local OldWeld = OldBlock:WaitForChild("Weld")
+	
+			local Wood = OldWeld.Part1
+	
+			if Wood then
+				Wood.CanCollide = false
+			end
+	
+			workspace.ChildRemoved:Connect(function(Child)
+				if MapBtpDone then
+					return
+				end
+	
+				if Child:IsA("Model") and Child.Name == "Regen" then
+					local DeathPlateTrigger = workspace:WaitForChild("Regen"):WaitForChild("DeathPlateTrigger")
+					local Block = DeathPlateTrigger:WaitForChild("Block")
+	
+					task.wait(0.2)
+	
+					for i, Weld in ipairs(Block:GetChildren()) do
+						if Weld.Part1 == SwordHandle then
+							Sword.Parent = Backpack
+	
+							if not HasTouchstone then
+								local Touchstone = workspace:WaitForChild("Regen"):FindFirstChild("Touchstone")
+	
+								if Touchstone then
+									local TouchstoneHandle = Touchstone:WaitForChild("Handle")
+	
+									TouchstoneHandle.CanCollide = false
+	
+									repeat
+										if Touchstone.Parent == workspace:WaitForChild("Regen") then
+											TouchstoneHandle.CFrame = HumanoidRootPart.CFrame
+											task.wait(0.01)
+										else
+											error("Touchstone Taken!!!! FAHHHH (reset the script)")
+											return
+										end
+									until Character:FindFirstChild("Touchstone")
+								end
+							end
+	
+							HasTouchstone = true
+	
+							local TouchstoneTool = Character:FindFirstChild("Touchstone")
+	
+							task.wait()
+	
+							Sword.Parent = Character
+	
+							-- ███ █████████ ███████████ ████ ███ ███ weld
+	
+							Sword.Grip = CFrame.new(0, -7000, 0) * CFrame.Angles(math.rad(90), 0, math.rad(-90))
+	
+							Sword.Parent = Backpack
+							Sword.Parent = Character
+	
+							TouchstoneTool.Enabled = true
+	
+							task.wait(0.9)
+	
+							repeat
+								task.wait(0.01)
+	
+								Sword.Parent = Character
+								TouchstoneTool.Parent = Character
+							until TouchstoneTool.Parent == Character and Sword.Parent == Character
+	
+							task.delay(0.7, function()
+								TouchstoneTool:Activate()
+	
+								MapBtpDone = true
+	
+								task.wait(1)
+								Animate.Enabled = true
+								HumanoidRootPart.CFrame = CFrame.new(0, 300, 0)
+								task.wait(0.5)
+								Sword.Parent = Backpack
+								TouchstoneTool.Parent = Backpack
+								
+								Humanoid.Health = 0 -- well, thats one way of doing it!
+							end)
+						end
+					end
+				end
+			end)
+		else
+			error("Sword is not found in backpack!!! FAHHHHH (reset the script)")
+		end
+	end)
+	
+end;
+task.spawn(C_28);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.BadgeGiver.Giver
+local function C_2d()
+local script = G2L["2d"];
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	button.MouseButton1Click:Connect(function()
+		local character = player.Character or player.CharacterAdded:Wait()
+		local hrp = character:WaitForChild("HumanoidRootPart")
+	
+		local targetModel = nil
+		for _, descendant in workspace:GetDescendants() do
+			if descendant.Name == "Smooth Block Model" then
+				local badgeID = descendant:FindFirstChild("BadgeID")
+				if badgeID then
+					targetModel = descendant
+					break
+				end
+			end
+		end
+	
+		if not targetModel then
+			return
+		end
+	
+		local originalCFrame = hrp.CFrame
+	
+		hrp.CFrame = targetModel.CFrame
+		task.wait(0.1)
+		hrp.CFrame = originalCFrame
+	end)
+end;
+task.spawn(C_2d);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.InfiniteForceFeild.Forcefield
+local function C_31()
+local script = G2L["31"];
+	local button = script.Parent
+	local Player = game.Players.LocalPlayer
+	
+	local InfiniteForcefield = false
+	local InfiniteForcefieldInProgress = false
+	
+	local RegenModel = workspace:FindFirstChild("Regen")
+	workspace.ChildAdded:Connect(function(child)
+		if child.Name == "Regen" then
+			RegenModel = child
+		end
+	end)
+	
+	local function FireTouchEvents(part1, part2)
+		pcall(firetouchinterest, part1, part2, 1)
+		pcall(firetouchinterest, part1, part2, 0)
+		pcall(firetouchinterest, part2, part1, 1)
+		pcall(firetouchinterest, part2, part1, 0)
+	end
+	
+	local function OnCharacter(Character)
+		Character.ChildAdded:Connect(function(child)
+			if not InfiniteForcefield then return end
+	
+			if child:IsA("Tool") and child.Name == "ShieldSphere" then
+				if not InfiniteForcefieldInProgress then
+					InfiniteForcefieldInProgress = true
+	
+					local h = child:WaitForChild("Handle")
+					h.CanCollide = false
+	
+					local cf = Character:GetPivot()
+					local cam = workspace.CurrentCamera
+					local ccf, cfo = cam.CFrame, cam.Focus
+	
+					task.wait()
+	
+					child.Parent = Player.Backpack
+					child.Parent = Character
+					child:Activate()
+					task.wait()
+					child:Destroy()
+	
+					for i = 1, 3 do
+						Character:PivotTo(cf)
+						cam.CFrame, cam.Focus = ccf, cfo
+						task.wait()
+					end
+	
+					InfiniteForcefieldInProgress = false
+				end
+			end
+		end)
+	
+		local root
+		repeat
+			task.wait()
+			root = Character:FindFirstChild("HumanoidRootPart")
+		until root
+	
+		task.spawn(function()
+			while Character.Parent do
+				if InfiniteForcefield and RegenModel then
+					local orb = RegenModel:FindFirstChild("ShieldSphere")
+					if orb and orb:FindFirstChild("Handle") then
+						FireTouchEvents(orb.Handle, root)
+					end
+				end
+				task.wait()
+			end
+		end)
+	end
+	
+	Player.CharacterAdded:Connect(OnCharacter)
+	if Player.Character then
+		OnCharacter(Player.Character)
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		InfiniteForcefield = not InfiniteForcefield
+		button.Text = InfiniteForcefield and "Infinite Forcefield                              ON" or "Infinite Forcefield                              OFF"
+	end)
+end;
+task.spawn(C_31);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.AntiVoid.Antivoid
+local function C_34()
+local script = G2L["34"];
+	local button = script.Parent
+	local Player = game.Players.LocalPlayer
+	
+	local Antivoid = true
+	
+	local function GetCharacter()
+		return Player.Character
+	end
+	
+	local function GetRoot(char)
+		if char then
+			return char:FindFirstChild("HumanoidRootPart")
+		end
+	end
+	
+	task.spawn(function()
+		while true do
+			task.wait()
+	
+			if Antivoid then
+				local char = GetCharacter()
+				local root = GetRoot(char)
+	
+				if root and root.Position.Y < -450 then
+					root.CFrame = CFrame.new(root.Position.X, 1000, root.Position.Z)
+					root.AssemblyLinearVelocity = Vector3.zero
+					root.AssemblyAngularVelocity = Vector3.zero
+				end
+			end
+		end
+	end)
+	
+	button.MouseButton1Click:Connect(function()
+		Antivoid = not Antivoid
+		button.Text = Antivoid and "Antivoid                              ON" or "Antivoid                              OFF"
+	end)
+end;
+task.spawn(C_34);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.GrabAllTools.GrabTools
+local function C_37()
+local script = G2L["37"];
+	local button = script.Parent
+	local Player = game.Players.LocalPlayer
+	local RS = game:GetService("RunService")
+	
+	local RegenModel = workspace:FindFirstChild("Regen")
+	
+	workspace.ChildAdded:Connect(function(child)
+		if child.Name == "Regen" then
+			RegenModel = child
+		end
+	end)
+	
+	local function GetCharacter()
+		return Player.Character
+	end
+	
+	local function GetRoot(char)
+		if char then
+			return char:FindFirstChild("HumanoidRootPart")
+		end
+	end
+	
+	local function FireTouchEvents(part1, part2)
+		pcall(firetouchinterest, part1, part2, 1)
+		pcall(firetouchinterest, part1, part2, 0)
+		pcall(firetouchinterest, part2, part1, 1)
+		pcall(firetouchinterest, part2, part1, 0)
+	end
+	
+	local function Grab()
+		if RegenModel then
+			local root = GetRoot(GetCharacter())
+			if root then
+				for _, child in ipairs(RegenModel:GetChildren()) do
+					if child:IsA("Tool") and child:FindFirstChild("Handle") then
+						FireTouchEvents(root, child.Handle)
+					end
+				end
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		Grab()
+	end)
+end;
+task.spawn(C_37);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.KillAll.LocalScript
+local function C_3a()
+local script = G2L["3a"];
+	local button = script.Parent
+	local Player = game.Players.LocalPlayer
+	
+	local LK = false
+	local FriendsOK = true
+	
+	local function IsFriendsWith(plr)
+		local ok, res = pcall(Player.IsFriendsWith, Player, plr.UserId)
+		return ok and res
+	end
+	
+	local function GetCharacterRoot(char)
+		if char then
+			return char:FindFirstChild("HumanoidRootPart")
+		end
+	end
+	
+	local function FireTouchEvents(part1, part2)
+		pcall(firetouchinterest, part1, part2, 1)
+		pcall(firetouchinterest, part1, part2, 0)
+		pcall(firetouchinterest, part2, part1, 1)
+		pcall(firetouchinterest, part2, part1, 0)
+	end
+	
+	task.spawn(function()
+		while true do
+			task.wait()
+	
+			if LK then
+				for _, plr in pairs(game.Players:GetPlayers()) do
+					if plr ~= Player then
+						if not FriendsOK or not IsFriendsWith(plr) then
+							local root = GetCharacterRoot(plr.Character)
+							if root then
+								local char = Player.Character
+								if char then
+									for _, tool in pairs(char:GetChildren()) do
+										if tool:IsA("Tool") then
+											local h = tool:FindFirstChild("Handle")
+											if h then
+												FireTouchEvents(h, root)
+											end
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end)
+	
+	button.MouseButton1Click:Connect(function()
+		print("You are a bad person, you know.")
+		LK = not LK
+		button.Text = LK and "Kill All                                 ON" or "Kill All                                OFF"
+	end)
+end;
+task.spawn(C_3a);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.FlingAll.LocalScript
+local function C_3d()
+local script = G2L["3d"];
+	local button = script.Parent
+	
+	
+	local Player = game.Players.LocalPlayer
+	local trol = false
+	local FriendsSafe = true
+	
+	local function IsFriendsWith(plr)
+		local ok, res = pcall(Player.IsFriendsWith, Player, plr.UserId)
+		return ok and res
+	end
+	
+	local function GetCharacterRoot(char)
+		if char then
+			return char:FindFirstChild("HumanoidRootPart")
+		end
+	end
+	
+	local function GetHumanoid(char)
+		if char then
+			return char:FindFirstChildOfClass("Humanoid")
+		end
+	end
+	
+	task.spawn(function()
+		while true do
+			task.wait(0.1)
+			if not trol then continue end
+	
+			local char = Player.Character
+			if not char or not char:FindFirstChild("Windforce") then
+				continue
+			end
+	
+			for _, plr in pairs(game.Players:GetPlayers()) do
+				if plr == Player then continue end
+	
+				if FriendsSafe and IsFriendsWith(plr) then continue end
+	
+				local targetChar = plr.Character
+				if not targetChar then continue end
+	
+				local root = GetCharacterRoot(targetChar)
+				local hum = GetHumanoid(targetChar)
+	
+				if root and hum and hum.Health > 50 then
+					local windforceTool = char:FindFirstChild("Windforce") or Player.Backpack:FindFirstChild("Windforce")
+					if windforceTool and windforceTool:IsA("Tool") then
+						local handle = windforceTool:FindFirstChild("Handle")
+						if handle then
+							pcall(function()
+								firetouchinterest(handle, root, 1)
+								firetouchinterest(handle, root, 0)
+								firetouchinterest(root, handle, 1)
+								firetouchinterest(root, handle, 0)
+							end)
+						end
+					end
+				end
+			end
+		end
+	end)
+	
+	button.MouseButton1Click:Connect(function()
+		trol = not trol
+		button.Text = trol and "Windforce Fling All                              ON" or "Windforce Fling All                              OFF"
+	end)
+end;
+task.spawn(C_3d);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.KillStealer.KillSteal
+local function C_40()
+local script = G2L["40"];
+	local button = script.Parent
+	
+	local Player = game.Players.LocalPlayer
+	local ON = false
+	local FriendsOK = true
+	
+	local function IsFriendsWith(plr)
+		local ok, res = pcall(Player.IsFriendsWith, Player, plr.UserId)
+		return ok and res
+	end
+	
+	local function GetCharacterRoot(char)
+		if char then
+			return char:FindFirstChild("HumanoidRootPart")
+		end
+	end
+	
+	local function FireTouchEvents(part1, part2)
+		pcall(firetouchinterest, part1, part2, 1)
+		pcall(firetouchinterest, part1, part2, 0)
+		pcall(firetouchinterest, part2, part1, 1)
+		pcall(firetouchinterest, part2, part1, 0)
+	end
+	
+	task.spawn(function()
+		while true do
+			task.wait()
+			if not ON then continue end
+	
+			for _, plr in pairs(game.Players:GetPlayers()) do
+				if plr ~= Player then
+					if not FriendsOK or not IsFriendsWith(plr) then
+						local vic = plr.Character
+						if vic then
+							local hum = vic:FindFirstChildOfClass("Humanoid")
+							local vicRoot = GetCharacterRoot(vic)
+	
+							if hum and vicRoot and hum.Health < 90 then
+								local char = Player.Character
+								if char then
+									for _, tool in pairs(char:GetChildren()) do
+										if tool:IsA("Tool") then
+											local h = tool:FindFirstChild("Handle")
+											if h then
+												FireTouchEvents(h, vicRoot)
+											end
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end)
+	
+	button.MouseButton1Click:Connect(function()
+		ON = not ON
+		button.Text = ON and "Kill Stealer                              ON" or "Kill Stealer                              OFF"
+	end)
+end;
+task.spawn(C_40);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.ClickKill.ClickKill
+local function C_43()
+local script = G2L["43"];
+	local button = script.Parent
+	local Player = game.Players.LocalPlayer
+	local CK = false
+	local FriendsSafe = false
+	local mouse = Player:GetMouse()
+	
+	local function IsFriendsWith(plr)
+		local ok, res = pcall(Player.IsFriendsWith, Player, plr.UserId)
+		return ok and res
+	end
+	
+	local function FireTouchEvents(part1, part2)
+		pcall(firetouchinterest, part1, part2, 1)
+		pcall(firetouchinterest, part1, part2, 0)
+		pcall(firetouchinterest, part2, part1, 1)
+		pcall(firetouchinterest, part2, part1, 0)
+	end
+	
+	mouse.Button1Down:Connect(function()
+		if not CK then return end
+		local targetPart = mouse.Target
+		if not targetPart then return end
+		local targetChar = targetPart
+		while targetChar and not targetChar:FindFirstChildOfClass("Humanoid") do
+			targetChar = targetChar.Parent
+			if targetChar == workspace or targetChar == nil then return end
+		end
+		if not targetChar then return end
+		local targetPlr = game.Players:GetPlayerFromCharacter(targetChar)
+		if not targetPlr or targetPlr == Player then return end
+		if FriendsSafe and IsFriendsWith(targetPlr) then return end
+	
+		local char = Player.Character
+		if not char then return end
+		for _, tool in pairs(char:GetChildren()) do
+			if tool:IsA("Tool") then
+				local h = tool:FindFirstChild("Handle")
+				if h then
+					tool:Activate()
+					for _, v66 in ipairs(targetChar:GetDescendants()) do
+						if v66:IsA("BasePart") then
+							FireTouchEvents(h, v66)
+							tool:Activate()
+						end
+					end
+				end
+			end
+		end
+	end)
+	
+	button.MouseButton1Click:Connect(function()
+		CK = not CK
+		button.Text = CK and "Click Kill                              ON" or "Click Kill                              OFF"
+	end)
+end;
+task.spawn(C_43);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.StepTimer.Time
+local function C_47()
+local script = G2L["47"];
+	local textLabel = script.Parent
+	
+	local RegenModel = workspace:FindFirstChild("Regen")
+	local LastRegen = tick()
+	
+	if RegenModel then
+		LastRegen = tick()
+	else
+		textLabel.Text = "45.00"
+		RegenModel = workspace:WaitForChild("Regen")
+	end
+	
+	workspace.ChildAdded:Connect(function(child)
+		if child.Name == "Regen" then
+			RegenModel = child
+			LastRegen = tick()
+		end
+	end)
+	
+	local function GetTimeBeforeRegen()
+		return math.max(0, 45 - (tick() - LastRegen))
+	end
+	
+	while true do
+		local timeLeft = GetTimeBeforeRegen()
+		textLabel.Text = string.format("%.2f", timeLeft)
+		task.wait(0)
+	end
+end;
+task.spawn(C_47);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.MainFrame.ScrollingMain.TextButton.LocalScript
+local function C_4d()
+local script = G2L["4d"];
+	local button = script.Parent
+	local link = button.Text
+	button.MouseButton1Click:Connect(function()
+		setclipboard(link)
+		button.Text = "Link copied!"
+		task.wait(1.5)
+		button.Text = link
+	end)
+	
+	
+end;
+task.spawn(C_4d);
+-- StarterGui.Untitled SFOTHⁱᵛ UI PUBLIC.TopBar.Minimize.LocalScript
+local function C_51()
+local script = G2L["51"];
+	local b = script.Parent
+	local mini = false
+	local RunService = game:GetService("RunService")
+	
+	local side = Instance.new("Frame")
+	side.Name = "side"
+	side.Size = UDim2.new(0.3, 0, 0, 2)
+	side.Position = UDim2.new(0.5, 0, 0.5, 0)
+	side.AnchorPoint = Vector2.new(0.5, 0.5)
+	side.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	side.BorderSizePixel = 0
+	side.Parent = b
+	
+	local otherside = Instance.new("Frame")
+	otherside.Name = "otherside"
+	otherside.Size = UDim2.new(0, 2, 0.7, 0)
+	otherside.Position = UDim2.new(0.5, 0, 0.5, 0)
+	otherside.AnchorPoint = Vector2.new(0.5, 0.5)
+	otherside.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	otherside.BorderSizePixel = 0
+	otherside.Parent = b
+	otherside.Rotation = 90
+	
+	b.MouseButton1Click:Connect(function()
+		mini = not mini
+		task.spawn(function()
+			local startTime = os.clock()
+			local duration = 0.25
+			if not mini then
+				b.Parent.Parent.TopBar.MainFrame.ScrollingMain.Visible = true
+			end
+			local startmainsize = b.Parent.Parent.TopBar.MainFrame.Size
+			local startSize = b.Parent.Parent.TopBar.MainFrame.ScrollingMain.Size
+			local startscrollpos = b.Parent.Parent.TopBar.MainFrame.ScrollingMain.Position
+			local tgetsize = mini and UDim2.new(0, 377, 0, 39) or UDim2.new(0, 377, 0, 260)
+			local tgetscrollsize = mini and UDim2.new(0, 377, 0, 0) or UDim2.new(0, 377, 0, 218)
+			local tgetscrollpos = mini and UDim2.new(0, 0, 0.12, 0) or UDim2.new(0, 0, 0.16, 0)
+			local startRot = otherside.Rotation
+			local targetRot = mini and 0 or 90
+			while true do
+				local elapsed = os.clock() - startTime
+				local a = math.min(elapsed / duration, 1)
+				local eased = math.sin(a * math.pi / 2)
+				b.Parent.Parent.TopBar.MainFrame.Size = startmainsize:Lerp(tgetsize, eased)
+				b.Parent.Parent.TopBar.MainFrame.ScrollingMain.Size = startSize:Lerp(tgetscrollsize, eased)
+				b.Parent.Parent.TopBar.MainFrame.ScrollingMain.Position = startscrollpos:Lerp(tgetscrollpos, eased)
+				otherside.Rotation = startRot + (targetRot - startRot) * eased
+				if a >= 1 then
+					break
+				end
+				RunService.Heartbeat:Wait()
+			end
+			if mini then
+				b.Parent.Parent.TopBar.MainFrame.ScrollingMain.Visible = false
+			end
+		end)
+	end)
+end;
+task.spawn(C_51);
+
+return G2L["1"], require;
