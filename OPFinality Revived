@@ -4273,12 +4273,12 @@ local script = G2L["6"];
 	setclipboard("discord.gg/dd4XXRMz8b")
 	
 	pcall(function()
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Like this script?"
-			Text = "The discord has been copied!"
-			Duration = 35;
-		})
-	end)
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Like this script?",
+		Text = "The discord has been copied!",
+		Duration = 35,
+	})
+end)
 	
 	
 	task.wait(0.5)
