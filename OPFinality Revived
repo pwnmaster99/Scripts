@@ -1,4 +1,4 @@
-local OldWeldPhysics = false ----- the new ones are more stable
+local OldWeldPhysics = false -- the new ones are more stable
 local E_SELECT = true -- toggles holding down E and clicking someone to select them
 
 -- Instances: 409 | Scripts: 141 | Modules: 0 | Tags: 0
