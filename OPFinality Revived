@@ -1,5 +1,6 @@
 local OldWeldPhysics = false -- new ones are more stable
 local E_SELECT = true
+setclipboard("discord.gg/RB5aZ6pxjy")
 
 -- Instances: 409 | Scripts: 141 | Modules: 0 | Tags: 0
 local G2L = {};
@@ -4272,7 +4273,7 @@ local function C_6()
 local script = G2L["6"];
 	pcall(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "join the discord twin";
+			Title = "The discord has been copied!";
 			Text = ".gg/dd4XXRMz8b";
 			Duration = 35;
 		})
