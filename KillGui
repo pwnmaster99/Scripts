@@ -1,4 +1,4 @@
-
+setclipboard("discord.gg/dd4XXRMz8b")
 
 -- Instances: 21 | Scripts: 7 | Modules: 0 | Tags: 0
 local G2L = {};
@@ -536,8 +536,8 @@ local function C_15()
 local script = G2L["15"];
 	pcall(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "join the discord twin";
-			Text = ".gg/dd4XXRMz8b";
+			Title = "Discord";
+			Text = "Like this script? The discord has been copied!";
 			Duration = 35;
 		})
 	end)
