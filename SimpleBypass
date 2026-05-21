@@ -1,3 +1,4 @@
+setclipboard("discord.gg/dd4XXRMz8b")
 game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "HEY";
 			Text = "THIS SCRIPT IS DISCONTINUED!! get the new one in the discord. (which has been copied to your clipboard.)";
