@@ -1,5 +1,8 @@
--- anything but releasing opfinality revived yo 🤑🤑🤑
-
+game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "HEY";
+			Text = "THIS SCRIPT IS DISCONTINUED!! get the new one in the discord. (which has been copied to your clipboard.)";
+			Duration = 120;
+		})
 local G2L = {};
 
 -- StarterGui.SimpleBypass
