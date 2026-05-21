@@ -1,11 +1,4 @@
---[=[
- d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
-88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
-88      88    88    88            odD'      88      88    88 88ooo88 
-88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-]=]
+setclipboard("discord.gg/dd4XXRMz8b")
 
 -- Instances: 98 | Scripts: 25 | Modules: 0 | Tags: 0
 local G2L = {};
@@ -1005,20 +998,20 @@ local script = G2L["3"];
 	pcall(function()
 
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "HEY LISTEN HERE";
-			Text = "THIS SCRIPT IS DISCONTINUED!! get the new one (OPF:R) where this will ALL be migrated.";
+			Title = "HEY";
+			Text = "THIS SCRIPT IS DISCONTINUED!! get the new one in the discord.";
 			Duration = 120;
 		})
 
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "THIS IS WHERE THE NEW SCRIPT WILL BE / SCRIPTBLOX TOO";
+			Title = "The discord has been copied!";
 			Text = ".gg/dd4XXRMz8b";
 			Duration = 120;
 		})
 	
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "Notification";
-			Text = "theres also a button to copy it at the bottom of the GUI";
+			Text = "by urban1";
 			Duration = 120;
 		})
 	end)
