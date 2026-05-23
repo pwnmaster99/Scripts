@@ -1,6 +1,10 @@
 local OldWeldPhysics = false -- the new ones are more stable
 local E_SELECT = true -- toggles holding down E and clicking someone to select them
 
+
+-- I spent quite a while on this. Do not skid, please!
+
+
 -- Instances: 409 | Scripts: 141 | Modules: 0 | Tags: 0
 local G2L = {};
 
