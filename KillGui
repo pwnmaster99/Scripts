@@ -546,8 +546,8 @@ local script = G2L["15"];
 	
 	pcall(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "OUTDATED";
-			Text = "This script is OUTDATED! The discord has the newer ones.";
+			Title = "OUTDATED / PATCHED";
+			Text = "This script is OUTDATED AND PATCHED! Check the discord.";
 			Duration = 35;
 		})
 	end)
