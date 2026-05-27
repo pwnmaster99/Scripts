@@ -4282,6 +4282,13 @@ local script = G2L["6"];
 		Text = "The discord has been copied!",
 		Duration = 35,
 	})
+
+	pcall(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "WARNING",
+		Text = "KILLING IS PATCHED FOR NOW D:",
+		Duration = 35,
+	})
 end)
 	
 	
