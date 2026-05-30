@@ -1,0 +1,358 @@
+/*
+  !!THIS IS NOT A ROBLOX EXPLOIT!!
+  !!THIS IS FOR VORTEX!!
+  (vortex.towerstats.com) 
+  just copy and paste all of this into the console
+*/
+
+
+
+
+(() => {
+    'use strict';
+
+    if (window.__urbanLoaded) {
+        document.getElementById('urban-ui')?.remove();
+        clearInterval(window.__seizureInterval);
+    }
+
+    window.__urbanLoaded = true;
+
+    const _state = {
+        speed: 1,
+        jump: 0,
+        fly: false,
+        noclip: false,
+        freeze: false,
+        tpwalk: 0,
+        spin: 0,
+        flyY: 0,
+        noclipY: 0,
+        frozenPos: null,
+        seizure: false,
+        seizureOrigin: null,
+        savedPos: null
+    };
+
+    const _cmds = {
+        speedboost(a){ _state.speed = parseFloat(a) || 1; },
+        sb(a){ _cmds.speedboost(a); },
+
+        jumpboost(a){ _state.jump = parseFloat(a) || 0; },
+        jb(a){ _cmds.jumpboost(a); },
+
+        tpwalk(a){ _state.tpwalk = parseFloat(a) || 0; },
+        untpwalk(){ _state.tpwalk = 0; },
+
+        fly(){
+            if (!character?.position) return;
+            _state.fly = true;
+            _state.noclip = false;
+            _state.flyY = character.position.y;
+        },
+        unfly(){ _state.fly = false; },
+
+        noclip(){
+            if (!character?.position) return;
+            _state.noclip = true;
+            _state.fly = false;
+            _state.noclipY = character.position.y;
+        },
+        clip(){ _cmds.noclip(); },
+        unclip(){ _state.noclip = false; },
+
+        freeze(){
+            if (!character?.position) return;
+            _state.freeze = true;
+            _state.frozenPos = {
+                x: character.position.x,
+                y: character.position.y,
+                z: character.position.z
+            };
+        },
+        fr(){ _cmds.freeze(); },
+        unfreeze(){ _state.freeze = false; _state.frozenPos = null; },
+        unfr(){ _cmds.unfreeze(); },
+        thaw(){ _cmds.unfreeze(); },
+
+        spin(a){ _state.spin = parseFloat(a) || 10; },
+        unspin(){ _state.spin = 0; },
+
+        fov(a){
+            if (!camera) return;
+            camera.fov = parseFloat(a) || 50;
+            camera.updateProjectionMatrix();
+        },
+
+        voidtp(){
+            if (!character?.position) return;
+            character.position.set(0, 10, 0);
+        },
+
+        tppos(a){
+            if (!character?.position) return;
+            const parts = a.trim().split(/\s+/);
+            const x = parseFloat(parts[0]);
+            const y = parseFloat(parts[1]);
+            const z = parseFloat(parts[2]);
+            if (isNaN(x) || isNaN(y) || isNaN(z)) return;
+            character.position.set(x, y, z);
+        },
+
+        rejoin(){ location.reload(); },
+        rj(){ _cmds.rejoin(); },
+
+        thru(a){
+            if (!character?.position) return;
+            const dist = parseFloat(a) || 10;
+            const v = new THREE.Vector3(0, 0, -1).applyQuaternion(camera.quaternion);
+            v.y = 0; v.normalize();
+            character.position.addScaledVector(v, dist);
+        },
+
+        seizure(){
+            if (!character?.position) return;
+            _state.seizure = true;
+            _state.seizureOrigin = {
+                x: character.position.x,
+                y: character.position.y,
+                z: character.position.z
+            };
+            if (window.__seizureInterval) return;
+            window.__seizureInterval = setInterval(() => {
+                if (!_state.seizure || !character || !_state.seizureOrigin) return;
+                const o = _state.seizureOrigin;
+                character.position.set(
+                    o.x + (Math.random() - 0.5),
+                    o.y + (Math.random() - 0.5) * 0.4,
+                    o.z + (Math.random() - 0.5)
+                );
+                if (character.yaw !== undefined) {
+                    character.yaw += (Math.random() - 0.5) * 0.8;
+                }
+            }, 16);
+        },
+        unseizure(){
+            _state.seizure = false;
+            _state.seizureOrigin = null;
+            clearInterval(window.__seizureInterval);
+            window.__seizureInterval = null;
+        },
+
+        save(){
+            if (!character?.position) return;
+            _state.savedPos = {
+                x: character.position.x,
+                y: character.position.y,
+                z: character.position.z
+            };
+        },
+        load(){
+            if (!character?.position || !_state.savedPos) return;
+            character.position.set(_state.savedPos.x, _state.savedPos.y, _state.savedPos.z);
+        },
+
+        discord(){
+            window.open('https://discord.gg/RB5aZ6pxjy', '_blank');
+        }
+    };
+
+    function exec(t) {
+        const parts = t.trim().split(/\s+/);
+        const name = (parts.shift() || '').replace(';', '').toLowerCase();
+        const arg = parts.join(' ');
+        if (_cmds[name]) _cmds[name](arg);
+    }
+
+    const panel = document.createElement('div');
+    panel.id = 'urban-ui';
+
+    Object.assign(panel.style, {
+        position: 'fixed',
+        bottom: '20px',
+        right: '20px',
+        background: '#111',
+        color: '#fff',
+        fontFamily: 'monospace',
+        fontSize: '12px',
+        zIndex: 999999,
+        border: '1px solid #333'
+    });
+
+    const titleBar = document.createElement('div');
+    titleBar.textContent = 'urban1s admin';
+    Object.assign(titleBar.style, {
+        padding: '4px',
+        background: '#222',
+        cursor: 'move'
+    });
+
+    const discordBar = document.createElement('div');
+    discordBar.textContent = 'discord.gg/RB5aZ6pxjy';
+    Object.assign(discordBar.style, {
+        padding: '3px 4px',
+        background: '#5865F2',
+        color: '#fff',
+        cursor: 'pointer',
+        fontSize: '11px',
+        textAlign: 'center'
+    });
+    discordBar.addEventListener('click', () => window.open('https://discord.gg/RB5aZ6pxjy', '_blank'));
+
+    const cmdList = document.createElement('div');
+    cmdList.style.padding = '4px';
+    cmdList.style.width = '220px';
+    cmdList.style.maxHeight = '140px';
+    cmdList.style.overflowY = 'auto';
+
+    cmdList.innerHTML = `
+;speedboost / sb [val]<br>
+;jumpboost / jb [val]<br>
+;tpwalk [val]<br>
+;untpwalk<br>
+;fly<br>
+;unfly<br>
+;noclip / clip<br>
+;unclip<br>
+;freeze / fr<br>
+;unfreeze / unfr / thaw<br>
+;spin [val]<br>
+;unspin<br>
+;fov [val]<br>
+;voidtp<br>
+;tppos [x] [y] [z]<br>
+;rejoin / rj<br>
+;thru [val]<br>
+;seizure<br>
+;unseizure<br>
+;save<br>
+;load<br>
+;discord
+`;
+
+    const input = document.createElement('input');
+    input.type = 'text';
+
+    Object.assign(input.style, {
+        width: '212px',
+        margin: '4px',
+        background: '#000',
+        color: '#fff',
+        border: '1px solid #333',
+        outline: 'none'
+    });
+
+    panel.appendChild(titleBar);
+    panel.appendChild(discordBar);
+    panel.appendChild(cmdList);
+    panel.appendChild(input);
+    document.body.appendChild(panel);
+
+    let dragging = false, ox = 0, oy = 0;
+
+    titleBar.addEventListener('mousedown', e => {
+        dragging = true;
+        ox = e.clientX - panel.offsetLeft;
+        oy = e.clientY - panel.offsetTop;
+    });
+
+    window.addEventListener('mousemove', e => {
+        if (!dragging) return;
+        panel.style.left = (e.clientX - ox) + 'px';
+        panel.style.top = (e.clientY - oy) + 'px';
+        panel.style.right = 'auto';
+        panel.style.bottom = 'auto';
+    });
+
+    window.addEventListener('mouseup', () => dragging = false);
+
+    window.addEventListener('keydown', e => {
+        if (e.key === ';') {
+            e.preventDefault();
+            input.focus();
+            input.value = ';';
+        }
+    });
+
+    input.addEventListener('keydown', e => {
+        if (e.key !== 'Enter') return;
+        exec(input.value);
+        input.value = '';
+        input.blur();
+    });
+
+    window.__seizureInterval = null;
+
+    if (!window.__urbanOriginalUpdate) window.__urbanOriginalUpdate = update;
+
+    update = function(dt) {
+        window.__urbanOriginalUpdate(dt);
+
+        if (!character || !camera || !character.position) return;
+
+        if (_state.freeze && _state.frozenPos) {
+            character.position.set(
+                _state.frozenPos.x,
+                _state.frozenPos.y,
+                _state.frozenPos.z
+            );
+            return;
+        }
+
+        if (_state.seizure) return;
+
+        const fwd = new THREE.Vector3(0, 0, -1).applyQuaternion(camera.quaternion);
+        const right = new THREE.Vector3(1, 0, 0).applyQuaternion(camera.quaternion);
+        fwd.y = 0; right.y = 0;
+        fwd.normalize(); right.normalize();
+
+        if (_state.spin) {
+            if (character.rotation) character.rotation.y += _state.spin * dt;
+            if (character.yaw !== undefined) character.yaw += _state.spin * dt;
+        }
+
+        if (_state.fly) {
+            const m = new THREE.Vector3();
+            if (keys['KeyW']) m.add(fwd);
+            if (keys['KeyS']) m.sub(fwd);
+            if (keys['KeyA']) m.sub(right);
+            if (keys['KeyD']) m.add(right);
+
+            if (m.lengthSq()) {
+                m.normalize();
+                character.position.addScaledVector(m, dt * 45);
+            }
+
+            if (keys['Space']) _state.flyY += 45 * dt;
+            if (keys['ShiftLeft'] || keys['ShiftRight']) _state.flyY -= 45 * dt;
+
+            character.position.y = _state.flyY;
+            return;
+        }
+
+        if (_state.noclip) {
+            if (keys['KeyW']) character.position.addScaledVector(fwd, 5);
+            character.position.y = _state.noclipY;
+            return;
+        }
+
+        if (_state.tpwalk && keys['KeyW']) {
+            character.position.addScaledVector(fwd, _state.tpwalk);
+        }
+
+        const move = new THREE.Vector3();
+        if (keys['KeyW']) move.add(fwd);
+        if (keys['KeyS']) move.sub(fwd);
+        if (keys['KeyA']) move.sub(right);
+        if (keys['KeyD']) move.add(right);
+
+        if (move.lengthSq()) {
+            move.normalize();
+            character.position.addScaledVector(move, dt * 10 * (_state.speed - 1));
+        }
+
+        if (_state.jump && keys['Space']) {
+            character.position.y += _state.jump;
+        }
+    };
+})();
