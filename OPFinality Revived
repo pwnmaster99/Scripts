@@ -4290,7 +4290,7 @@ local script = G2L["6"];
 		Duration = 35,
 	})
 end)
-	
+end);
 	
 	task.wait(0.5)
 	
