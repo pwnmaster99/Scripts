@@ -4274,12 +4274,11 @@ task.spawn(C_5);
 -- StarterGui.OPF:R.LocalScript
 local function C_6()
 local script = G2L["6"];
-	setclipboard("discord.gg/dd4XXRMz8b")
 	
 	pcall(function()
 	game:GetService("StarterGui"):SetCore("SendNotification", {
-		Title = "Like this script?",
-		Text = "The discord has been copied!",
+		Title = "THIS SCRIPT IS DISCONTINUED!!",
+		Text = "discord.gg/dd4XXRMz8b GO HERE",
 		Duration = 35,
 	})
 
