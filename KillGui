@@ -1,7 +1,7 @@
 
 -- thou shalt not steal.
 
-setclipboard("discord.gg/dd4XXRMz8b")
+
 -- Instances: 21 | Scripts: 7 | Modules: 0 | Tags: 0
 local G2L = {};
 
@@ -539,7 +539,7 @@ local script = G2L["15"];
 	pcall(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "Discord";
-			Text = "Like this script? The discord has been copied!";
+			Text = "Join this it NOW discord.gg/dd4XXRMz8b";
 			Duration = 35;
 		})
 	end)
@@ -547,7 +547,7 @@ local script = G2L["15"];
 	pcall(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "OUTDATED / PATCHED";
-			Text = "This script is OUTDATED AND PATCHED! Check the discord.";
+			Text = "THIS SHIT IS PATCHED! anything but fixing the goddamn predator problem on roblox";
 			Duration = 35;
 		})
 	end)
