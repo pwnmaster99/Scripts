@@ -1,7 +1,7 @@
-setclipboard("discord.gg/dd4XXRMz8b")
+
 game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "HEY";
-			Text = "THIS SCRIPT IS DISCONTINUED!! The discord is on your clipboard.";
+			Text = "THIS SCRIPT IS DISCONTINUED!! Get the new one from the discord (discord.gg/dd4XXRMz8b)";
 			Duration = 120;
 		})
 local G2L = {};
