@@ -1,4 +1,4 @@
-setclipboard("discord.gg/dd4XXRMz8b")
+
 
 -- Instances: 98 | Scripts: 25 | Modules: 0 | Tags: 0
 local G2L = {};
@@ -1004,8 +1004,8 @@ local script = G2L["3"];
 		})
 
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "The discord has been copied!";
-			Text = ".gg/dd4XXRMz8b";
+			Title = "The discord in question";
+			Text = "discord.gg/dd4XXRMz8b";
 			Duration = 120;
 		})
 	
