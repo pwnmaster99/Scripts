@@ -4277,7 +4277,7 @@ local script = G2L["6"];
 	
 	pcall(function()
 	game:GetService("StarterGui"):SetCore("SendNotification", {
-		Title = "THIS SCRIPT IS DISCONTINUED!!",
+		Title = "DISCONTINUED!!",
 		Text = "discord.gg/dd4XXRMz8b GO HERE",
 		Duration = 35,
 	})
@@ -4287,6 +4287,14 @@ local script = G2L["6"];
 		Title = "WARNING",
 		Text = "KILLING IS PATCHED FOR NOW D:",
 		Duration = 35,
+	})
+end)
+
+	pcall(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "by urban1",
+		Text = "by urban1 (@nightly_2222 on roblox)",
+		Duration = math.huge,
 	})
 end)
 end);
