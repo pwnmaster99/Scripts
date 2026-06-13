@@ -3447,7 +3447,6 @@ task.spawn(C_59);
 -- StarterGui.ohhh, im toolgripping it!.LocalScript
 local function C_5b()
 local script = G2L["5b"];
-	
 	pcall(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "Like this script?",
@@ -3456,7 +3455,6 @@ local script = G2L["5b"];
 		})
 	end)
 	
-	
 	pcall(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "By urban1",
@@ -3464,7 +3462,6 @@ local script = G2L["5b"];
 			Duration = 999999999;
 		})
 	end)
-	
 	
 end;
 task.spawn(C_5b);
