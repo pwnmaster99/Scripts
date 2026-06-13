@@ -3450,8 +3450,8 @@ local script = G2L["5b"];
 	
 	pcall(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Like this script?"
-			Text = "join discord.gg/dd4XXRMz8b"
+			Title = "Like this script?",
+			Text = "join discord.gg/dd4XXRMz8b",
 			Duration = 999999999;
 		})
 	end)
@@ -3459,8 +3459,8 @@ local script = G2L["5b"];
 	
 	pcall(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "By urban1"
-			Text = "Toolgrip by urban1"
+			Title = "By urban1",
+			Text = "Toolgrip by urban1",
 			Duration = 999999999;
 		})
 	end)
