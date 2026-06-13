@@ -451,9 +451,8 @@ G2L["27"]["Name"] = [[Description]];
 G2L["27"]["Position"] = UDim2.new(0.03291, 0, 0.41186, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe.Number
+-- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe.TextBox
 G2L["28"] = Instance.new("TextBox", G2L["23"]);
-G2L["28"]["Name"] = [[Number]];
 G2L["28"]["BorderSizePixel"] = 0;
 G2L["28"]["TextSize"] = 41;
 G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
