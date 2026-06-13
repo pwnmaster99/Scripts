@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 90 | Scripts: 27 | Modules: 0 | Tags: 0
+-- Instances: 92 | Scripts: 29 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ohhh, im toolgripping it!
@@ -451,8 +451,9 @@ G2L["27"]["Name"] = [[Description]];
 G2L["27"]["Position"] = UDim2.new(0.03291, 0, 0.41186, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe.TextBox
+-- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe.Number
 G2L["28"] = Instance.new("TextBox", G2L["23"]);
+G2L["28"]["Name"] = [[Number]];
 G2L["28"]["BorderSizePixel"] = 0;
 G2L["28"]["TextSize"] = 41;
 G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
@@ -1019,7 +1020,7 @@ G2L["58"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]]
 G2L["58"]["Size"] = UDim2.new(0, 218, 0, 27);
 G2L["58"]["ClipsDescendants"] = true;
 G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["58"]["Text"] = [[dupe 'em]];
+G2L["58"]["Text"] = [[drop 'em]];
 G2L["58"]["Name"] = [[Start]];
 G2L["58"]["Position"] = UDim2.new(0.07184, 0, 0.76817, 0);
 
@@ -1036,6 +1037,16 @@ G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
 G2L["5a"]["Size"] = UDim2.new(0, 532, 0, 40);
 G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5a"]["Name"] = [[TopBar]];
+
+
+-- StarterGui.ohhh, im toolgripping it!.LocalScript
+G2L["5b"] = Instance.new("LocalScript", G2L["1"]);
+
+
+
+-- StarterGui.ohhh, im toolgripping it!.SimulationRadius
+G2L["5c"] = Instance.new("LocalScript", G2L["1"]);
+G2L["5c"]["Name"] = [[SimulationRadius]];
 
 
 -- StarterGui.ohhh, im toolgripping it!.Scrollup
@@ -1746,48 +1757,21 @@ local function C_2a()
 local script = G2L["2a"];
 	local button = script.Parent
 	local textButton = button:FindFirstChildOfClass("TextButton") or button
-	local Players = game:GetService("Players")
 	
 	textButton.MouseButton1Click:Connect(function()
-		local player = Players.LocalPlayer
-		local character = player.Character or player.CharacterAdded:Wait()
-		local rootPart = character:WaitForChild("HumanoidRootPart")
-		local startCFrame = rootPart.CFrame
+		local player = game.Players.LocalPlayer
+		local startCFrame = player.Character.HumanoidRootPart.CFrame
 	
-		local tname = script.Parent.Parent.TextBox.Text
-		local target = nil
-		for _, p in ipairs(Players:GetPlayers()) do
-			if p ~= player then
-				local nameLower = p.Name:lower()
-				local displayLower = (p.DisplayName or ""):lower()
-				local targetLower = tname:lower()
-				if nameLower:find(targetLower) or displayLower:find(targetLower) then
-					target = p
-					break
-				end
-			end
-		end
-	
-		if not target or not target.Character then return end
-		local targetRoot = target.Character:FindFirstChild("HumanoidRootPart")
-		if not targetRoot then return end
-	
-		local count = tonumber(script.Parent.Parent.Number.Text) or 1
-		local droppedTools = {}
-	
-		for i = 1, count do
+		for i = 1, tonumber(script.Parent.Parent.Number.Text) do
 			local char = player.Character or player.CharacterAdded:Wait()
 			task.wait(0.01)
 			char:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(0, 10000000000, 0)
 			task.wait(0.3)
 	
 			for _, tool in ipairs(player.Backpack:GetChildren()) do
-				if tool:IsA("Tool") and tool:FindFirstChild("Handle") then
-					tool.Parent = char
-					task.wait(0)
-					tool.Parent = workspace
-					table.insert(droppedTools, tool)
-				end
+				tool.Parent = char
+				task.wait(0)
+				tool.Parent = workspace
 			end
 	
 			char:WaitForChild("Humanoid").Health = 0
@@ -1796,69 +1780,26 @@ local script = G2L["2a"];
 	
 		local finalChar = player.Character or player.CharacterAdded:Wait()
 		local finalRoot = finalChar:WaitForChild("HumanoidRootPart")
+	
 		finalRoot.CFrame = startCFrame
+		task.wait(0.5)
+		finalRoot.Anchored = true
+		task.wait(0.1)
 	
-		for _, tool in ipairs(droppedTools) do
-			local handle = tool:FindFirstChild("Handle")
-			if handle and handle:IsA("BasePart") then
-				handle.CanTouch = true
+		for _, tool in ipairs(workspace:GetChildren()) do
+			if tool:IsA("Tool") then
+				for _, desc in ipairs(tool:GetDescendants()) do
+					if desc:IsA("BasePart") then
+						desc.CanCollide = false
+					end
+				end
+				if tool:FindFirstChild("Handle") then
+					tool.Handle.CFrame = finalRoot.CFrame
+				end
 			end
 		end
 	
-		local startTime = os.time()
-	
-		task.spawn(function()
-			while os.time() - startTime < 6 and #droppedTools > 0 and finalChar and finalChar:FindFirstChild("HumanoidRootPart") do
-				local validTools = {}
-				for i = #droppedTools, 1, -1 do
-					local tool = droppedTools[i]
-					if tool.Parent == workspace and tool:FindFirstChild("Handle") then
-						table.insert(validTools, tool)
-					else
-						table.remove(droppedTools, i)
-					end
-				end
-	
-				if #validTools == 0 then break end
-	
-				local myRoot = finalChar.HumanoidRootPart
-				local closestHandle = nil
-				local minDistance = math.huge
-	
-				for _, tool in ipairs(validTools) do
-					local handle = tool.Handle
-					local dist = (myRoot.Position - handle.Position).Magnitude
-					if dist < minDistance then
-						minDistance = dist
-						closestHandle = handle
-					end
-				end
-	
-				if closestHandle then
-					myRoot.CFrame = closestHandle.CFrame
-				end
-				task.wait()
-			end
-	
-			if finalChar and finalChar:FindFirstChild("HumanoidRootPart") then
-				finalChar.HumanoidRootPart.CFrame = startCFrame
-			end
-		end)
-	
-		for _, tool in ipairs(droppedTools) do
-			task.spawn(function()
-				local handle = tool:FindFirstChild("Handle")
-				if handle then
-					while tool.Parent == workspace and os.time() - startTime < 6 and target.Character and target.Character:FindFirstChild("HumanoidRootPart") do
-						local currentRoot = target.Character.HumanoidRootPart
-						firetouchinterest(currentRoot, handle, 0)
-						task.wait()
-						firetouchinterest(currentRoot, handle, 1)
-						task.wait(0.05)
-					end
-				end
-			end)
-		end
+		finalRoot.Anchored = false
 	end)
 	
 end;
@@ -3503,5 +3444,52 @@ local script = G2L["59"];
 	
 end;
 task.spawn(C_59);
+-- StarterGui.ohhh, im toolgripping it!.LocalScript
+local function C_5b()
+local script = G2L["5b"];
+	
+	pcall(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Like this script?"
+			Text = "join discord.gg/dd4XXRMz8b"
+			Duration = 999999999;
+		})
+	end)
+	
+	
+	pcall(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "By urban1"
+			Text = "Toolgrip by urban1"
+			Duration = 999999999;
+		})
+	end)
+	
+	
+end;
+task.spawn(C_5b);
+-- StarterGui.ohhh, im toolgripping it!.SimulationRadius
+local function C_5c()
+local script = G2L["5c"];
+	local Players = game:GetService("Players")
+	local Player = Players.LocalPlayer
+	
+	Player.SimulationRadius = 999999999
+	Player.MaximumSimulationRadius = 999999999
+	
+	
+	pcall(function()
+		setsimulationradius(999999999)
+	end)
+	
+	
+	game:GetService("RunService").Heartbeat:Connect(function()
+		Player.SimulationRadius = 999999999
+		Player.MaximumSimulationRadius = 999999999
+	end)
+	
+	
+end;
+task.spawn(C_5c);
 
 return G2L["1"], require;
