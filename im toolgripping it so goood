@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 92 | Scripts: 29 | Modules: 0 | Tags: 0
+-- Instances: 85 | Scripts: 28 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ohhh, im toolgripping it!
@@ -937,116 +937,23 @@ G2L["52"]["Name"] = [[Title]];
 G2L["52"]["Position"] = UDim2.new(0.06784, 0, 0.13759, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.BGiver
-G2L["53"] = Instance.new("Frame", G2L["6"]);
+-- StarterGui.ohhh, im toolgripping it!.Main.TopBar
+G2L["53"] = Instance.new("Frame", G2L["4"]);
 G2L["53"]["BorderSizePixel"] = 0;
 G2L["53"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["53"]["Size"] = UDim2.new(0, 100, 0, 100);
-G2L["53"]["Position"] = UDim2.new(0.50846, 0, 0.00645, 0);
+G2L["53"]["Size"] = UDim2.new(0, 532, 0, 40);
 G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["53"]["Name"] = [[BGiver]];
-
-
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.BGiver.Title
-G2L["54"] = Instance.new("TextLabel", G2L["53"]);
-G2L["54"]["TextWrapped"] = true;
-G2L["54"]["BorderSizePixel"] = 0;
-G2L["54"]["TextSize"] = 48;
-G2L["54"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["54"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["54"]["BackgroundTransparency"] = 1;
-G2L["54"]["Size"] = UDim2.new(0, 238, 0, 53);
-G2L["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["54"]["Text"] = [[drop your items]];
-G2L["54"]["Name"] = [[Title]];
-G2L["54"]["Position"] = UDim2.new(0.01846, 0, 0.015, 0);
-
-
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.BGiver.Description
-G2L["55"] = Instance.new("TextLabel", G2L["53"]);
-G2L["55"]["TextWrapped"] = true;
-G2L["55"]["BorderSizePixel"] = 0;
-G2L["55"]["TextSize"] = 18;
-G2L["55"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["55"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["55"]["BackgroundTransparency"] = 1;
-G2L["55"]["Size"] = UDim2.new(0, 89, 0, 14);
-G2L["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["55"]["Text"] = [[items MUST:]];
-G2L["55"]["Name"] = [[Description]];
-G2L["55"]["Position"] = UDim2.new(-0.00309, 0, 0.27686, 0);
-
-
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.BGiver.Description
-G2L["56"] = Instance.new("TextLabel", G2L["53"]);
-G2L["56"]["TextWrapped"] = true;
-G2L["56"]["BorderSizePixel"] = 0;
-G2L["56"]["TextSize"] = 18;
-G2L["56"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["56"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["56"]["BackgroundTransparency"] = 1;
-G2L["56"]["Size"] = UDim2.new(0, 89, 0, 14);
-G2L["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["56"]["Text"] = [[be droppable]];
-G2L["56"]["Name"] = [[Description]];
-G2L["56"]["Position"] = UDim2.new(-0.00309, 0, 0.34186, 0);
-
-
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.BGiver.TextBox
-G2L["57"] = Instance.new("TextBox", G2L["53"]);
-G2L["57"]["CursorPosition"] = -1;
-G2L["57"]["BorderSizePixel"] = 0;
-G2L["57"]["TextSize"] = 41;
-G2L["57"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["57"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
-G2L["57"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
-G2L["57"]["ClipsDescendants"] = true;
-G2L["57"]["Size"] = UDim2.new(0, 200, 0, 31);
-G2L["57"]["Position"] = UDim2.new(0.104, 0, 0.59, 0);
-G2L["57"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["57"]["Text"] = [[name]];
-
-
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.BGiver.Start
-G2L["58"] = Instance.new("TextButton", G2L["53"]);
-G2L["58"]["BorderSizePixel"] = 0;
-G2L["58"]["TextSize"] = 38;
-G2L["58"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["58"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
-G2L["58"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
-G2L["58"]["Size"] = UDim2.new(0, 218, 0, 27);
-G2L["58"]["ClipsDescendants"] = true;
-G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["58"]["Text"] = [[drop 'em]];
-G2L["58"]["Name"] = [[Start]];
-G2L["58"]["Position"] = UDim2.new(0.07184, 0, 0.76817, 0);
-
-
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.BGiver.Start.LocalScript
-G2L["59"] = Instance.new("LocalScript", G2L["58"]);
-
-
-
--- StarterGui.ohhh, im toolgripping it!.Main.TopBar
-G2L["5a"] = Instance.new("Frame", G2L["4"]);
-G2L["5a"]["BorderSizePixel"] = 0;
-G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["5a"]["Size"] = UDim2.new(0, 532, 0, 40);
-G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5a"]["Name"] = [[TopBar]];
+G2L["53"]["Name"] = [[TopBar]];
 
 
 -- StarterGui.ohhh, im toolgripping it!.LocalScript
-G2L["5b"] = Instance.new("LocalScript", G2L["1"]);
+G2L["54"] = Instance.new("LocalScript", G2L["1"]);
 
 
 
 -- StarterGui.ohhh, im toolgripping it!.SimulationRadius
-G2L["5c"] = Instance.new("LocalScript", G2L["1"]);
-G2L["5c"]["Name"] = [[SimulationRadius]];
+G2L["55"] = Instance.new("LocalScript", G2L["1"]);
+G2L["55"]["Name"] = [[SimulationRadius]];
 
 
 -- StarterGui.ohhh, im toolgripping it!.Scrollup
@@ -3377,76 +3284,9 @@ local script = G2L["51"];
 	
 end;
 task.spawn(C_51);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.BGiver.Start.LocalScript
-local function C_59()
-local script = G2L["59"];
-	local button = script.Parent
-	local textButton = button:FindFirstChildOfClass("TextButton") or button
-	local Players = game:GetService("Players")
-	
-	textButton.MouseButton1Click:Connect(function()
-		local localPlayer = Players.LocalPlayer
-		local character = localPlayer.Character
-		if not character then return end
-	
-		local tname = script.Parent.Parent.TextBox.Text
-		local target = nil
-		for _, p in ipairs(Players:GetPlayers()) do
-			if p ~= localPlayer then
-				local nameLower = p.Name:lower()
-				local displayLower = (p.DisplayName or ""):lower()
-				local targetLower = tname:lower()
-				if nameLower:find(targetLower) or displayLower:find(targetLower) then
-					target = p
-					break
-				end
-			end
-		end
-	
-		if not target or not target.Character then return end
-		local targetRoot = target.Character:FindFirstChild("HumanoidRootPart")
-		if not targetRoot then return end
-	
-		local droppedTools = {}
-		for _, tool in ipairs(localPlayer.Backpack:GetChildren()) do
-			if tool:IsA("Tool") and tool:FindFirstChild("Handle") then
-				tool.Parent = character
-				task.wait()
-				tool.Parent = workspace
-				table.insert(droppedTools, tool)
-			end
-		end
-	
-		for _, tool in ipairs(character:GetChildren()) do
-			if tool:IsA("Tool") and tool:FindFirstChild("Handle") then
-				tool.Parent = workspace
-				table.insert(droppedTools, tool)
-			end
-		end
-	
-		task.wait(0.1)
-	
-		for _, tool in ipairs(droppedTools) do
-			task.spawn(function()
-				local handle = tool:FindFirstChild("Handle")
-				if handle then
-					while tool.Parent == workspace and target.Character and target.Character:FindFirstChild("HumanoidRootPart") do
-						local currentRoot = target.Character.HumanoidRootPart
-						firetouchinterest(currentRoot, handle, 0)
-						task.wait()
-						firetouchinterest(currentRoot, handle, 1)
-						task.wait(0.05)
-					end
-				end
-			end)
-		end
-	end)
-	
-end;
-task.spawn(C_59);
 -- StarterGui.ohhh, im toolgripping it!.LocalScript
-local function C_5b()
-local script = G2L["5b"];
+local function C_54()
+local script = G2L["54"];
 	pcall(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "Like this script?",
@@ -3464,10 +3304,10 @@ local script = G2L["5b"];
 	end)
 	
 end;
-task.spawn(C_5b);
+task.spawn(C_54);
 -- StarterGui.ohhh, im toolgripping it!.SimulationRadius
-local function C_5c()
-local script = G2L["5c"];
+local function C_55()
+local script = G2L["55"];
 	local Players = game:GetService("Players")
 	local Player = Players.LocalPlayer
 	
@@ -3487,6 +3327,6 @@ local script = G2L["5c"];
 	
 	
 end;
-task.spawn(C_5c);
+task.spawn(C_55);
 
 return G2L["1"], require;
