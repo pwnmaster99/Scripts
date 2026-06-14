@@ -7,27 +7,27 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 85 | Scripts: 28 | Modules: 0 | Tags: 0
+-- Instances: 87 | Scripts: 28 | Modules: 0 | Tags: 0
 local G2L = {};
 
--- StarterGui.ohhh, im toolgripping it!
+-- StarterGui.she grip on my tool till I hub
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-G2L["1"]["Name"] = [[ohhh, im toolgripping it!]];
+G2L["1"]["Name"] = [[she grip on my tool till I hub]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
 
 
--- StarterGui.ohhh, im toolgripping it!.Scrollup
+-- StarterGui.she grip on my tool till I hub.Scrollup
 G2L["2"] = Instance.new("LocalScript", G2L["1"]);
 G2L["2"]["Name"] = [[Scrollup]];
 
 
--- StarterGui.ohhh, im toolgripping it!.list
+-- StarterGui.she grip on my tool till I hub.list
 G2L["3"] = Instance.new("LocalScript", G2L["1"]);
 G2L["3"]["Name"] = [[list]];
 
 
--- StarterGui.ohhh, im toolgripping it!.Main
+-- StarterGui.she grip on my tool till I hub.Main
 G2L["4"] = Instance.new("Frame", G2L["1"]);
 G2L["4"]["BorderSizePixel"] = 0;
 G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -38,16 +38,17 @@ G2L["4"]["Name"] = [[Main]];
 G2L["4"]["BackgroundTransparency"] = 0.9;
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.Smooth GUI Dragging
+-- StarterGui.she grip on my tool till I hub.Main.Smooth GUI Dragging
 G2L["5"] = Instance.new("LocalScript", G2L["4"]);
 G2L["5"]["Name"] = [[Smooth GUI Dragging]];
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain
 G2L["6"] = Instance.new("ScrollingFrame", G2L["4"]);
 G2L["6"]["Active"] = true;
 G2L["6"]["BorderSizePixel"] = 0;
 G2L["6"]["CanvasSize"] = UDim2.new(0, 0, 10, 0);
+G2L["6"]["CanvasPosition"] = Vector2.new(0, 600);
 -- [ERROR] cannot convert TopImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["6"]["TopImage"] = [[]];
 G2L["6"]["Name"] = [[ScrollingMain]];
@@ -63,7 +64,7 @@ G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6"]["ScrollBarThickness"] = 0;
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47
 G2L["7"] = Instance.new("Frame", G2L["6"]);
 G2L["7"]["BorderSizePixel"] = 0;
 G2L["7"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
@@ -73,7 +74,7 @@ G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7"]["Name"] = [[ak47]];
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47.Title
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Title
 G2L["8"] = Instance.new("TextLabel", G2L["7"]);
 G2L["8"]["TextWrapped"] = true;
 G2L["8"]["BorderSizePixel"] = 0;
@@ -89,7 +90,7 @@ G2L["8"]["Name"] = [[Title]];
 G2L["8"]["Position"] = UDim2.new(0.12646, 0, 0.07711, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47.Description
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Description
 G2L["9"] = Instance.new("TextLabel", G2L["7"]);
 G2L["9"]["TextWrapped"] = true;
 G2L["9"]["BorderSizePixel"] = 0;
@@ -105,7 +106,7 @@ G2L["9"]["Name"] = [[Description]];
 G2L["9"]["Position"] = UDim2.new(0.15691, 0, 0.20686, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47.Start
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start
 G2L["a"] = Instance.new("TextButton", G2L["7"]);
 G2L["a"]["BorderSizePixel"] = 0;
 G2L["a"]["TextSize"] = 38;
@@ -120,12 +121,12 @@ G2L["a"]["Name"] = [[Start]];
 G2L["a"]["Position"] = UDim2.new(0.15184, 0, 0.48317, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start.LocalScript
 G2L["b"] = Instance.new("LocalScript", G2L["a"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47.Start (sword)
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (sword)
 G2L["c"] = Instance.new("TextButton", G2L["7"]);
 G2L["c"]["BorderSizePixel"] = 0;
 G2L["c"]["TextSize"] = 38;
@@ -140,12 +141,12 @@ G2L["c"]["Name"] = [[Start (sword)]];
 G2L["c"]["Position"] = UDim2.new(0.15184, 0, 0.63527, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (sword).LocalScript
 G2L["d"] = Instance.new("LocalScript", G2L["c"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47.Start (boombox)
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (boombox)
 G2L["e"] = Instance.new("TextButton", G2L["7"]);
 G2L["e"]["BorderSizePixel"] = 0;
 G2L["e"]["TextSize"] = 38;
@@ -160,12 +161,12 @@ G2L["e"]["Name"] = [[Start (boombox)]];
 G2L["e"]["Position"] = UDim2.new(0.15184, 0, 0.78734, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (boombox).LocalScript
 G2L["f"] = Instance.new("LocalScript", G2L["e"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.friend
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend
 G2L["10"] = Instance.new("Frame", G2L["6"]);
 G2L["10"]["BorderSizePixel"] = 0;
 G2L["10"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
@@ -175,7 +176,7 @@ G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["10"]["Name"] = [[friend]];
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.friend.Title
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Title
 G2L["11"] = Instance.new("TextLabel", G2L["10"]);
 G2L["11"]["TextWrapped"] = true;
 G2L["11"]["BorderSizePixel"] = 0;
@@ -191,7 +192,7 @@ G2L["11"]["Name"] = [[Title]];
 G2L["11"]["Position"] = UDim2.new(0.21383, 0, 0.07711, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.friend.Description
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Description
 G2L["12"] = Instance.new("TextLabel", G2L["10"]);
 G2L["12"]["TextWrapped"] = true;
 G2L["12"]["BorderSizePixel"] = 0;
@@ -207,7 +208,7 @@ G2L["12"]["Name"] = [[Description]];
 G2L["12"]["Position"] = UDim2.new(0.15291, 0, 0.20686, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.friend.Start
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start
 G2L["13"] = Instance.new("TextButton", G2L["10"]);
 G2L["13"]["BorderSizePixel"] = 0;
 G2L["13"]["TextSize"] = 38;
@@ -222,12 +223,12 @@ G2L["13"]["Name"] = [[Start]];
 G2L["13"]["Position"] = UDim2.new(0.14784, 0, 0.48317, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.friend.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start.LocalScript
 G2L["14"] = Instance.new("LocalScript", G2L["13"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.friend.Start (sword)
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (sword)
 G2L["15"] = Instance.new("TextButton", G2L["10"]);
 G2L["15"]["BorderSizePixel"] = 0;
 G2L["15"]["TextSize"] = 38;
@@ -242,12 +243,12 @@ G2L["15"]["Name"] = [[Start (sword)]];
 G2L["15"]["Position"] = UDim2.new(0.14784, 0, 0.63527, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.friend.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (sword).LocalScript
 G2L["16"] = Instance.new("LocalScript", G2L["15"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.friend.Start (boombox)
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (boombox)
 G2L["17"] = Instance.new("TextButton", G2L["10"]);
 G2L["17"]["BorderSizePixel"] = 0;
 G2L["17"]["TextSize"] = 38;
@@ -262,12 +263,12 @@ G2L["17"]["Name"] = [[Start (boombox)]];
 G2L["17"]["Position"] = UDim2.new(0.14784, 0, 0.78734, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.friend.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (boombox).LocalScript
 G2L["18"] = Instance.new("LocalScript", G2L["17"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.RPG
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG
 G2L["19"] = Instance.new("Frame", G2L["6"]);
 G2L["19"]["BorderSizePixel"] = 0;
 G2L["19"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
@@ -277,7 +278,7 @@ G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["19"]["Name"] = [[RPG]];
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.RPG.Title
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Title
 G2L["1a"] = Instance.new("TextLabel", G2L["19"]);
 G2L["1a"]["TextWrapped"] = true;
 G2L["1a"]["BorderSizePixel"] = 0;
@@ -293,7 +294,7 @@ G2L["1a"]["Name"] = [[Title]];
 G2L["1a"]["Position"] = UDim2.new(0.22183, 0, 0.07711, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.RPG.Description
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Description
 G2L["1b"] = Instance.new("TextLabel", G2L["19"]);
 G2L["1b"]["TextWrapped"] = true;
 G2L["1b"]["BorderSizePixel"] = 0;
@@ -309,7 +310,7 @@ G2L["1b"]["Name"] = [[Description]];
 G2L["1b"]["Position"] = UDim2.new(0.16091, 0, 0.20686, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.RPG.Start
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start
 G2L["1c"] = Instance.new("TextButton", G2L["19"]);
 G2L["1c"]["BorderSizePixel"] = 0;
 G2L["1c"]["TextSize"] = 38;
@@ -324,12 +325,12 @@ G2L["1c"]["Name"] = [[Start]];
 G2L["1c"]["Position"] = UDim2.new(0.15584, 0, 0.48317, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.RPG.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start.LocalScript
 G2L["1d"] = Instance.new("LocalScript", G2L["1c"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.RPG.Start (sword)
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start (sword)
 G2L["1e"] = Instance.new("TextButton", G2L["19"]);
 G2L["1e"]["BorderSizePixel"] = 0;
 G2L["1e"]["TextSize"] = 38;
@@ -344,12 +345,12 @@ G2L["1e"]["Name"] = [[Start (sword)]];
 G2L["1e"]["Position"] = UDim2.new(0.15584, 0, 0.63527, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.RPG.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start (sword).LocalScript
 G2L["1f"] = Instance.new("LocalScript", G2L["1e"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.RPG.Start (boombox)
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start (boombox)
 G2L["20"] = Instance.new("TextButton", G2L["19"]);
 G2L["20"]["BorderSizePixel"] = 0;
 G2L["20"]["TextSize"] = 38;
@@ -364,12 +365,12 @@ G2L["20"]["Name"] = [[Start (boombox)]];
 G2L["20"]["Position"] = UDim2.new(0.15584, 0, 0.78734, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.RPG.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start (boombox).LocalScript
 G2L["21"] = Instance.new("LocalScript", G2L["20"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.layout
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.layout
 G2L["22"] = Instance.new("UIGridLayout", G2L["6"]);
 G2L["22"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
 G2L["22"]["CellSize"] = UDim2.new(0, 250, 0, 200);
@@ -377,7 +378,7 @@ G2L["22"]["FillDirectionMaxCells"] = 2;
 G2L["22"]["Name"] = [[layout]];
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe
 G2L["23"] = Instance.new("Frame", G2L["6"]);
 G2L["23"]["BorderSizePixel"] = 0;
 G2L["23"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
@@ -387,7 +388,7 @@ G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["23"]["Name"] = [[ADupe]];
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe.Title
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Title
 G2L["24"] = Instance.new("TextLabel", G2L["23"]);
 G2L["24"]["TextWrapped"] = true;
 G2L["24"]["BorderSizePixel"] = 0;
@@ -403,7 +404,7 @@ G2L["24"]["Name"] = [[Title]];
 G2L["24"]["Position"] = UDim2.new(0.01846, 0, 0.015, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe.Description
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Description
 G2L["25"] = Instance.new("TextLabel", G2L["23"]);
 G2L["25"]["TextWrapped"] = true;
 G2L["25"]["BorderSizePixel"] = 0;
@@ -419,7 +420,7 @@ G2L["25"]["Name"] = [[Description]];
 G2L["25"]["Position"] = UDim2.new(-0.00309, 0, 0.27686, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe.Description
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Description
 G2L["26"] = Instance.new("TextLabel", G2L["23"]);
 G2L["26"]["TextWrapped"] = true;
 G2L["26"]["BorderSizePixel"] = 0;
@@ -435,7 +436,7 @@ G2L["26"]["Name"] = [[Description]];
 G2L["26"]["Position"] = UDim2.new(-0.00309, 0, 0.34186, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe.Description
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Description
 G2L["27"] = Instance.new("TextLabel", G2L["23"]);
 G2L["27"]["TextWrapped"] = true;
 G2L["27"]["BorderSizePixel"] = 0;
@@ -451,7 +452,7 @@ G2L["27"]["Name"] = [[Description]];
 G2L["27"]["Position"] = UDim2.new(0.03291, 0, 0.41186, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe.Number
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Number
 G2L["28"] = Instance.new("TextBox", G2L["23"]);
 G2L["28"]["Name"] = [[Number]];
 G2L["28"]["BorderSizePixel"] = 0;
@@ -466,7 +467,7 @@ G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["28"]["Text"] = [[amount]];
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe.Start
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Start
 G2L["29"] = Instance.new("TextButton", G2L["23"]);
 G2L["29"]["BorderSizePixel"] = 0;
 G2L["29"]["TextSize"] = 38;
@@ -481,12 +482,12 @@ G2L["29"]["Name"] = [[Start]];
 G2L["29"]["Position"] = UDim2.new(0.07184, 0, 0.76817, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Start.LocalScript
 G2L["2a"] = Instance.new("LocalScript", G2L["29"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe.Description
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Description
 G2L["2b"] = Instance.new("TextLabel", G2L["23"]);
 G2L["2b"]["TextWrapped"] = true;
 G2L["2b"]["BorderSizePixel"] = 0;
@@ -502,18 +503,18 @@ G2L["2b"]["Name"] = [[Description]];
 G2L["2b"]["Position"] = UDim2.new(0.32091, 0, 0.51186, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe.Description.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Description.LocalScript
 G2L["2c"] = Instance.new("LocalScript", G2L["2b"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.top spacing
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.top spacing
 G2L["2d"] = Instance.new("UIPadding", G2L["6"]);
 G2L["2d"]["PaddingTop"] = UDim.new(0, 5);
 G2L["2d"]["Name"] = [[top spacing]];
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.handgun
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun
 G2L["2e"] = Instance.new("Frame", G2L["6"]);
 G2L["2e"]["BorderSizePixel"] = 0;
 G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
@@ -523,7 +524,7 @@ G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2e"]["Name"] = [[handgun]];
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.handgun.Title
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun.Title
 G2L["2f"] = Instance.new("TextLabel", G2L["2e"]);
 G2L["2f"]["TextWrapped"] = true;
 G2L["2f"]["BorderSizePixel"] = 0;
@@ -539,7 +540,7 @@ G2L["2f"]["Name"] = [[Title]];
 G2L["2f"]["Position"] = UDim2.new(0.15446, 0, 0.07759, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.handgun.Description
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun.Description
 G2L["30"] = Instance.new("TextLabel", G2L["2e"]);
 G2L["30"]["TextWrapped"] = true;
 G2L["30"]["BorderSizePixel"] = 0;
@@ -555,7 +556,7 @@ G2L["30"]["Name"] = [[Description]];
 G2L["30"]["Position"] = UDim2.new(0.17291, 0, 0.17873, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.handgun.Start
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun.Start
 G2L["31"] = Instance.new("TextButton", G2L["2e"]);
 G2L["31"]["BorderSizePixel"] = 0;
 G2L["31"]["TextSize"] = 38;
@@ -570,12 +571,12 @@ G2L["31"]["Name"] = [[Start]];
 G2L["31"]["Position"] = UDim2.new(0.17184, 0, 0.51317, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.handgun.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun.Start.LocalScript
 G2L["32"] = Instance.new("LocalScript", G2L["31"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.handgun.Start (sword)
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun.Start (sword)
 G2L["33"] = Instance.new("TextButton", G2L["2e"]);
 G2L["33"]["BorderSizePixel"] = 0;
 G2L["33"]["TextSize"] = 38;
@@ -590,12 +591,12 @@ G2L["33"]["Name"] = [[Start (sword)]];
 G2L["33"]["Position"] = UDim2.new(0.17184, 0, 0.66527, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.handgun.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun.Start (sword).LocalScript
 G2L["34"] = Instance.new("LocalScript", G2L["33"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.handgun.Start (boombox)
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun.Start (boombox)
 G2L["35"] = Instance.new("TextButton", G2L["2e"]);
 G2L["35"]["BorderSizePixel"] = 0;
 G2L["35"]["TextSize"] = 38;
@@ -610,12 +611,12 @@ G2L["35"]["Name"] = [[Start (boombox)]];
 G2L["35"]["Position"] = UDim2.new(0.17184, 0, 0.81734, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.handgun.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun.Start (boombox).LocalScript
 G2L["36"] = Instance.new("LocalScript", G2L["35"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47 v2
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2
 G2L["37"] = Instance.new("Frame", G2L["6"]);
 G2L["37"]["BorderSizePixel"] = 0;
 G2L["37"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
@@ -625,7 +626,7 @@ G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["37"]["Name"] = [[ak47 v2]];
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47 v2.Title
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2.Title
 G2L["38"] = Instance.new("TextLabel", G2L["37"]);
 G2L["38"]["TextWrapped"] = true;
 G2L["38"]["BorderSizePixel"] = 0;
@@ -641,7 +642,7 @@ G2L["38"]["Name"] = [[Title]];
 G2L["38"]["Position"] = UDim2.new(0.15446, 0, 0.07759, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47 v2.Description
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2.Description
 G2L["39"] = Instance.new("TextLabel", G2L["37"]);
 G2L["39"]["TextWrapped"] = true;
 G2L["39"]["BorderSizePixel"] = 0;
@@ -657,7 +658,7 @@ G2L["39"]["Name"] = [[Description]];
 G2L["39"]["Position"] = UDim2.new(0.17291, 0, 0.17873, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47 v2.Start
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2.Start
 G2L["3a"] = Instance.new("TextButton", G2L["37"]);
 G2L["3a"]["BorderSizePixel"] = 0;
 G2L["3a"]["TextSize"] = 38;
@@ -672,12 +673,12 @@ G2L["3a"]["Name"] = [[Start]];
 G2L["3a"]["Position"] = UDim2.new(0.17184, 0, 0.51317, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47 v2.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2.Start.LocalScript
 G2L["3b"] = Instance.new("LocalScript", G2L["3a"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47 v2.Start (sword)
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2.Start (sword)
 G2L["3c"] = Instance.new("TextButton", G2L["37"]);
 G2L["3c"]["BorderSizePixel"] = 0;
 G2L["3c"]["TextSize"] = 38;
@@ -692,12 +693,12 @@ G2L["3c"]["Name"] = [[Start (sword)]];
 G2L["3c"]["Position"] = UDim2.new(0.17184, 0, 0.66527, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47 v2.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2.Start (sword).LocalScript
 G2L["3d"] = Instance.new("LocalScript", G2L["3c"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47 v2.Start (boombox)
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2.Start (boombox)
 G2L["3e"] = Instance.new("TextButton", G2L["37"]);
 G2L["3e"]["BorderSizePixel"] = 0;
 G2L["3e"]["TextSize"] = 38;
@@ -712,12 +713,12 @@ G2L["3e"]["Name"] = [[Start (boombox)]];
 G2L["3e"]["Position"] = UDim2.new(0.17184, 0, 0.81734, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47 v2.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2.Start (boombox).LocalScript
 G2L["3f"] = Instance.new("LocalScript", G2L["3e"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.sphere dynamic
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic
 G2L["40"] = Instance.new("Frame", G2L["6"]);
 G2L["40"]["BorderSizePixel"] = 0;
 G2L["40"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
@@ -727,7 +728,7 @@ G2L["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["40"]["Name"] = [[sphere dynamic]];
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.sphere dynamic.Title
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic.Title
 G2L["41"] = Instance.new("TextLabel", G2L["40"]);
 G2L["41"]["TextWrapped"] = true;
 G2L["41"]["BorderSizePixel"] = 0;
@@ -743,7 +744,7 @@ G2L["41"]["Name"] = [[Title]];
 G2L["41"]["Position"] = UDim2.new(0.05446, 0, 0.09211, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.sphere dynamic.Description
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic.Description
 G2L["42"] = Instance.new("TextLabel", G2L["40"]);
 G2L["42"]["TextWrapped"] = true;
 G2L["42"]["BorderSizePixel"] = 0;
@@ -759,7 +760,7 @@ G2L["42"]["Name"] = [[Description]];
 G2L["42"]["Position"] = UDim2.new(0.15291, 0, 0.19686, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.sphere dynamic.Start
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic.Start
 G2L["43"] = Instance.new("TextButton", G2L["40"]);
 G2L["43"]["BorderSizePixel"] = 0;
 G2L["43"]["TextSize"] = 38;
@@ -774,12 +775,12 @@ G2L["43"]["Name"] = [[Start]];
 G2L["43"]["Position"] = UDim2.new(0.15184, 0, 0.48317, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.sphere dynamic.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic.Start.LocalScript
 G2L["44"] = Instance.new("LocalScript", G2L["43"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.sphere dynamic.Start (sword)
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic.Start (sword)
 G2L["45"] = Instance.new("TextButton", G2L["40"]);
 G2L["45"]["BorderSizePixel"] = 0;
 G2L["45"]["TextSize"] = 38;
@@ -794,12 +795,12 @@ G2L["45"]["Name"] = [[Start (sword)]];
 G2L["45"]["Position"] = UDim2.new(0.15184, 0, 0.63527, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.sphere dynamic.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic.Start (sword).LocalScript
 G2L["46"] = Instance.new("LocalScript", G2L["45"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.sphere dynamic.Start (boombox)
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic.Start (boombox)
 G2L["47"] = Instance.new("TextButton", G2L["40"]);
 G2L["47"]["BorderSizePixel"] = 0;
 G2L["47"]["TextSize"] = 38;
@@ -814,12 +815,12 @@ G2L["47"]["Name"] = [[Start (boombox)]];
 G2L["47"]["Position"] = UDim2.new(0.15184, 0, 0.78734, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.sphere dynamic.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic.Start (boombox).LocalScript
 G2L["48"] = Instance.new("LocalScript", G2L["47"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.big fucking gun
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun
 G2L["49"] = Instance.new("Frame", G2L["6"]);
 G2L["49"]["BorderSizePixel"] = 0;
 G2L["49"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
@@ -829,7 +830,7 @@ G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["49"]["Name"] = [[big fucking gun]];
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.big fucking gun.Title
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Title
 G2L["4a"] = Instance.new("TextLabel", G2L["49"]);
 G2L["4a"]["TextWrapped"] = true;
 G2L["4a"]["BorderSizePixel"] = 0;
@@ -845,7 +846,7 @@ G2L["4a"]["Name"] = [[Title]];
 G2L["4a"]["Position"] = UDim2.new(0.07184, 0, -0.00241, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.big fucking gun.Description
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Description
 G2L["4b"] = Instance.new("TextLabel", G2L["49"]);
 G2L["4b"]["TextWrapped"] = true;
 G2L["4b"]["BorderSizePixel"] = 0;
@@ -861,7 +862,7 @@ G2L["4b"]["Name"] = [[Description]];
 G2L["4b"]["Position"] = UDim2.new(0.17291, 0, 0.28373, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.big fucking gun.Start
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Start
 G2L["4c"] = Instance.new("TextButton", G2L["49"]);
 G2L["4c"]["BorderSizePixel"] = 0;
 G2L["4c"]["TextSize"] = 38;
@@ -876,12 +877,12 @@ G2L["4c"]["Name"] = [[Start]];
 G2L["4c"]["Position"] = UDim2.new(0.17184, 0, 0.51317, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.big fucking gun.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Start.LocalScript
 G2L["4d"] = Instance.new("LocalScript", G2L["4c"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.big fucking gun.Start (sword)
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Start (sword)
 G2L["4e"] = Instance.new("TextButton", G2L["49"]);
 G2L["4e"]["BorderSizePixel"] = 0;
 G2L["4e"]["TextSize"] = 38;
@@ -896,12 +897,12 @@ G2L["4e"]["Name"] = [[Start (sword)]];
 G2L["4e"]["Position"] = UDim2.new(0.17184, 0, 0.66527, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.big fucking gun.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Start (sword).LocalScript
 G2L["4f"] = Instance.new("LocalScript", G2L["4e"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.big fucking gun.Start (boombox)
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Start (boombox)
 G2L["50"] = Instance.new("TextButton", G2L["49"]);
 G2L["50"]["BorderSizePixel"] = 0;
 G2L["50"]["TextSize"] = 38;
@@ -916,12 +917,12 @@ G2L["50"]["Name"] = [[Start (boombox)]];
 G2L["50"]["Position"] = UDim2.new(0.17184, 0, 0.81734, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.big fucking gun.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Start (boombox).LocalScript
 G2L["51"] = Instance.new("LocalScript", G2L["50"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.big fucking gun.Title
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Title
 G2L["52"] = Instance.new("TextLabel", G2L["49"]);
 G2L["52"]["TextWrapped"] = true;
 G2L["52"]["BorderSizePixel"] = 0;
@@ -937,7 +938,7 @@ G2L["52"]["Name"] = [[Title]];
 G2L["52"]["Position"] = UDim2.new(0.06784, 0, 0.13759, 0);
 
 
--- StarterGui.ohhh, im toolgripping it!.Main.TopBar
+-- StarterGui.she grip on my tool till I hub.Main.TopBar
 G2L["53"] = Instance.new("Frame", G2L["4"]);
 G2L["53"]["BorderSizePixel"] = 0;
 G2L["53"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
@@ -946,17 +947,46 @@ G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["53"]["Name"] = [[TopBar]];
 
 
--- StarterGui.ohhh, im toolgripping it!.LocalScript
-G2L["54"] = Instance.new("LocalScript", G2L["1"]);
+-- StarterGui.she grip on my tool till I hub.Main.TopBar.TextLabel
+G2L["54"] = Instance.new("TextLabel", G2L["53"]);
+G2L["54"]["BorderSizePixel"] = 0;
+G2L["54"]["TextSize"] = 34;
+G2L["54"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["54"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["54"]["BackgroundTransparency"] = 1;
+G2L["54"]["Size"] = UDim2.new(0, 268, 0, 40);
+G2L["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["54"]["Text"] = [[she grip on my tool till I hub]];
+G2L["54"]["Position"] = UDim2.new(0.01692, 0, 0, 0);
+
+
+-- StarterGui.she grip on my tool till I hub.Main.TopBar.TextLabel
+G2L["55"] = Instance.new("TextLabel", G2L["53"]);
+G2L["55"]["TextWrapped"] = true;
+G2L["55"]["BorderSizePixel"] = 0;
+G2L["55"]["TextSize"] = 28;
+G2L["55"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["55"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["55"]["BackgroundTransparency"] = 1;
+G2L["55"]["Size"] = UDim2.new(0, 70, 0, 21);
+G2L["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["55"]["Text"] = [[???]];
+G2L["55"]["Position"] = UDim2.new(0.86842, 0, 0.475, 0);
+
+
+-- StarterGui.she grip on my tool till I hub.LocalScript
+G2L["56"] = Instance.new("LocalScript", G2L["1"]);
 
 
 
--- StarterGui.ohhh, im toolgripping it!.SimulationRadius
-G2L["55"] = Instance.new("LocalScript", G2L["1"]);
-G2L["55"]["Name"] = [[SimulationRadius]];
+-- StarterGui.she grip on my tool till I hub.SimulationRadius
+G2L["57"] = Instance.new("LocalScript", G2L["1"]);
+G2L["57"]["Name"] = [[SimulationRadius]];
 
 
--- StarterGui.ohhh, im toolgripping it!.Scrollup
+-- StarterGui.she grip on my tool till I hub.Scrollup
 local function C_2()
 local script = G2L["2"];
 	for _, v in ipairs(script.Parent:GetDescendants()) do
@@ -966,7 +996,7 @@ local script = G2L["2"];
 	end
 end;
 task.spawn(C_2);
--- StarterGui.ohhh, im toolgripping it!.list
+-- StarterGui.she grip on my tool till I hub.list
 local function C_3()
 local script = G2L["3"];
 	-- blacklist
@@ -987,7 +1017,7 @@ local script = G2L["3"];
 	end
 end;
 task.spawn(C_3);
--- StarterGui.ohhh, im toolgripping it!.Main.Smooth GUI Dragging
+-- StarterGui.she grip on my tool till I hub.Main.Smooth GUI Dragging
 local function C_5()
 local script = G2L["5"];
 	local UserInputService = game:GetService("UserInputService")
@@ -1046,7 +1076,7 @@ local script = G2L["5"];
 	
 end;
 task.spawn(C_5);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start.LocalScript
 local function C_b()
 local script = G2L["b"];
 	local button = script.Parent
@@ -1117,7 +1147,7 @@ local script = G2L["b"];
 	end)
 end;
 task.spawn(C_b);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (sword).LocalScript
 local function C_d()
 local script = G2L["d"];
 	
@@ -1182,7 +1212,7 @@ local script = G2L["d"];
 	
 end;
 task.spawn(C_d);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (boombox).LocalScript
 local function C_f()
 local script = G2L["f"];
 	
@@ -1250,7 +1280,7 @@ local script = G2L["f"];
 	
 end;
 task.spawn(C_f);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.friend.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start.LocalScript
 local function C_14()
 local script = G2L["14"];
 	
@@ -1347,7 +1377,7 @@ local script = G2L["14"];
 	
 end;
 task.spawn(C_14);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.friend.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (sword).LocalScript
 local function C_16()
 local script = G2L["16"];
 	
@@ -1410,7 +1440,7 @@ local script = G2L["16"];
 	
 end;
 task.spawn(C_16);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.friend.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (boombox).LocalScript
 local function C_18()
 local script = G2L["18"];
 	
@@ -1469,7 +1499,7 @@ local script = G2L["18"];
 	
 end;
 task.spawn(C_18);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.RPG.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start.LocalScript
 local function C_1d()
 local script = G2L["1d"];
 	local button = script.Parent
@@ -1534,7 +1564,7 @@ local script = G2L["1d"];
 	
 end;
 task.spawn(C_1d);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.RPG.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start (sword).LocalScript
 local function C_1f()
 local script = G2L["1f"];
 	
@@ -1603,7 +1633,7 @@ local script = G2L["1f"];
 	
 end;
 task.spawn(C_1f);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.RPG.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start (boombox).LocalScript
 local function C_21()
 local script = G2L["21"];
 	
@@ -1659,7 +1689,7 @@ local script = G2L["21"];
 	
 end;
 task.spawn(C_21);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Start.LocalScript
 local function C_2a()
 local script = G2L["2a"];
 	local button = script.Parent
@@ -1711,7 +1741,7 @@ local script = G2L["2a"];
 	
 end;
 task.spawn(C_2a);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ADupe.Description.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Description.LocalScript
 local function C_2c()
 local script = G2L["2c"];
 	local label = script.Parent
@@ -1736,7 +1766,7 @@ local script = G2L["2c"];
 	
 end;
 task.spawn(C_2c);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.handgun.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun.Start.LocalScript
 local function C_32()
 local script = G2L["32"];
 	
@@ -1795,7 +1825,7 @@ local script = G2L["32"];
 	
 end;
 task.spawn(C_32);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.handgun.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun.Start (sword).LocalScript
 local function C_34()
 local script = G2L["34"];
 	
@@ -1866,7 +1896,7 @@ local script = G2L["34"];
 	
 end;
 task.spawn(C_34);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.handgun.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun.Start (boombox).LocalScript
 local function C_36()
 local script = G2L["36"];
 	
@@ -1921,7 +1951,7 @@ local script = G2L["36"];
 	
 end;
 task.spawn(C_36);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47 v2.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2.Start.LocalScript
 local function C_3b()
 local script = G2L["3b"];
 	
@@ -1993,7 +2023,7 @@ local script = G2L["3b"];
 	
 end;
 task.spawn(C_3b);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47 v2.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2.Start (sword).LocalScript
 local function C_3d()
 local script = G2L["3d"];
 	
@@ -2076,7 +2106,7 @@ local script = G2L["3d"];
 	
 end;
 task.spawn(C_3d);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.ak47 v2.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2.Start (boombox).LocalScript
 local function C_3f()
 local script = G2L["3f"];
 	
@@ -2129,7 +2159,7 @@ local script = G2L["3f"];
 	
 end;
 task.spawn(C_3f);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.sphere dynamic.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic.Start.LocalScript
 local function C_44()
 local script = G2L["44"];
 	local button = script.Parent
@@ -2193,7 +2223,7 @@ local script = G2L["44"];
 	
 end;
 task.spawn(C_44);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.sphere dynamic.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic.Start (sword).LocalScript
 local function C_46()
 local script = G2L["46"];
 	local button = script.Parent
@@ -2257,7 +2287,7 @@ local script = G2L["46"];
 	
 end;
 task.spawn(C_46);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.sphere dynamic.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic.Start (boombox).LocalScript
 local function C_48()
 local script = G2L["48"];
 	local button = script.Parent
@@ -2321,7 +2351,7 @@ local script = G2L["48"];
 	
 end;
 task.spawn(C_48);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.big fucking gun.Start.LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Start.LocalScript
 local function C_4d()
 local script = G2L["4d"];
 	
@@ -2725,7 +2755,7 @@ local script = G2L["4d"];
 	
 end;
 task.spawn(C_4d);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.big fucking gun.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Start (sword).LocalScript
 local function C_4f()
 local script = G2L["4f"];
 	
@@ -3142,7 +3172,7 @@ local script = G2L["4f"];
 	
 end;
 task.spawn(C_4f);
--- StarterGui.ohhh, im toolgripping it!.Main.ScrollingMain.big fucking gun.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Start (boombox).LocalScript
 local function C_51()
 local script = G2L["51"];
 	
@@ -3284,9 +3314,9 @@ local script = G2L["51"];
 	
 end;
 task.spawn(C_51);
--- StarterGui.ohhh, im toolgripping it!.LocalScript
-local function C_54()
-local script = G2L["54"];
+-- StarterGui.she grip on my tool till I hub.LocalScript
+local function C_56()
+local script = G2L["56"];
 	pcall(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "Like this script?",
@@ -3304,10 +3334,10 @@ local script = G2L["54"];
 	end)
 	
 end;
-task.spawn(C_54);
--- StarterGui.ohhh, im toolgripping it!.SimulationRadius
-local function C_55()
-local script = G2L["55"];
+task.spawn(C_56);
+-- StarterGui.she grip on my tool till I hub.SimulationRadius
+local function C_57()
+local script = G2L["57"];
 	local Players = game:GetService("Players")
 	local Player = Players.LocalPlayer
 	
@@ -3327,6 +3357,6 @@ local script = G2L["55"];
 	
 	
 end;
-task.spawn(C_55);
+task.spawn(C_57);
 
 return G2L["1"], require;
