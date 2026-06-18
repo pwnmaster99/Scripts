@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 87 | Scripts: 28 | Modules: 0 | Tags: 0
+-- Instances: 88 | Scripts: 29 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.she grip on my tool till I hub
@@ -27,320 +27,323 @@ G2L["3"] = Instance.new("LocalScript", G2L["1"]);
 G2L["3"]["Name"] = [[list]];
 
 
+-- StarterGui.she grip on my tool till I hub.LocalScript
+G2L["4"] = Instance.new("LocalScript", G2L["1"]);
+
+
+
+-- StarterGui.she grip on my tool till I hub.SimulationRadius
+G2L["5"] = Instance.new("LocalScript", G2L["1"]);
+G2L["5"]["Name"] = [[SimulationRadius]];
+
+
 -- StarterGui.she grip on my tool till I hub.Main
-G2L["4"] = Instance.new("Frame", G2L["1"]);
-G2L["4"]["BorderSizePixel"] = 0;
-G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4"]["Size"] = UDim2.new(0, 532, 0, 310);
-G2L["4"]["Position"] = UDim2.new(0.04968, 0, 0.07314, 0);
-G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4"]["Name"] = [[Main]];
-G2L["4"]["BackgroundTransparency"] = 0.9;
+G2L["6"] = Instance.new("Frame", G2L["1"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["Size"] = UDim2.new(0, 532, 0, 310);
+G2L["6"]["Position"] = UDim2.new(0.04968, 0, 0.07314, 0);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Name"] = [[Main]];
+G2L["6"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.she grip on my tool till I hub.Main.Smooth GUI Dragging
-G2L["5"] = Instance.new("LocalScript", G2L["4"]);
-G2L["5"]["Name"] = [[Smooth GUI Dragging]];
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+G2L["7"]["Name"] = [[Smooth GUI Dragging]];
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain
-G2L["6"] = Instance.new("ScrollingFrame", G2L["4"]);
-G2L["6"]["Active"] = true;
-G2L["6"]["BorderSizePixel"] = 0;
-G2L["6"]["CanvasSize"] = UDim2.new(0, 0, 10, 0);
-G2L["6"]["CanvasPosition"] = Vector2.new(0, 600);
+G2L["8"] = Instance.new("ScrollingFrame", G2L["6"]);
+G2L["8"]["Active"] = true;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["CanvasSize"] = UDim2.new(0, 0, 2.665, 0);
 -- [ERROR] cannot convert TopImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["6"]["TopImage"] = [[]];
-G2L["6"]["Name"] = [[ScrollingMain]];
-G2L["6"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
-G2L["6"]["MidImage"] = [[]];
+G2L["8"]["TopImage"] = [[]];
+G2L["8"]["Name"] = [[ScrollingMain]];
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["8"]["MidImage"] = [[]];
 -- [ERROR] cannot convert MidImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 -- [ERROR] cannot convert BottomImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["6"]["BottomImage"] = [[]];
-G2L["6"]["Size"] = UDim2.new(0, 532, 0, 269);
-G2L["6"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6"]["Position"] = UDim2.new(0, 0, 0.12903, 0);
-G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6"]["ScrollBarThickness"] = 0;
+G2L["8"]["BottomImage"] = [[]];
+G2L["8"]["Size"] = UDim2.new(0, 532, 0, 269);
+G2L["8"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Position"] = UDim2.new(0, 0, 0.12903, 0);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["ScrollBarThickness"] = 5;
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47
-G2L["7"] = Instance.new("Frame", G2L["6"]);
-G2L["7"]["BorderSizePixel"] = 0;
-G2L["7"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["7"]["Size"] = UDim2.new(0, 197, 0, 217);
-G2L["7"]["Position"] = UDim2.new(0.5, 0, 0.03, 0);
-G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Name"] = [[ak47]];
+G2L["9"] = Instance.new("Frame", G2L["8"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["9"]["Size"] = UDim2.new(0, 197, 0, 217);
+G2L["9"]["Position"] = UDim2.new(0.5, 0, 0.03, 0);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Name"] = [[ak47]];
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Title
-G2L["8"] = Instance.new("TextLabel", G2L["7"]);
-G2L["8"]["TextWrapped"] = true;
-G2L["8"]["BorderSizePixel"] = 0;
-G2L["8"]["TextSize"] = 48;
-G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8"]["BackgroundTransparency"] = 1;
-G2L["8"]["Size"] = UDim2.new(0, 185, 0, 29);
-G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["Text"] = [[ak47 (28)]];
-G2L["8"]["Name"] = [[Title]];
-G2L["8"]["Position"] = UDim2.new(0.12646, 0, 0.07711, 0);
+G2L["a"] = Instance.new("TextLabel", G2L["9"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextSize"] = 48;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["BackgroundTransparency"] = 1;
+G2L["a"]["Size"] = UDim2.new(0, 185, 0, 29);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[ak47]];
+G2L["a"]["Name"] = [[Title]];
+G2L["a"]["Position"] = UDim2.new(0.12646, 0, 0.07711, 0);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Description
-G2L["9"] = Instance.new("TextLabel", G2L["7"]);
-G2L["9"]["TextWrapped"] = true;
-G2L["9"]["BorderSizePixel"] = 0;
-G2L["9"]["TextSize"] = 18;
-G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9"]["BackgroundTransparency"] = 1;
-G2L["9"]["Size"] = UDim2.new(0, 173, 0, 39);
-G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9"]["Text"] = [[russia]];
-G2L["9"]["Name"] = [[Description]];
-G2L["9"]["Position"] = UDim2.new(0.15691, 0, 0.20686, 0);
+G2L["b"] = Instance.new("TextLabel", G2L["9"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 18;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["BackgroundTransparency"] = 1;
+G2L["b"]["Size"] = UDim2.new(0, 173, 0, 39);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[russia]];
+G2L["b"]["Name"] = [[Description]];
+G2L["b"]["Position"] = UDim2.new(0.15691, 0, 0.20686, 0);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start
-G2L["a"] = Instance.new("TextButton", G2L["7"]);
-G2L["a"]["BorderSizePixel"] = 0;
-G2L["a"]["TextSize"] = 38;
-G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
-G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
-G2L["a"]["Size"] = UDim2.new(0, 174, 0, 27);
-G2L["a"]["ClipsDescendants"] = true;
-G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["Text"] = [[Start]];
-G2L["a"]["Name"] = [[Start]];
-G2L["a"]["Position"] = UDim2.new(0.15184, 0, 0.48317, 0);
-
-
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start.LocalScript
-G2L["b"] = Instance.new("LocalScript", G2L["a"]);
-
-
-
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (sword)
-G2L["c"] = Instance.new("TextButton", G2L["7"]);
+G2L["c"] = Instance.new("TextButton", G2L["9"]);
+G2L["c"]["TextWrapped"] = true;
 G2L["c"]["BorderSizePixel"] = 0;
 G2L["c"]["TextSize"] = 38;
+G2L["c"]["TextScaled"] = true;
 G2L["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["c"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 G2L["c"]["Size"] = UDim2.new(0, 174, 0, 27);
 G2L["c"]["ClipsDescendants"] = true;
 G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c"]["Text"] = [[Start (sword)]];
-G2L["c"]["Name"] = [[Start (sword)]];
-G2L["c"]["Position"] = UDim2.new(0.15184, 0, 0.63527, 0);
+G2L["c"]["Text"] = [[Start (28)]];
+G2L["c"]["Name"] = [[Start]];
+G2L["c"]["Position"] = UDim2.new(0.15184, 0, 0.48317, 0);
 
 
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start.LocalScript
 G2L["d"] = Instance.new("LocalScript", G2L["c"]);
 
 
 
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (boombox)
-G2L["e"] = Instance.new("TextButton", G2L["7"]);
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (sword)
+G2L["e"] = Instance.new("TextButton", G2L["9"]);
+G2L["e"]["TextWrapped"] = true;
 G2L["e"]["BorderSizePixel"] = 0;
 G2L["e"]["TextSize"] = 38;
+G2L["e"]["TextScaled"] = true;
 G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["e"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 G2L["e"]["Size"] = UDim2.new(0, 174, 0, 27);
 G2L["e"]["ClipsDescendants"] = true;
 G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e"]["Text"] = [[Start (boombox)]];
-G2L["e"]["Name"] = [[Start (boombox)]];
-G2L["e"]["Position"] = UDim2.new(0.15184, 0, 0.78734, 0);
+G2L["e"]["Text"] = [[Start (sword) (19)]];
+G2L["e"]["Name"] = [[Start (sword)]];
+G2L["e"]["Position"] = UDim2.new(0.15184, 0, 0.63527, 0);
 
 
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (sword).LocalScript
 G2L["f"] = Instance.new("LocalScript", G2L["e"]);
 
 
 
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend
-G2L["10"] = Instance.new("Frame", G2L["6"]);
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (boombox)
+G2L["10"] = Instance.new("TextButton", G2L["9"]);
+G2L["10"]["TextWrapped"] = true;
 G2L["10"]["BorderSizePixel"] = 0;
-G2L["10"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["10"]["Size"] = UDim2.new(0, 197, 0, 217);
-G2L["10"]["Position"] = UDim2.new(0.11466, 0, 0.13774, 0);
+G2L["10"]["TextSize"] = 38;
+G2L["10"]["TextScaled"] = true;
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["10"]["Size"] = UDim2.new(0, 174, 0, 27);
+G2L["10"]["ClipsDescendants"] = true;
 G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10"]["Name"] = [[friend]];
+G2L["10"]["Text"] = [[Start (boombox) (23)]];
+G2L["10"]["Name"] = [[Start (boombox)]];
+G2L["10"]["Position"] = UDim2.new(0.15184, 0, 0.78734, 0);
+
+
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (boombox).LocalScript
+G2L["11"] = Instance.new("LocalScript", G2L["10"]);
+
+
+
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend
+G2L["12"] = Instance.new("Frame", G2L["8"]);
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["12"]["Size"] = UDim2.new(0, 197, 0, 217);
+G2L["12"]["Position"] = UDim2.new(0.11466, 0, 0.13774, 0);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Name"] = [[friend]];
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Title
-G2L["11"] = Instance.new("TextLabel", G2L["10"]);
-G2L["11"]["TextWrapped"] = true;
-G2L["11"]["BorderSizePixel"] = 0;
-G2L["11"]["TextSize"] = 48;
-G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["BackgroundTransparency"] = 1;
-G2L["11"]["Size"] = UDim2.new(0, 148, 0, 29);
-G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["Text"] = [[friend (52)]];
-G2L["11"]["Name"] = [[Title]];
-G2L["11"]["Position"] = UDim2.new(0.21383, 0, 0.07711, 0);
+G2L["13"] = Instance.new("TextLabel", G2L["12"]);
+G2L["13"]["TextWrapped"] = true;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextSize"] = 48;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["BackgroundTransparency"] = 1;
+G2L["13"]["Size"] = UDim2.new(0, 148, 0, 29);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[friend]];
+G2L["13"]["Name"] = [[Title]];
+G2L["13"]["Position"] = UDim2.new(0.21383, 0, 0.07711, 0);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Description
-G2L["12"] = Instance.new("TextLabel", G2L["10"]);
-G2L["12"]["TextWrapped"] = true;
-G2L["12"]["BorderSizePixel"] = 0;
-G2L["12"]["TextSize"] = 18;
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12"]["BackgroundTransparency"] = 1;
-G2L["12"]["Size"] = UDim2.new(0, 173, 0, 39);
-G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Text"] = [[the stand user could be anyone]];
-G2L["12"]["Name"] = [[Description]];
-G2L["12"]["Position"] = UDim2.new(0.15291, 0, 0.20686, 0);
+G2L["14"] = Instance.new("TextLabel", G2L["12"]);
+G2L["14"]["TextWrapped"] = true;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextSize"] = 18;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["BackgroundTransparency"] = 1;
+G2L["14"]["Size"] = UDim2.new(0, 173, 0, 39);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[the stand user could be anyone]];
+G2L["14"]["Name"] = [[Description]];
+G2L["14"]["Position"] = UDim2.new(0.15291, 0, 0.20686, 0);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start
-G2L["13"] = Instance.new("TextButton", G2L["10"]);
-G2L["13"]["BorderSizePixel"] = 0;
-G2L["13"]["TextSize"] = 38;
-G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
-G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
-G2L["13"]["Size"] = UDim2.new(0, 174, 0, 27);
-G2L["13"]["ClipsDescendants"] = true;
-G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13"]["Text"] = [[Start]];
-G2L["13"]["Name"] = [[Start]];
-G2L["13"]["Position"] = UDim2.new(0.14784, 0, 0.48317, 0);
-
-
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start.LocalScript
-G2L["14"] = Instance.new("LocalScript", G2L["13"]);
-
-
-
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (sword)
-G2L["15"] = Instance.new("TextButton", G2L["10"]);
+G2L["15"] = Instance.new("TextButton", G2L["12"]);
+G2L["15"]["TextWrapped"] = true;
 G2L["15"]["BorderSizePixel"] = 0;
 G2L["15"]["TextSize"] = 38;
+G2L["15"]["TextScaled"] = true;
 G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["15"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 G2L["15"]["Size"] = UDim2.new(0, 174, 0, 27);
 G2L["15"]["ClipsDescendants"] = true;
 G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15"]["Text"] = [[Start (sword)]];
-G2L["15"]["Name"] = [[Start (sword)]];
-G2L["15"]["Position"] = UDim2.new(0.14784, 0, 0.63527, 0);
+G2L["15"]["Text"] = [[Start (52)]];
+G2L["15"]["Name"] = [[Start]];
+G2L["15"]["Position"] = UDim2.new(0.14784, 0, 0.48317, 0);
 
 
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (sword).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start.LocalScript
 G2L["16"] = Instance.new("LocalScript", G2L["15"]);
 
 
 
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (boombox)
-G2L["17"] = Instance.new("TextButton", G2L["10"]);
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (sword)
+G2L["17"] = Instance.new("TextButton", G2L["12"]);
+G2L["17"]["TextWrapped"] = true;
 G2L["17"]["BorderSizePixel"] = 0;
 G2L["17"]["TextSize"] = 38;
+G2L["17"]["TextScaled"] = true;
 G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["17"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 G2L["17"]["Size"] = UDim2.new(0, 174, 0, 27);
 G2L["17"]["ClipsDescendants"] = true;
 G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17"]["Text"] = [[Start (boombox)]];
-G2L["17"]["Name"] = [[Start (boombox)]];
-G2L["17"]["Position"] = UDim2.new(0.14784, 0, 0.78734, 0);
+G2L["17"]["Text"] = [[Start (sword) (18)]];
+G2L["17"]["Name"] = [[Start (sword)]];
+G2L["17"]["Position"] = UDim2.new(0.14784, 0, 0.63527, 0);
 
 
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (boombox).LocalScript
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (sword).LocalScript
 G2L["18"] = Instance.new("LocalScript", G2L["17"]);
 
 
 
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG
-G2L["19"] = Instance.new("Frame", G2L["6"]);
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (boombox)
+G2L["19"] = Instance.new("TextButton", G2L["12"]);
+G2L["19"]["TextWrapped"] = true;
 G2L["19"]["BorderSizePixel"] = 0;
-G2L["19"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["19"]["Size"] = UDim2.new(0, 197, 0, 217);
-G2L["19"]["Position"] = UDim2.new(0.115, 0, 0.1025, 0);
+G2L["19"]["TextSize"] = 38;
+G2L["19"]["TextScaled"] = true;
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["19"]["Size"] = UDim2.new(0, 174, 0, 27);
+G2L["19"]["ClipsDescendants"] = true;
 G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["Name"] = [[RPG]];
+G2L["19"]["Text"] = [[Start (boombox) (14)]];
+G2L["19"]["Name"] = [[Start (boombox)]];
+G2L["19"]["Position"] = UDim2.new(0.14784, 0, 0.78734, 0);
+
+
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (boombox).LocalScript
+G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
+
+
+
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG
+G2L["1b"] = Instance.new("Frame", G2L["8"]);
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["1b"]["Size"] = UDim2.new(0, 197, 0, 217);
+G2L["1b"]["Position"] = UDim2.new(0.115, 0, 0.1025, 0);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Name"] = [[RPG]];
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Title
-G2L["1a"] = Instance.new("TextLabel", G2L["19"]);
-G2L["1a"]["TextWrapped"] = true;
-G2L["1a"]["BorderSizePixel"] = 0;
-G2L["1a"]["TextSize"] = 48;
-G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a"]["BackgroundTransparency"] = 1;
-G2L["1a"]["Size"] = UDim2.new(0, 148, 0, 29);
-G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a"]["Text"] = [[RPG (24)]];
-G2L["1a"]["Name"] = [[Title]];
-G2L["1a"]["Position"] = UDim2.new(0.22183, 0, 0.07711, 0);
+G2L["1c"] = Instance.new("TextLabel", G2L["1b"]);
+G2L["1c"]["TextWrapped"] = true;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextSize"] = 48;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["BackgroundTransparency"] = 1;
+G2L["1c"]["Size"] = UDim2.new(0, 148, 0, 29);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[ RPG]];
+G2L["1c"]["Name"] = [[Title]];
+G2L["1c"]["Position"] = UDim2.new(0.22183, 0, 0.07711, 0);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Description
-G2L["1b"] = Instance.new("TextLabel", G2L["19"]);
-G2L["1b"]["TextWrapped"] = true;
-G2L["1b"]["BorderSizePixel"] = 0;
-G2L["1b"]["TextSize"] = 18;
-G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b"]["BackgroundTransparency"] = 1;
-G2L["1b"]["Size"] = UDim2.new(0, 173, 0, 39);
-G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1b"]["Text"] = [[boom]];
-G2L["1b"]["Name"] = [[Description]];
-G2L["1b"]["Position"] = UDim2.new(0.16091, 0, 0.20686, 0);
-
-
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start
-G2L["1c"] = Instance.new("TextButton", G2L["19"]);
-G2L["1c"]["BorderSizePixel"] = 0;
-G2L["1c"]["TextSize"] = 38;
-G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
-G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
-G2L["1c"]["Size"] = UDim2.new(0, 174, 0, 27);
-G2L["1c"]["ClipsDescendants"] = true;
-G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["Text"] = [[Start]];
-G2L["1c"]["Name"] = [[Start]];
-G2L["1c"]["Position"] = UDim2.new(0.15584, 0, 0.48317, 0);
-
-
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start.LocalScript
-G2L["1d"] = Instance.new("LocalScript", G2L["1c"]);
-
+G2L["1d"] = Instance.new("TextLabel", G2L["1b"]);
+G2L["1d"]["TextWrapped"] = true;
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["TextSize"] = 18;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["BackgroundTransparency"] = 1;
+G2L["1d"]["Size"] = UDim2.new(0, 173, 0, 39);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Text"] = [[boom]];
+G2L["1d"]["Name"] = [[Description]];
+G2L["1d"]["Position"] = UDim2.new(0.16091, 0, 0.20686, 0);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start (sword)
-G2L["1e"] = Instance.new("TextButton", G2L["19"]);
+G2L["1e"] = Instance.new("TextButton", G2L["1b"]);
+G2L["1e"]["TextWrapped"] = true;
 G2L["1e"]["BorderSizePixel"] = 0;
 G2L["1e"]["TextSize"] = 38;
+G2L["1e"]["TextScaled"] = true;
 G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 G2L["1e"]["Size"] = UDim2.new(0, 174, 0, 27);
 G2L["1e"]["ClipsDescendants"] = true;
 G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e"]["Text"] = [[Start (sword)]];
+G2L["1e"]["Text"] = [[Start (sword) (24)]];
 G2L["1e"]["Name"] = [[Start (sword)]];
 G2L["1e"]["Position"] = UDim2.new(0.15584, 0, 0.63527, 0);
 
@@ -351,16 +354,18 @@ G2L["1f"] = Instance.new("LocalScript", G2L["1e"]);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start (boombox)
-G2L["20"] = Instance.new("TextButton", G2L["19"]);
+G2L["20"] = Instance.new("TextButton", G2L["1b"]);
+G2L["20"]["TextWrapped"] = true;
 G2L["20"]["BorderSizePixel"] = 0;
 G2L["20"]["TextSize"] = 38;
+G2L["20"]["TextScaled"] = true;
 G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["20"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 G2L["20"]["Size"] = UDim2.new(0, 174, 0, 27);
 G2L["20"]["ClipsDescendants"] = true;
 G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["20"]["Text"] = [[Start (boombox)]];
+G2L["20"]["Text"] = [[Start (boombox) (11)]];
 G2L["20"]["Name"] = [[Start (boombox)]];
 G2L["20"]["Position"] = UDim2.new(0.15584, 0, 0.78734, 0);
 
@@ -370,58 +375,56 @@ G2L["21"] = Instance.new("LocalScript", G2L["20"]);
 
 
 
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.layout
-G2L["22"] = Instance.new("UIGridLayout", G2L["6"]);
-G2L["22"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["22"]["CellSize"] = UDim2.new(0, 250, 0, 200);
-G2L["22"]["FillDirectionMaxCells"] = 2;
-G2L["22"]["Name"] = [[layout]];
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start
+G2L["22"] = Instance.new("TextButton", G2L["1b"]);
+G2L["22"]["TextWrapped"] = true;
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["TextSize"] = 38;
+G2L["22"]["TextScaled"] = true;
+G2L["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["22"]["Size"] = UDim2.new(0, 174, 0, 27);
+G2L["22"]["ClipsDescendants"] = true;
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Text"] = [[Start (22)]];
+G2L["22"]["Name"] = [[Start]];
+G2L["22"]["Position"] = UDim2.new(0.15584, 0, 0.48317, 0);
+
+
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start.LocalScript
+G2L["23"] = Instance.new("LocalScript", G2L["22"]);
+
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe
-G2L["23"] = Instance.new("Frame", G2L["6"]);
-G2L["23"]["BorderSizePixel"] = 0;
-G2L["23"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["23"]["Size"] = UDim2.new(0, 100, 0, 100);
-G2L["23"]["Position"] = UDim2.new(0.50846, 0, 0.00645, 0);
-G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23"]["Name"] = [[ADupe]];
+G2L["24"] = Instance.new("Frame", G2L["8"]);
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["24"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["24"]["Position"] = UDim2.new(0.50846, 0, 0.00645, 0);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Name"] = [[ADupe]];
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Title
-G2L["24"] = Instance.new("TextLabel", G2L["23"]);
-G2L["24"]["TextWrapped"] = true;
-G2L["24"]["BorderSizePixel"] = 0;
-G2L["24"]["TextSize"] = 48;
-G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["24"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["24"]["BackgroundTransparency"] = 1;
-G2L["24"]["Size"] = UDim2.new(0, 238, 0, 53);
-G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24"]["Text"] = [[dupe your items]];
-G2L["24"]["Name"] = [[Title]];
-G2L["24"]["Position"] = UDim2.new(0.01846, 0, 0.015, 0);
-
-
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Description
-G2L["25"] = Instance.new("TextLabel", G2L["23"]);
+G2L["25"] = Instance.new("TextLabel", G2L["24"]);
 G2L["25"]["TextWrapped"] = true;
 G2L["25"]["BorderSizePixel"] = 0;
-G2L["25"]["TextSize"] = 18;
+G2L["25"]["TextSize"] = 48;
 G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["25"]["BackgroundTransparency"] = 1;
-G2L["25"]["Size"] = UDim2.new(0, 89, 0, 14);
+G2L["25"]["Size"] = UDim2.new(0, 238, 0, 53);
 G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25"]["Text"] = [[items MUST:]];
-G2L["25"]["Name"] = [[Description]];
-G2L["25"]["Position"] = UDim2.new(-0.00309, 0, 0.27686, 0);
+G2L["25"]["Text"] = [[dupe your items]];
+G2L["25"]["Name"] = [[Title]];
+G2L["25"]["Position"] = UDim2.new(0.01846, 0, 0.015, 0);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Description
-G2L["26"] = Instance.new("TextLabel", G2L["23"]);
+G2L["26"] = Instance.new("TextLabel", G2L["24"]);
 G2L["26"]["TextWrapped"] = true;
 G2L["26"]["BorderSizePixel"] = 0;
 G2L["26"]["TextSize"] = 18;
@@ -431,13 +434,13 @@ G2L["26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["26"]["BackgroundTransparency"] = 1;
 G2L["26"]["Size"] = UDim2.new(0, 89, 0, 14);
 G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["26"]["Text"] = [[be droppable]];
+G2L["26"]["Text"] = [[items MUST:]];
 G2L["26"]["Name"] = [[Description]];
-G2L["26"]["Position"] = UDim2.new(-0.00309, 0, 0.34186, 0);
+G2L["26"]["Position"] = UDim2.new(-0.00309, 0, 0.27686, 0);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Description
-G2L["27"] = Instance.new("TextLabel", G2L["23"]);
+G2L["27"] = Instance.new("TextLabel", G2L["24"]);
 G2L["27"]["TextWrapped"] = true;
 G2L["27"]["BorderSizePixel"] = 0;
 G2L["27"]["TextSize"] = 18;
@@ -445,30 +448,31 @@ G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["27"]["BackgroundTransparency"] = 1;
-G2L["27"]["Size"] = UDim2.new(0, 114, 0, 14);
+G2L["27"]["Size"] = UDim2.new(0, 89, 0, 14);
 G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["Text"] = [[be in the starterpack]];
+G2L["27"]["Text"] = [[be droppable]];
 G2L["27"]["Name"] = [[Description]];
-G2L["27"]["Position"] = UDim2.new(0.03291, 0, 0.41186, 0);
+G2L["27"]["Position"] = UDim2.new(-0.00309, 0, 0.34186, 0);
 
 
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Number
-G2L["28"] = Instance.new("TextBox", G2L["23"]);
-G2L["28"]["Name"] = [[Number]];
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Description
+G2L["28"] = Instance.new("TextLabel", G2L["24"]);
+G2L["28"]["TextWrapped"] = true;
 G2L["28"]["BorderSizePixel"] = 0;
-G2L["28"]["TextSize"] = 41;
+G2L["28"]["TextSize"] = 18;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["28"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
-G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
-G2L["28"]["ClipsDescendants"] = true;
-G2L["28"]["Size"] = UDim2.new(0, 200, 0, 31);
-G2L["28"]["Position"] = UDim2.new(0.104, 0, 0.59, 0);
+G2L["28"]["BackgroundTransparency"] = 1;
+G2L["28"]["Size"] = UDim2.new(0, 114, 0, 14);
 G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28"]["Text"] = [[amount]];
+G2L["28"]["Text"] = [[be in the starterpack]];
+G2L["28"]["Name"] = [[Description]];
+G2L["28"]["Position"] = UDim2.new(0.03291, 0, 0.41186, 0);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Start
-G2L["29"] = Instance.new("TextButton", G2L["23"]);
+G2L["29"] = Instance.new("TextButton", G2L["24"]);
 G2L["29"]["BorderSizePixel"] = 0;
 G2L["29"]["TextSize"] = 38;
 G2L["29"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
@@ -488,7 +492,7 @@ G2L["2a"] = Instance.new("LocalScript", G2L["29"]);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Description
-G2L["2b"] = Instance.new("TextLabel", G2L["23"]);
+G2L["2b"] = Instance.new("TextLabel", G2L["24"]);
 G2L["2b"]["TextWrapped"] = true;
 G2L["2b"]["BorderSizePixel"] = 0;
 G2L["2b"]["TextSize"] = 18;
@@ -508,14 +512,23 @@ G2L["2c"] = Instance.new("LocalScript", G2L["2b"]);
 
 
 
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.top spacing
-G2L["2d"] = Instance.new("UIPadding", G2L["6"]);
-G2L["2d"]["PaddingTop"] = UDim.new(0, 5);
-G2L["2d"]["Name"] = [[top spacing]];
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Number
+G2L["2d"] = Instance.new("TextBox", G2L["24"]);
+G2L["2d"]["Name"] = [[Number]];
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["TextSize"] = 41;
+G2L["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["2d"]["ClipsDescendants"] = true;
+G2L["2d"]["Size"] = UDim2.new(0, 200, 0, 31);
+G2L["2d"]["Position"] = UDim2.new(0.104, 0, 0.59, 0);
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["Text"] = [[]];
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun
-G2L["2e"] = Instance.new("Frame", G2L["6"]);
+G2L["2e"] = Instance.new("Frame", G2L["8"]);
 G2L["2e"]["BorderSizePixel"] = 0;
 G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
 G2L["2e"]["Size"] = UDim2.new(0, 197, 0, 217);
@@ -535,7 +548,7 @@ G2L["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2f"]["BackgroundTransparency"] = 1;
 G2L["2f"]["Size"] = UDim2.new(0, 197, 0, 29);
 G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f"]["Text"] = [[handgun (27)]];
+G2L["2f"]["Text"] = [[handgun]];
 G2L["2f"]["Name"] = [[Title]];
 G2L["2f"]["Position"] = UDim2.new(0.15446, 0, 0.07759, 0);
 
@@ -551,22 +564,24 @@ G2L["30"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["30"]["BackgroundTransparency"] = 1;
 G2L["30"]["Size"] = UDim2.new(0, 173, 0, 39);
 G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["Text"] = [[pew]];
+G2L["30"]["Text"] = [[its a pretty big handgun]];
 G2L["30"]["Name"] = [[Description]];
 G2L["30"]["Position"] = UDim2.new(0.17291, 0, 0.17873, 0);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun.Start
 G2L["31"] = Instance.new("TextButton", G2L["2e"]);
+G2L["31"]["TextWrapped"] = true;
 G2L["31"]["BorderSizePixel"] = 0;
 G2L["31"]["TextSize"] = 38;
+G2L["31"]["TextScaled"] = true;
 G2L["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["31"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 G2L["31"]["Size"] = UDim2.new(0, 174, 0, 27);
 G2L["31"]["ClipsDescendants"] = true;
 G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["31"]["Text"] = [[Start]];
+G2L["31"]["Text"] = [[Start (14)]];
 G2L["31"]["Name"] = [[Start]];
 G2L["31"]["Position"] = UDim2.new(0.17184, 0, 0.51317, 0);
 
@@ -578,15 +593,17 @@ G2L["32"] = Instance.new("LocalScript", G2L["31"]);
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun.Start (sword)
 G2L["33"] = Instance.new("TextButton", G2L["2e"]);
+G2L["33"]["TextWrapped"] = true;
 G2L["33"]["BorderSizePixel"] = 0;
 G2L["33"]["TextSize"] = 38;
+G2L["33"]["TextScaled"] = true;
 G2L["33"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["33"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 G2L["33"]["Size"] = UDim2.new(0, 174, 0, 27);
 G2L["33"]["ClipsDescendants"] = true;
 G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["33"]["Text"] = [[Start (sword)]];
+G2L["33"]["Text"] = [[Start (sword) (27)]];
 G2L["33"]["Name"] = [[Start (sword)]];
 G2L["33"]["Position"] = UDim2.new(0.17184, 0, 0.66527, 0);
 
@@ -598,15 +615,17 @@ G2L["34"] = Instance.new("LocalScript", G2L["33"]);
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.handgun.Start (boombox)
 G2L["35"] = Instance.new("TextButton", G2L["2e"]);
+G2L["35"]["TextWrapped"] = true;
 G2L["35"]["BorderSizePixel"] = 0;
 G2L["35"]["TextSize"] = 38;
+G2L["35"]["TextScaled"] = true;
 G2L["35"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["35"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 G2L["35"]["Size"] = UDim2.new(0, 174, 0, 27);
 G2L["35"]["ClipsDescendants"] = true;
 G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["35"]["Text"] = [[Start (boombox)]];
+G2L["35"]["Text"] = [[Start (boombox) (9)]];
 G2L["35"]["Name"] = [[Start (boombox)]];
 G2L["35"]["Position"] = UDim2.new(0.17184, 0, 0.81734, 0);
 
@@ -617,7 +636,7 @@ G2L["36"] = Instance.new("LocalScript", G2L["35"]);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2
-G2L["37"] = Instance.new("Frame", G2L["6"]);
+G2L["37"] = Instance.new("Frame", G2L["8"]);
 G2L["37"]["BorderSizePixel"] = 0;
 G2L["37"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
 G2L["37"]["Size"] = UDim2.new(0, 197, 0, 217);
@@ -637,7 +656,7 @@ G2L["38"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["38"]["BackgroundTransparency"] = 1;
 G2L["38"]["Size"] = UDim2.new(0, 197, 0, 29);
 G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["38"]["Text"] = [[ak47 v2 (38)]];
+G2L["38"]["Text"] = [[ak47 v2]];
 G2L["38"]["Name"] = [[Title]];
 G2L["38"]["Position"] = UDim2.new(0.15446, 0, 0.07759, 0);
 
@@ -653,22 +672,24 @@ G2L["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["39"]["BackgroundTransparency"] = 1;
 G2L["39"]["Size"] = UDim2.new(0, 173, 0, 39);
 G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["39"]["Text"] = [[russia v2]];
+G2L["39"]["Text"] = [[its better]];
 G2L["39"]["Name"] = [[Description]];
 G2L["39"]["Position"] = UDim2.new(0.17291, 0, 0.17873, 0);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2.Start
 G2L["3a"] = Instance.new("TextButton", G2L["37"]);
+G2L["3a"]["TextWrapped"] = true;
 G2L["3a"]["BorderSizePixel"] = 0;
 G2L["3a"]["TextSize"] = 38;
+G2L["3a"]["TextScaled"] = true;
 G2L["3a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 G2L["3a"]["Size"] = UDim2.new(0, 174, 0, 27);
 G2L["3a"]["ClipsDescendants"] = true;
 G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3a"]["Text"] = [[Start]];
+G2L["3a"]["Text"] = [[Start (27)]];
 G2L["3a"]["Name"] = [[Start]];
 G2L["3a"]["Position"] = UDim2.new(0.17184, 0, 0.51317, 0);
 
@@ -680,15 +701,17 @@ G2L["3b"] = Instance.new("LocalScript", G2L["3a"]);
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2.Start (sword)
 G2L["3c"] = Instance.new("TextButton", G2L["37"]);
+G2L["3c"]["TextWrapped"] = true;
 G2L["3c"]["BorderSizePixel"] = 0;
 G2L["3c"]["TextSize"] = 38;
+G2L["3c"]["TextScaled"] = true;
 G2L["3c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["3c"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 G2L["3c"]["Size"] = UDim2.new(0, 174, 0, 27);
 G2L["3c"]["ClipsDescendants"] = true;
 G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3c"]["Text"] = [[Start (sword)]];
+G2L["3c"]["Text"] = [[Start (sword) (38)]];
 G2L["3c"]["Name"] = [[Start (sword)]];
 G2L["3c"]["Position"] = UDim2.new(0.17184, 0, 0.66527, 0);
 
@@ -700,15 +723,17 @@ G2L["3d"] = Instance.new("LocalScript", G2L["3c"]);
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47 v2.Start (boombox)
 G2L["3e"] = Instance.new("TextButton", G2L["37"]);
+G2L["3e"]["TextWrapped"] = true;
 G2L["3e"]["BorderSizePixel"] = 0;
 G2L["3e"]["TextSize"] = 38;
+G2L["3e"]["TextScaled"] = true;
 G2L["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 G2L["3e"]["Size"] = UDim2.new(0, 174, 0, 27);
 G2L["3e"]["ClipsDescendants"] = true;
 G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3e"]["Text"] = [[Start (boombox)]];
+G2L["3e"]["Text"] = [[Start (boombox) (8)]];
 G2L["3e"]["Name"] = [[Start (boombox)]];
 G2L["3e"]["Position"] = UDim2.new(0.17184, 0, 0.81734, 0);
 
@@ -719,7 +744,7 @@ G2L["3f"] = Instance.new("LocalScript", G2L["3e"]);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic
-G2L["40"] = Instance.new("Frame", G2L["6"]);
+G2L["40"] = Instance.new("Frame", G2L["8"]);
 G2L["40"]["BorderSizePixel"] = 0;
 G2L["40"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
 G2L["40"]["Size"] = UDim2.new(0, 197, 0, 217);
@@ -755,15 +780,17 @@ G2L["42"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["42"]["BackgroundTransparency"] = 1;
 G2L["42"]["Size"] = UDim2.new(0, 173, 0, 39);
 G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42"]["Text"] = [[domain expansion]];
+G2L["42"]["Text"] = [[scales with how many items u have]];
 G2L["42"]["Name"] = [[Description]];
-G2L["42"]["Position"] = UDim2.new(0.15291, 0, 0.19686, 0);
+G2L["42"]["Position"] = UDim2.new(0.14891, 0, 0.22186, 0);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic.Start
 G2L["43"] = Instance.new("TextButton", G2L["40"]);
+G2L["43"]["TextWrapped"] = true;
 G2L["43"]["BorderSizePixel"] = 0;
 G2L["43"]["TextSize"] = 38;
+G2L["43"]["TextScaled"] = true;
 G2L["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["43"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
@@ -782,8 +809,10 @@ G2L["44"] = Instance.new("LocalScript", G2L["43"]);
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic.Start (sword)
 G2L["45"] = Instance.new("TextButton", G2L["40"]);
+G2L["45"]["TextWrapped"] = true;
 G2L["45"]["BorderSizePixel"] = 0;
 G2L["45"]["TextSize"] = 38;
+G2L["45"]["TextScaled"] = true;
 G2L["45"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["45"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
@@ -802,8 +831,10 @@ G2L["46"] = Instance.new("LocalScript", G2L["45"]);
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.sphere dynamic.Start (boombox)
 G2L["47"] = Instance.new("TextButton", G2L["40"]);
+G2L["47"]["TextWrapped"] = true;
 G2L["47"]["BorderSizePixel"] = 0;
 G2L["47"]["TextSize"] = 38;
+G2L["47"]["TextScaled"] = true;
 G2L["47"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["47"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
@@ -821,7 +852,7 @@ G2L["48"] = Instance.new("LocalScript", G2L["47"]);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun
-G2L["49"] = Instance.new("Frame", G2L["6"]);
+G2L["49"] = Instance.new("Frame", G2L["8"]);
 G2L["49"]["BorderSizePixel"] = 0;
 G2L["49"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
 G2L["49"]["Size"] = UDim2.new(0, 197, 0, 217);
@@ -843,7 +874,7 @@ G2L["4a"]["Size"] = UDim2.new(0, 217, 0, 29);
 G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4a"]["Text"] = [[big fucking gun]];
 G2L["4a"]["Name"] = [[Title]];
-G2L["4a"]["Position"] = UDim2.new(0.07184, 0, -0.00241, 0);
+G2L["4a"]["Position"] = UDim2.new(0.072, 0, 0.1, 0);
 
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Description
@@ -864,15 +895,17 @@ G2L["4b"]["Position"] = UDim2.new(0.17291, 0, 0.28373, 0);
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Start
 G2L["4c"] = Instance.new("TextButton", G2L["49"]);
+G2L["4c"]["TextWrapped"] = true;
 G2L["4c"]["BorderSizePixel"] = 0;
 G2L["4c"]["TextSize"] = 38;
+G2L["4c"]["TextScaled"] = true;
 G2L["4c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 G2L["4c"]["Size"] = UDim2.new(0, 174, 0, 27);
 G2L["4c"]["ClipsDescendants"] = true;
 G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4c"]["Text"] = [[Start]];
+G2L["4c"]["Text"] = [[Start (358)]];
 G2L["4c"]["Name"] = [[Start]];
 G2L["4c"]["Position"] = UDim2.new(0.17184, 0, 0.51317, 0);
 
@@ -884,15 +917,17 @@ G2L["4d"] = Instance.new("LocalScript", G2L["4c"]);
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Start (sword)
 G2L["4e"] = Instance.new("TextButton", G2L["49"]);
+G2L["4e"]["TextWrapped"] = true;
 G2L["4e"]["BorderSizePixel"] = 0;
 G2L["4e"]["TextSize"] = 38;
+G2L["4e"]["TextScaled"] = true;
 G2L["4e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 G2L["4e"]["Size"] = UDim2.new(0, 174, 0, 27);
 G2L["4e"]["ClipsDescendants"] = true;
 G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4e"]["Text"] = [[Start (sword)]];
+G2L["4e"]["Text"] = [[Start (sword) (371)]];
 G2L["4e"]["Name"] = [[Start (sword)]];
 G2L["4e"]["Position"] = UDim2.new(0.17184, 0, 0.66527, 0);
 
@@ -904,15 +939,17 @@ G2L["4f"] = Instance.new("LocalScript", G2L["4e"]);
 
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Start (boombox)
 G2L["50"] = Instance.new("TextButton", G2L["49"]);
+G2L["50"]["TextWrapped"] = true;
 G2L["50"]["BorderSizePixel"] = 0;
 G2L["50"]["TextSize"] = 38;
+G2L["50"]["TextScaled"] = true;
 G2L["50"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["50"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["50"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
 G2L["50"]["Size"] = UDim2.new(0, 174, 0, 27);
 G2L["50"]["ClipsDescendants"] = true;
 G2L["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["50"]["Text"] = [[Start (boombox)]];
+G2L["50"]["Text"] = [[Start (boombox) (97)]];
 G2L["50"]["Name"] = [[Start (boombox)]];
 G2L["50"]["Position"] = UDim2.new(0.17184, 0, 0.81734, 0);
 
@@ -922,68 +959,71 @@ G2L["51"] = Instance.new("LocalScript", G2L["50"]);
 
 
 
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.big fucking gun.Title
-G2L["52"] = Instance.new("TextLabel", G2L["49"]);
-G2L["52"]["TextWrapped"] = true;
-G2L["52"]["BorderSizePixel"] = 0;
-G2L["52"]["TextSize"] = 48;
-G2L["52"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["52"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["52"]["BackgroundTransparency"] = 1;
-G2L["52"]["Size"] = UDim2.new(0, 217, 0, 29);
-G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["52"]["Text"] = [[(371)]];
-G2L["52"]["Name"] = [[Title]];
-G2L["52"]["Position"] = UDim2.new(0.06784, 0, 0.13759, 0);
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.layout
+G2L["52"] = Instance.new("UIGridLayout", G2L["8"]);
+G2L["52"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["52"]["CellSize"] = UDim2.new(0, 250, 0, 200);
+G2L["52"]["FillDirectionMaxCells"] = 2;
+G2L["52"]["Name"] = [[layout]];
+
+
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.top spacing
+G2L["53"] = Instance.new("UIPadding", G2L["8"]);
+G2L["53"]["PaddingTop"] = UDim.new(0, 5);
+G2L["53"]["Name"] = [[top spacing]];
 
 
 -- StarterGui.she grip on my tool till I hub.Main.TopBar
-G2L["53"] = Instance.new("Frame", G2L["4"]);
-G2L["53"]["BorderSizePixel"] = 0;
-G2L["53"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["53"]["Size"] = UDim2.new(0, 532, 0, 40);
-G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["53"]["Name"] = [[TopBar]];
-
-
--- StarterGui.she grip on my tool till I hub.Main.TopBar.TextLabel
-G2L["54"] = Instance.new("TextLabel", G2L["53"]);
+G2L["54"] = Instance.new("Frame", G2L["6"]);
 G2L["54"]["BorderSizePixel"] = 0;
-G2L["54"]["TextSize"] = 34;
-G2L["54"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["54"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["54"]["BackgroundTransparency"] = 1;
-G2L["54"]["Size"] = UDim2.new(0, 268, 0, 40);
+G2L["54"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["54"]["Size"] = UDim2.new(0, 532, 0, 40);
 G2L["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["54"]["Text"] = [[she grip on my tool till I hub]];
-G2L["54"]["Position"] = UDim2.new(0.01692, 0, 0, 0);
+G2L["54"]["Name"] = [[TopBar]];
 
 
 -- StarterGui.she grip on my tool till I hub.Main.TopBar.TextLabel
-G2L["55"] = Instance.new("TextLabel", G2L["53"]);
+G2L["55"] = Instance.new("TextLabel", G2L["54"]);
 G2L["55"]["TextWrapped"] = true;
 G2L["55"]["BorderSizePixel"] = 0;
-G2L["55"]["TextSize"] = 28;
+G2L["55"]["TextSize"] = 34;
+G2L["55"]["TextScaled"] = true;
 G2L["55"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["55"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["55"]["BackgroundTransparency"] = 1;
-G2L["55"]["Size"] = UDim2.new(0, 70, 0, 21);
+G2L["55"]["Size"] = UDim2.new(0, 314, 0, 48);
 G2L["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["55"]["Text"] = [[???]];
-G2L["55"]["Position"] = UDim2.new(0.86842, 0, 0.475, 0);
+G2L["55"]["Text"] = [[she grip on my tool till I hub]];
+G2L["55"]["Position"] = UDim2.new(0, 0, -0.1, 0);
 
 
--- StarterGui.she grip on my tool till I hub.LocalScript
-G2L["56"] = Instance.new("LocalScript", G2L["1"]);
+-- StarterGui.she grip on my tool till I hub.Main.TopBar.ImageButton
+G2L["56"] = Instance.new("ImageButton", G2L["54"]);
+G2L["56"]["BorderSizePixel"] = 0;
+G2L["56"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["56"]["Size"] = UDim2.new(0, 81, 0, 32);
+G2L["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["56"]["Position"] = UDim2.new(0.83647, 0, 0.1, 0);
+
+
+-- StarterGui.she grip on my tool till I hub.Main.TopBar.ImageButton.LocalScript
+G2L["57"] = Instance.new("LocalScript", G2L["56"]);
 
 
 
--- StarterGui.she grip on my tool till I hub.SimulationRadius
-G2L["57"] = Instance.new("LocalScript", G2L["1"]);
-G2L["57"]["Name"] = [[SimulationRadius]];
+-- StarterGui.she grip on my tool till I hub.Main.TopBar.ImageButton.TextLabel
+G2L["58"] = Instance.new("TextLabel", G2L["56"]);
+G2L["58"]["BorderSizePixel"] = 0;
+G2L["58"]["TextSize"] = 89;
+G2L["58"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["58"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["58"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["58"]["BackgroundTransparency"] = 1;
+G2L["58"]["Size"] = UDim2.new(0, 59, 0, 24);
+G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["58"]["Text"] = [[-]];
+G2L["58"]["Position"] = UDim2.new(0.1358, 0, 0, 0);
 
 
 -- StarterGui.she grip on my tool till I hub.Scrollup
@@ -1017,9 +1057,53 @@ local script = G2L["3"];
 	end
 end;
 task.spawn(C_3);
--- StarterGui.she grip on my tool till I hub.Main.Smooth GUI Dragging
+-- StarterGui.she grip on my tool till I hub.LocalScript
+local function C_4()
+local script = G2L["4"];
+	pcall(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "check for updates",
+			Text = "discord.gg/dd4XXRMz8b",
+			Duration = 999999999;
+		})
+	end)
+	
+	pcall(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "By urban1",
+			Text = "Toolgrip by urban1",
+			Duration = 999999999;
+		})
+	end)
+	
+end;
+task.spawn(C_4);
+-- StarterGui.she grip on my tool till I hub.SimulationRadius
 local function C_5()
 local script = G2L["5"];
+	local Players = game:GetService("Players")
+	local Player = Players.LocalPlayer
+	
+	Player.SimulationRadius = 999999999
+	Player.MaximumSimulationRadius = 999999999
+	
+	
+	pcall(function()
+		setsimulationradius(999999999)
+	end)
+	
+	
+	game:GetService("RunService").Heartbeat:Connect(function()
+		Player.SimulationRadius = 999999999
+		Player.MaximumSimulationRadius = 999999999
+	end)
+	
+	
+end;
+task.spawn(C_5);
+-- StarterGui.she grip on my tool till I hub.Main.Smooth GUI Dragging
+local function C_7()
+local script = G2L["7"];
 	local UserInputService = game:GetService("UserInputService")
 	local runService = (game:GetService("RunService"));
 	
@@ -1075,10 +1159,10 @@ local script = G2L["5"];
 	runService.Heartbeat:Connect(Update)
 	
 end;
-task.spawn(C_5);
+task.spawn(C_7);
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start.LocalScript
-local function C_b()
-local script = G2L["b"];
+local function C_d()
+local script = G2L["d"];
 	local button = script.Parent
 	
 	
@@ -1146,10 +1230,10 @@ local script = G2L["b"];
 		end
 	end)
 end;
-task.spawn(C_b);
+task.spawn(C_d);
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (sword).LocalScript
-local function C_d()
-local script = G2L["d"];
+local function C_f()
+local script = G2L["f"];
 	
 	local button = script.Parent
 	local localPlayer = game.Players.LocalPlayer
@@ -1211,10 +1295,10 @@ local script = G2L["d"];
 	end)
 	
 end;
-task.spawn(C_d);
+task.spawn(C_f);
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ak47.Start (boombox).LocalScript
-local function C_f()
-local script = G2L["f"];
+local function C_11()
+local script = G2L["11"];
 	
 	local button = script.Parent
 	
@@ -1279,10 +1363,10 @@ local script = G2L["f"];
 	end)
 	
 end;
-task.spawn(C_f);
+task.spawn(C_11);
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start.LocalScript
-local function C_14()
-local script = G2L["14"];
+local function C_16()
+local script = G2L["16"];
 	
 	local button = script.Parent
 	
@@ -1376,10 +1460,10 @@ local script = G2L["14"];
 	end)
 	
 end;
-task.spawn(C_14);
+task.spawn(C_16);
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (sword).LocalScript
-local function C_16()
-local script = G2L["16"];
+local function C_18()
+local script = G2L["18"];
 	
 	local button = script.Parent
 	
@@ -1439,10 +1523,10 @@ local script = G2L["16"];
 	end)
 	
 end;
-task.spawn(C_16);
+task.spawn(C_18);
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.friend.Start (boombox).LocalScript
-local function C_18()
-local script = G2L["18"];
+local function C_1a()
+local script = G2L["1a"];
 	
 	local button = script.Parent
 	
@@ -1498,72 +1582,7 @@ local script = G2L["18"];
 	end)
 	
 end;
-task.spawn(C_18);
--- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start.LocalScript
-local function C_1d()
-local script = G2L["1d"];
-	local button = script.Parent
-	local localPlayer = game.Players.LocalPlayer
-	
-	local function createGrip(x, y, z, rx, ry, rz)
-		return CFrame.new(x, y, z) * CFrame.fromOrientation(math.rad(rx), math.rad(ry), math.rad(rz))
-	end
-	
-	local gripPoses = {
-		createGrip(-0.242, 0.120, 0.000, 0.0, 90.0, 0.0),
-		createGrip(-0.193, -0.782, -0.000, 38.2, 90.0, 0.0),
-		createGrip(0.012, -0.875, -0.000, -41.9, 90.0, -0.0),
-		createGrip(-1.119, 0.008, -0.000, 88.9, -90.0, 180.0),
-		createGrip(-1.167, -1.249, -0.000, 88.9, -90.0, 180.0),
-		createGrip(-0.085, -2.487, -0.000, 50.9, 90.0, 0.0),
-		createGrip(2.738, 0.927, -0.000, -50.3, 90.0, -0.0),
-		createGrip(-1.167, -2.578, -0.000, 88.9, -90.0, 180.0),
-		createGrip(-1.112, 1.334, -0.000, 88.9, -90.0, 180.0),
-		createGrip(-2.038, 1.240, -0.000, 73.3, 90.0, 0.0),
-		createGrip(-1.112, 2.660, -0.000, 88.9, -90.0, 180.0),
-		createGrip(-1.609, 2.826, 0.000, 85.1, 90.0, 0.0),
-		createGrip(-1.112, 3.924, -0.000, 88.9, -90.0, 180.0),
-		createGrip(-1.112, 5.247, 0.000, 88.9, -90.0, 180.0),
-		createGrip(-1.609, 4.154, 0.000, 85.1, 90.0, 0.0),
-		createGrip(-1.564, 6.420, 0.000, 87.1, 90.0, 0.0),
-		createGrip(-1.564, 7.746, 0.000, 87.1, 90.0, 0.0),
-		createGrip(-1.564, 9.065, 0.000, 87.1, 90.0, 0.0),
-		createGrip(-3.950, 9.644, 0.000, 72.7, 90.0, 0.0),
-		createGrip(0.465, 10.470, 0.000, 81.1, -90.0, 180.0),
-		createGrip(2.276, 1.002, 0.000, 4.7, -90.0, 180.0),
-		createGrip(2.276, 0.292, -0.012, 4.7, -90.0, -180.0),
-	}
-	
-	button.MouseButton1Click:Connect(function()
-		local character = localPlayer.Character
-		local humanoid = character and character:FindFirstChildOfClass("Humanoid")
-		local backpack = localPlayer:FindFirstChildOfClass("Backpack")
-	
-		if not character or not humanoid or not backpack then return end
-	
-		humanoid:UnequipTools()
-	
-		local tools = {}
-		for _, item in ipairs(backpack:GetChildren()) do
-			if item:IsA("Tool") then
-				table.insert(tools, item)
-			end
-		end
-	
-		table.sort(tools, function(toolA, toolB)
-			return toolA.Name:lower() < toolB.Name:lower()
-		end)
-	
-		local toolsToProcess = math.min(#gripPoses, #tools)
-		for i = 1, toolsToProcess do
-			local tool = tools[i]
-			tool.Grip = gripPoses[i]
-			tool.Parent = character
-		end
-	end)
-	
-end;
-task.spawn(C_1d);
+task.spawn(C_1a);
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start (sword).LocalScript
 local function C_1f()
 local script = G2L["1f"];
@@ -1689,6 +1708,71 @@ local script = G2L["21"];
 	
 end;
 task.spawn(C_21);
+-- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.RPG.Start.LocalScript
+local function C_23()
+local script = G2L["23"];
+	local button = script.Parent
+	local localPlayer = game.Players.LocalPlayer
+	
+	local function createGrip(x, y, z, rx, ry, rz)
+		return CFrame.new(x, y, z) * CFrame.fromOrientation(math.rad(rx), math.rad(ry), math.rad(rz))
+	end
+	
+	local gripPoses = {
+		createGrip(-0.242, 0.120, 0.000, 0.0, 90.0, 0.0),
+		createGrip(-0.193, -0.782, -0.000, 38.2, 90.0, 0.0),
+		createGrip(0.012, -0.875, -0.000, -41.9, 90.0, -0.0),
+		createGrip(-1.119, 0.008, -0.000, 88.9, -90.0, 180.0),
+		createGrip(-1.167, -1.249, -0.000, 88.9, -90.0, 180.0),
+		createGrip(-0.085, -2.487, -0.000, 50.9, 90.0, 0.0),
+		createGrip(2.738, 0.927, -0.000, -50.3, 90.0, -0.0),
+		createGrip(-1.167, -2.578, -0.000, 88.9, -90.0, 180.0),
+		createGrip(-1.112, 1.334, -0.000, 88.9, -90.0, 180.0),
+		createGrip(-2.038, 1.240, -0.000, 73.3, 90.0, 0.0),
+		createGrip(-1.112, 2.660, -0.000, 88.9, -90.0, 180.0),
+		createGrip(-1.609, 2.826, 0.000, 85.1, 90.0, 0.0),
+		createGrip(-1.112, 3.924, -0.000, 88.9, -90.0, 180.0),
+		createGrip(-1.112, 5.247, 0.000, 88.9, -90.0, 180.0),
+		createGrip(-1.609, 4.154, 0.000, 85.1, 90.0, 0.0),
+		createGrip(-1.564, 6.420, 0.000, 87.1, 90.0, 0.0),
+		createGrip(-1.564, 7.746, 0.000, 87.1, 90.0, 0.0),
+		createGrip(-1.564, 9.065, 0.000, 87.1, 90.0, 0.0),
+		createGrip(-3.950, 9.644, 0.000, 72.7, 90.0, 0.0),
+		createGrip(0.465, 10.470, 0.000, 81.1, -90.0, 180.0),
+		createGrip(2.276, 1.002, 0.000, 4.7, -90.0, 180.0),
+		createGrip(2.276, 0.292, -0.012, 4.7, -90.0, -180.0),
+	}
+	
+	button.MouseButton1Click:Connect(function()
+		local character = localPlayer.Character
+		local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+		local backpack = localPlayer:FindFirstChildOfClass("Backpack")
+	
+		if not character or not humanoid or not backpack then return end
+	
+		humanoid:UnequipTools()
+	
+		local tools = {}
+		for _, item in ipairs(backpack:GetChildren()) do
+			if item:IsA("Tool") then
+				table.insert(tools, item)
+			end
+		end
+	
+		table.sort(tools, function(toolA, toolB)
+			return toolA.Name:lower() < toolB.Name:lower()
+		end)
+	
+		local toolsToProcess = math.min(#gripPoses, #tools)
+		for i = 1, toolsToProcess do
+			local tool = tools[i]
+			tool.Grip = gripPoses[i]
+			tool.Parent = character
+		end
+	end)
+	
+end;
+task.spawn(C_23);
 -- StarterGui.she grip on my tool till I hub.Main.ScrollingMain.ADupe.Start.LocalScript
 local function C_2a()
 local script = G2L["2a"];
@@ -1703,7 +1787,7 @@ local script = G2L["2a"];
 			local char = player.Character or player.CharacterAdded:Wait()
 			task.wait(0.01)
 			char:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(0, 10000000000, 0)
-			task.wait(0.3)
+			task.wait(0.5)
 	
 			for _, tool in ipairs(player.Backpack:GetChildren()) do
 				tool.Parent = char
@@ -3314,48 +3398,34 @@ local script = G2L["51"];
 	
 end;
 task.spawn(C_51);
--- StarterGui.she grip on my tool till I hub.LocalScript
-local function C_56()
-local script = G2L["56"];
-	pcall(function()
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Like this script?",
-			Text = "join discord.gg/dd4XXRMz8b",
-			Duration = 999999999;
-		})
-	end)
-	
-	pcall(function()
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "By urban1",
-			Text = "Toolgrip by urban1",
-			Duration = 999999999;
-		})
-	end)
-	
-end;
-task.spawn(C_56);
--- StarterGui.she grip on my tool till I hub.SimulationRadius
+-- StarterGui.she grip on my tool till I hub.Main.TopBar.ImageButton.LocalScript
 local function C_57()
 local script = G2L["57"];
-	local Players = game:GetService("Players")
-	local Player = Players.LocalPlayer
+	local b = script.Parent
+	local mini = false
 	
-	Player.SimulationRadius = 999999999
-	Player.MaximumSimulationRadius = 999999999
+	local TweenService = game:GetService("TweenService")
+	local scrollingMain = script.Parent.Parent.Parent.ScrollingMain
 	
+	local tweenInfo = TweenInfo.new(
+		0.25,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out
+	)
 	
-	pcall(function()
-		setsimulationradius(999999999)
+	b.MouseButton1Click:Connect(function()
+		mini = not mini
+	
+		local targetSize = mini
+			and UDim2.new(0, 532, 0, 0)
+			or UDim2.new(0, 532, 0, 269)
+	
+		TweenService:Create(
+			scrollingMain,
+			tweenInfo,
+			{Size = targetSize}
+		):Play()
 	end)
-	
-	
-	game:GetService("RunService").Heartbeat:Connect(function()
-		Player.SimulationRadius = 999999999
-		Player.MaximumSimulationRadius = 999999999
-	end)
-	
-	
 end;
 task.spawn(C_57);
 
