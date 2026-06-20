@@ -4279,14 +4279,14 @@ local script = G2L["6"];
 	game:GetService("StarterGui"):SetCore("SendNotification", {
 		Title = "DISCONTINUED!!",
 		Text = "discord.gg/dd4XXRMz8b GO HERE",
-		Duration = 35,
+		Duration = 100000,
 	})
 
 	pcall(function()
 	game:GetService("StarterGui"):SetCore("SendNotification", {
 		Title = "WARNING",
-		Text = "KILLING AND WELDING IS PATCHED :(",
-		Duration = 35,
+		Text = "KILLING WELDING, AND FE PAGE IS PATCHED :(",
+		Duration = 100000,
 	})
 end)
 
