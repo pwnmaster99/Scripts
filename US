@@ -999,12 +999,12 @@ local script = G2L["3"];
 
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "HEY";
-			Text = "THIS SCRIPT IS DISCONTINUED!! get the new one in the discord.";
+			Text = "THIS SHIT IS PATCHED";
 			Duration = 120;
 		})
 
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "The discord in question";
+			Title = "The discord";
 			Text = "discord.gg/dd4XXRMz8b";
 			Duration = 120;
 		})
