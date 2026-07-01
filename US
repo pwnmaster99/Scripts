@@ -998,8 +998,8 @@ local script = G2L["3"];
 	pcall(function()
 
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "HEY";
-			Text = "THIS SHIT IS PATCHED";
+			Title = "notification";
+			Text = "This will be patched next roblox update";
 			Duration = 120;
 		})
 
