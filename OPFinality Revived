@@ -4285,7 +4285,7 @@ local script = G2L["6"];
 	pcall(function()
 	game:GetService("StarterGui"):SetCore("SendNotification", {
 		Title = "WARNING",
-		Text = "KILLING WELDING, AND FE PAGE IS PATCHED :(",
+		Text = "KILLING IS PATCHED :(",
 		Duration = 100000,
 	})
 end)
