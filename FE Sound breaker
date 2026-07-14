@@ -1,0 +1,533 @@
+--[[
+
+By urban1
+Suggested by badrjouny
+
+IF RespectFilteringEnabled = true, NOTHING WILL WORK
+  
+IF you keep spam / loop all on for too long, it will queue and will delay your other actions, keep them on for 7 seconds at a time, maximum
+
+it is advised you get an alt account in the same server, very often it'll just stop working. I dunno why
+
+for those confused about timepos mute, it sets the timepos of every sound to the end. This also means the server will be muted after you leave!
+
+]]--
+
+
+-- Instances: 27 | Scripts: 11 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.RespectFilteringEnabled GUI
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[RespectFilteringEnabled GUI]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["ClipsDescendants"] = true;
+G2L["2"]["Size"] = UDim2.new(0, 428, 0, 228);
+G2L["2"]["Position"] = UDim2.new(0.12488, 0, 0.15388, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[mainframe]];
+G2L["2"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.topbar
+G2L["3"] = Instance.new("Frame", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(42, 61, 159);
+G2L["3"]["Size"] = UDim2.new(0, 428, 0, 34);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Name"] = [[topbar]];
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.topbar.ImageLabel
+G2L["4"] = Instance.new("ImageLabel", G2L["3"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["Image"] = [[rbxassetid://729923345]];
+G2L["4"]["Size"] = UDim2.new(0, 31, 0, 31);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["BackgroundTransparency"] = 1;
+G2L["4"]["Position"] = UDim2.new(0.0257, 0, 0.02941, 0);
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.topbar.TextLabel
+G2L["5"] = Instance.new("TextLabel", G2L["3"]);
+G2L["5"]["TextWrapped"] = true;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["TextSize"] = 14;
+G2L["5"]["TextScaled"] = true;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["BackgroundTransparency"] = 1;
+G2L["5"]["Size"] = UDim2.new(0, 165, 0, 32);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[FE sound GUI]];
+G2L["5"]["Position"] = UDim2.new(0.29038, 0, -0.04657, 0);
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.topbar.minimize
+G2L["6"] = Instance.new("TextButton", G2L["3"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 55;
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["TextYAlignment"] = Enum.TextYAlignment.Bottom;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Size"] = UDim2.new(0, 29, 0, 39);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[_]];
+G2L["6"]["Name"] = [[minimize]];
+G2L["6"]["Position"] = UDim2.new(0.86364, 0, -0.10559, 0);
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.topbar.minimize.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.topbar.Close
+G2L["8"] = Instance.new("TextButton", G2L["3"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 55;
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["BackgroundTransparency"] = 1;
+G2L["8"]["Size"] = UDim2.new(0, 29, 0, 39);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[x]];
+G2L["8"]["Name"] = [[Close]];
+G2L["8"]["Position"] = UDim2.new(0.9314, 0, -0.16441, 0);
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.topbar.Close.LocalScript
+G2L["9"] = Instance.new("LocalScript", G2L["8"]);
+
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main
+G2L["a"] = Instance.new("Frame", G2L["2"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["a"]["ClipsDescendants"] = true;
+G2L["a"]["Size"] = UDim2.new(0, 428, 0, 188);
+G2L["a"]["Position"] = UDim2.new(0, 0, 0.17427, 0);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Name"] = [[Main]];
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.RFE
+G2L["b"] = Instance.new("TextLabel", G2L["a"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 43;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["b"]["BackgroundTransparency"] = 1;
+G2L["b"]["Size"] = UDim2.new(0, 426, 0, 23);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[RespectFilteringEnabled  = true]];
+G2L["b"]["Name"] = [[RFE]];
+G2L["b"]["Position"] = UDim2.new(-0.00234, 0, 0.03563, 0);
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.RFE.LocalScript
+G2L["c"] = Instance.new("LocalScript", G2L["b"]);
+
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Mute
+G2L["d"] = Instance.new("TextButton", G2L["a"]);
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextSize"] = 32;
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(46, 46, 46);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["Size"] = UDim2.new(0, 180, 0, 36);
+G2L["d"]["ClipsDescendants"] = true;
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[Mute Game]];
+G2L["d"]["Name"] = [[Mute]];
+G2L["d"]["Position"] = UDim2.new(0.04808, 0, 0.25025, 0);
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Mute.LocalScript
+G2L["e"] = Instance.new("LocalScript", G2L["d"]);
+
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Startpos mute
+G2L["f"] = Instance.new("TextButton", G2L["a"]);
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextSize"] = 32;
+G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(46, 46, 46);
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["Size"] = UDim2.new(0, 180, 0, 36);
+G2L["f"]["ClipsDescendants"] = true;
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[timepos mute]];
+G2L["f"]["Name"] = [[Startpos mute]];
+G2L["f"]["Position"] = UDim2.new(0.04808, 0, 0.48442, 0);
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Startpos mute.LocalScript
+G2L["10"] = Instance.new("LocalScript", G2L["f"]);
+
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Play All
+G2L["11"] = Instance.new("TextButton", G2L["a"]);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextSize"] = 32;
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(46, 46, 46);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["Size"] = UDim2.new(0, 180, 0, 36);
+G2L["11"]["ClipsDescendants"] = true;
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[Play All]];
+G2L["11"]["Name"] = [[Play All]];
+G2L["11"]["Position"] = UDim2.new(0.52287, 0, 0.24481, 0);
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Play All.LocalScript
+G2L["12"] = Instance.new("LocalScript", G2L["11"]);
+
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Loop All
+G2L["13"] = Instance.new("TextButton", G2L["a"]);
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextSize"] = 32;
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(46, 46, 46);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["Size"] = UDim2.new(0, 180, 0, 36);
+G2L["13"]["ClipsDescendants"] = true;
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[Loop All]];
+G2L["13"]["Name"] = [[Loop All]];
+G2L["13"]["Position"] = UDim2.new(0.52327, 0, 0.71333, 0);
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Loop All.LocalScript
+G2L["14"] = Instance.new("LocalScript", G2L["13"]);
+
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Stop All
+G2L["15"] = Instance.new("TextButton", G2L["a"]);
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["TextSize"] = 32;
+G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(46, 46, 46);
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["Size"] = UDim2.new(0, 180, 0, 36);
+G2L["15"]["ClipsDescendants"] = true;
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[Stop All]];
+G2L["15"]["Name"] = [[Stop All]];
+G2L["15"]["Position"] = UDim2.new(0.04673, 0, 0.71277, 0);
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Stop All.LocalScript
+G2L["16"] = Instance.new("LocalScript", G2L["15"]);
+
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Spam All
+G2L["17"] = Instance.new("TextButton", G2L["a"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextSize"] = 32;
+G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(46, 46, 46);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/TitilliumWeb.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17"]["Size"] = UDim2.new(0, 180, 0, 36);
+G2L["17"]["ClipsDescendants"] = true;
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[Spam All]];
+G2L["17"]["Name"] = [[Spam All]];
+G2L["17"]["Position"] = UDim2.new(0.52287, 0, 0.47897, 0);
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Spam All.LocalScript
+G2L["18"] = Instance.new("LocalScript", G2L["17"]);
+
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.topshadow
+G2L["19"] = Instance.new("Frame", G2L["2"]);
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(31, 47, 119);
+G2L["19"]["Size"] = UDim2.new(0, 428, 0, 6);
+G2L["19"]["Position"] = UDim2.new(0, 0, 0.14796, 0);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Name"] = [[topshadow]];
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Smooth GUI Dragging
+G2L["1a"] = Instance.new("LocalScript", G2L["2"]);
+G2L["1a"]["Name"] = [[Smooth GUI Dragging]];
+
+
+-- StarterGui.RespectFilteringEnabled GUI.LocalScript
+G2L["1b"] = Instance.new("LocalScript", G2L["1"]);
+
+
+
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.topbar.minimize.LocalScript
+local function C_7()
+local script = G2L["7"];
+	local frame = script.Parent.Parent.Parent:WaitForChild("Main")
+	local TweenService = game:GetService("TweenService")
+	
+	local open = UDim2.new(0, 438, 0, 188)
+	local close = UDim2.new(0, 438, 0, 0)
+	local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		if frame.Size.Y.Offset == open.Y.Offset then
+			TweenService:Create(frame, tweenInfo, {Size = close}):Play()
+		else
+			TweenService:Create(frame, tweenInfo, {Size = open}):Play()
+		end
+	end)
+	
+end;
+task.spawn(C_7);
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.topbar.Close.LocalScript
+local function C_9()
+local script = G2L["9"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local target = script.Parent.Parent.Parent
+		for _, child in ipairs(target:GetDescendants()) do
+			if pcall(function() return child.Transparency end) and child.Transparency ~= 1 then
+				task.spawn(function()
+					while child.Transparency < 1 do
+						child.Transparency = math.min(1, child.Transparency + 0.1)
+						task.wait(0.05)
+					end
+				end)
+			end
+		end
+		task.wait(0.5)
+		if target.Parent then target.Parent:Destroy() end
+	end)
+	
+end;
+task.spawn(C_9);
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.RFE.LocalScript
+local function C_c()
+local script = G2L["c"];
+	task.wait(1)
+	
+	if game.SoundService.RespectFilteringEnabled == false then
+		script.Parent.TextColor3 = Color3.fromRGB(0, 255, 0)
+		script.Parent.Text = "RespectFilteringEnabled = false"
+	else
+		script.Parent.TextColor3 = Color3.fromRGB(255, 0, 0)
+		script.Parent.Text = "RespectFilteringEnabled = true"
+	end
+	
+end;
+task.spawn(C_c);
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Mute.LocalScript
+local function C_e()
+local script = G2L["e"];
+	local Active = false
+	script.Parent.MouseButton1Click:Connect(function()
+		Active = not Active
+		script.Parent.BackgroundColor3 = Active and Color3.fromRGB(math.max(0, (script.Parent.BackgroundColor3.R * 255) - 30), math.max(0, (script.Parent.BackgroundColor3.G * 255) - 30), math.max(0, (script.Parent.BackgroundColor3.B * 255) - 30)) or Color3.fromRGB(math.min(255, (script.Parent.BackgroundColor3.R * 255) + 30), math.min(255, (script.Parent.BackgroundColor3.G * 255) + 30), math.min(255, (script.Parent.BackgroundColor3.B * 255) + 30))
+		while Active == true do
+			task.wait(0)
+			for _, sound in next, workspace:GetDescendants() do
+				if sound:IsA("Sound") then
+					sound:Stop()
+				end
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_e);
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Startpos mute.LocalScript
+local function C_10()
+local script = G2L["10"];
+	local Active = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Active = not Active
+	
+		local color = script.Parent.BackgroundColor3
+		if Active then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(math.max(0, color.R*255-30), math.max(0, color.G*255-30), math.max(0, color.B*255-30))
+		else
+			script.Parent.BackgroundColor3 = Color3.fromRGB(math.min(255, color.R*255+30), math.min(255, color.G*255+30), math.min(255, color.B*255+30))
+		end
+	
+		if Active then
+			while Active do
+				for _, s in pairs(workspace:GetDescendants()) do
+					if s:IsA("Sound") and s.TimeLength > 0.01 then
+						s.TimePosition = s.TimeLength - 0.01
+					end
+				end
+				task.wait(1)
+			end
+		else
+			for _, s in pairs(workspace:GetDescendants()) do
+				if s:IsA("Sound") then
+					s.TimePosition = 0
+				end
+			end
+		end
+	end)
+end;
+task.spawn(C_10);
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Play All.LocalScript
+local function C_12()
+local script = G2L["12"];
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, sound in next, workspace:GetDescendants() do
+			if sound:IsA("Sound") then
+				sound:Play()
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_12);
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Loop All.LocalScript
+local function C_14()
+local script = G2L["14"];
+	local Active = false
+	script.Parent.MouseButton1Click:Connect(function()
+		Active = not Active
+		script.Parent.BackgroundColor3 = Active and Color3.fromRGB(math.max(0, (script.Parent.BackgroundColor3.R * 255) - 30), math.max(0, (script.Parent.BackgroundColor3.G * 255) - 30), math.max(0, (script.Parent.BackgroundColor3.B * 255) - 30)) or Color3.fromRGB(math.min(255, (script.Parent.BackgroundColor3.R * 255) + 30), math.min(255, (script.Parent.BackgroundColor3.G * 255) + 30), math.min(255, (script.Parent.BackgroundColor3.B * 255) + 30))
+		while Active == true do
+			task.wait(5)
+			for i, Sound in ipairs(workspace:GetDescendants()) do
+				if Sound:IsA("Sound") then 
+					Sound:Play()
+				end
+			end
+		end
+	end)
+end;
+task.spawn(C_14);
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Stop All.LocalScript
+local function C_16()
+local script = G2L["16"];
+	script.Parent.MouseButton1Click:Connect(function()
+	for _, sound in next, workspace:GetDescendants() do
+		if sound:IsA("Sound") then
+			sound:Stop()
+		end
+	end
+	end)
+end;
+task.spawn(C_16);
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Main.Spam All.LocalScript
+local function C_18()
+local script = G2L["18"];
+	local Active = false
+	script.Parent.MouseButton1Click:Connect(function()
+		Active = not Active
+		script.Parent.BackgroundColor3 = Active and Color3.fromRGB(math.max(0, (script.Parent.BackgroundColor3.R * 255) - 30), math.max(0, (script.Parent.BackgroundColor3.G * 255) - 30), math.max(0, (script.Parent.BackgroundColor3.B * 255) - 30)) or Color3.fromRGB(math.min(255, (script.Parent.BackgroundColor3.R * 255) + 30), math.min(255, (script.Parent.BackgroundColor3.G * 255) + 30), math.min(255, (script.Parent.BackgroundColor3.B * 255) + 30))
+		while Active == true do
+			task.wait(0.01)
+			for _, sound in next, workspace:GetDescendants() do
+				if sound:IsA("Sound") then
+					sound:Play()
+				end
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_18);
+-- StarterGui.RespectFilteringEnabled GUI.mainframe.Smooth GUI Dragging
+local function C_1a()
+local script = G2L["1a"];
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (15); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+	
+end;
+task.spawn(C_1a);
+-- StarterGui.RespectFilteringEnabled GUI.LocalScript
+local function C_1b()
+local script = G2L["1b"];
+	pcall(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Join The Discord!",
+			Text = "discord.gg/dd4XXRMz8b",
+			Duration = 111; -- errr 1.
+		})
+	end)
+	
+end;
+task.spawn(C_1b);
+
+return G2L["1"], require;
