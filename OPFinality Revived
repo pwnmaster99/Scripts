@@ -1,5 +1,4 @@
-local OldWeldPhysics = false -- the new ones are more stable
-local E_SELECT = true -- toggles holding down E and clicking someone to select them
+
 
 
 -- I spent quite a while on this. Do not skid, please!
@@ -1850,6 +1849,8 @@ G2L["b2"]["Size"] = UDim2.new(0.2, 0, 0.38943, 0);
 G2L["b2"]["Position"] = UDim2.new(0.08605, 0, 0.16141, 0);
 G2L["b2"]["Name"] = [[AnimColon1]];
 
+local OldWeldPhysics = false -- the new ones are more stable
+local E_SELECT = true -- toggles holding down E and clicking someone to select them
 
 -- StarterGui.OPF:R.MainFrame.Pages.PageAnimations.AnimColon1.Bee
 G2L["b3"] = Instance.new("TextButton", G2L["b2"]);
@@ -4284,9 +4285,9 @@ local script = G2L["6"];
 
 	pcall(function()
 	game:GetService("StarterGui"):SetCore("SendNotification", {
-		Title = "WARNING",
-		Text = "KILLING IS PATCHED :(",
-		Duration = 100000,
+		Title = ".",
+		Text = ".",
+		Duration = 0,
 	})
 end)
 
