@@ -999,20 +999,20 @@ local script = G2L["3"];
 
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "notification";
-			Text = "This will be patched next roblox update";
-			Duration = 120;
+			Text = "This will be patched (eventually) so have fun while it lasts!";
+			Duration = 45;
 		})
 
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "The discord";
 			Text = "discord.gg/dd4XXRMz8b";
-			Duration = 120;
+			Duration = 45;
 		})
 	
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "Notification";
 			Text = "by urban1";
-			Duration = 120;
+			Duration = 45;
 		})
 	end)
 end;
