@@ -6,11 +6,6 @@ heavily inspired by Scripty#2063's sound breaker
 
 IF RespectFilteringEnabled = true, NOTHING WILL WORK
   
-IF you keep spam / loop all on for too long, it will queue and will delay your other actions, keep them on for 7 seconds at a time, maximum
-
-it is advised you get an alt account in the same server, very often it'll just stop working. I dunno why
-
-for those confused about timepos mute, it sets the timepos of every sound to the end. This also means the server will be muted after you leave!
 
 ]]--
 
