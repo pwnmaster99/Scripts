@@ -1,7 +1,7 @@
 
 
 
--- I spent quite a while on this. Do not skid, please!
+-- opfinality
 
 
 -- Instances: 409 | Scripts: 141 | Modules: 0 | Tags: 0
@@ -4278,16 +4278,16 @@ local script = G2L["6"];
 	
 	pcall(function()
 	game:GetService("StarterGui"):SetCore("SendNotification", {
-		Title = "DISCONTINUED!!",
-		Text = "discord.gg/dd4XXRMz8b GO HERE",
-		Duration = 100000,
+		Title = "discord",
+		Text = "discord.gg/dd4XXRMz8b",
+		Duration = 45,
 	})
 
 	pcall(function()
 	game:GetService("StarterGui"):SetCore("SendNotification", {
-		Title = ".",
-		Text = ".",
-		Duration = 0,
+		Title = "Notification",
+		Text = "Some commands may be broken / patched",
+		Duration = 45,
 	})
 end)
 
@@ -4295,7 +4295,7 @@ end)
 	game:GetService("StarterGui"):SetCore("SendNotification", {
 		Title = "by urban1",
 		Text = "by urban1 (@nightly_2222 on roblox)",
-		Duration = math.huge,
+		Duration = 45,
 	})
 end)
 end);
@@ -4305,7 +4305,7 @@ end);
 	if typeof(sethiddenproperty) ~= "function" then
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "OPF:R",
-			Text = "No sethiddenproperty! Welding will not work, and flinging will be unstable.",
+			Text = "No sethiddenproperty! some features will not work.",
 			Duration = 10
 		})
 	end
