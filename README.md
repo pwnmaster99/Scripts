@@ -1,2 +1,1 @@
-# MaScripts!
-Do Not Skid...
+the scripts, which I loadstring from
