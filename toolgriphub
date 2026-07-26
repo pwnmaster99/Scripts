@@ -1190,7 +1190,7 @@ local script = G2L["4"];
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "check for updates",
 			Text = "discord.gg/dd4XXRMz8b",
-			Duration = 999999999;
+			Duration = 45;
 		})
 	end)
 	
@@ -1198,7 +1198,7 @@ local script = G2L["4"];
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "By urban1",
 			Text = "Toolgrip by urban1",
-			Duration = 999999999;
+			Duration = 45;
 		})
 	end)
 	
