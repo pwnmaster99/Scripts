@@ -878,21 +878,21 @@ local script = G2L["6"];
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "Notification";
 			Text = "By urban and moonhad";
-			Duration = 35;
+			Duration = 45;
 		})
 		
 	
 	
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "join the discord twin";
+			Title = "join the discord";
 			Text = ".gg/dd4XXRMz8b";
-			Duration = 35;
+			Duration = 45;
 		})
 		
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "Notification";
 			Text = "There's a button at the bottom of the GUI to copy the invite";
-			Duration = 35;
+			Duration = 45;
 		})
 	end)
 end;
