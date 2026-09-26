@@ -1195,7 +1195,7 @@ local script = G2L["13"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if savedpos and root and root.Parent then
@@ -1229,7 +1229,7 @@ local script = G2L["13"];
 	
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -1246,7 +1246,7 @@ local script = G2L["13"];
 	
 			local targetCFrame = tRoot.CFrame * CFrame.new(PO) * RO
 	
-			pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
 	
 			root.CFrame = targetCFrame
 			root.Velocity = Vector3.new()
@@ -1300,7 +1300,7 @@ local script = G2L["13"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 	end)
 end;
@@ -1416,7 +1416,7 @@ local script = G2L["21"];
 	
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -1433,7 +1433,7 @@ local script = G2L["21"];
 	
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
-			pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
 	
 			root.CFrame = saved
 			root.Velocity = Vector3.new()
@@ -1453,7 +1453,7 @@ local script = G2L["21"];
 			con:Disconnect()
 			con = nil
 		end
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 	
 		if savedpos and root and root.Parent then
 			root.CFrame = savedpos
@@ -1496,7 +1496,7 @@ local script = G2L["21"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 	end)
 end;
@@ -1575,7 +1575,7 @@ local script = G2L["26"];
 	
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -1592,7 +1592,7 @@ local script = G2L["26"];
 	
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
-			pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
 	
 			root.CFrame = saved
 			root.Velocity = Vector3.new()
@@ -1612,7 +1612,7 @@ local script = G2L["26"];
 			con:Disconnect()
 			con = nil
 		end
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 	
 		if savedpos and root and root.Parent then
 			root.CFrame = savedpos
@@ -1655,7 +1655,7 @@ local script = G2L["26"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 	end)
 end;
@@ -1734,7 +1734,7 @@ local script = G2L["29"];
 	
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -1751,7 +1751,7 @@ local script = G2L["29"];
 	
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
-			pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
 	
 			root.CFrame = saved
 			root.Velocity = Vector3.new()
@@ -1771,7 +1771,7 @@ local script = G2L["29"];
 			con:Disconnect()
 			con = nil
 		end
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 	
 		if savedpos and root and root.Parent then
 			root.CFrame = savedpos
@@ -1814,7 +1814,7 @@ local script = G2L["29"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 	end)
 end;
@@ -1893,7 +1893,7 @@ local script = G2L["2c"];
 	
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -1910,7 +1910,7 @@ local script = G2L["2c"];
 	
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
-			pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
 	
 			root.CFrame = saved
 			root.Velocity = Vector3.new()
@@ -1930,7 +1930,7 @@ local script = G2L["2c"];
 			con:Disconnect()
 			con = nil
 		end
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 	
 		if savedpos and root and root.Parent then
 			root.CFrame = savedpos
@@ -1973,7 +1973,7 @@ local script = G2L["2c"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 	end)
 end;
@@ -2052,7 +2052,7 @@ local script = G2L["2f"];
 	
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -2069,7 +2069,7 @@ local script = G2L["2f"];
 	
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
-			pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
 	
 			root.CFrame = saved
 			root.Velocity = Vector3.new()
@@ -2091,7 +2091,7 @@ local script = G2L["2f"];
 			con:Disconnect()
 			con = nil
 		end
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 	
 		if savedpos and root and root.Parent then
 			root.CFrame = savedpos
@@ -2136,7 +2136,7 @@ local script = G2L["2f"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 	end)
 end;
@@ -2215,7 +2215,7 @@ local script = G2L["32"];
 	
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -2232,7 +2232,7 @@ local script = G2L["32"];
 	
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
-			pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
 	
 			root.CFrame = saved
 			root.Velocity = Vector3.new()
@@ -2253,7 +2253,7 @@ local script = G2L["32"];
 			con:Disconnect()
 			con = nil
 		end
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 	
 		if savedpos and root and root.Parent then
 			root.CFrame = savedpos
@@ -2297,7 +2297,7 @@ local script = G2L["32"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 	end)
 end;
@@ -2357,7 +2357,7 @@ local script = G2L["35"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if savedpos and root and root.Parent then
@@ -2392,7 +2392,7 @@ local script = G2L["35"];
 	
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -2409,7 +2409,7 @@ local script = G2L["35"];
 	
 			local targetCFrame = tRoot.CFrame * CFrame.new(PO) * RO
 	
-			pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
 	
 			root.CFrame = targetCFrame
 			root.Velocity = Vector3.new()
@@ -2462,7 +2462,7 @@ local script = G2L["35"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 	end)
 end;
@@ -2578,7 +2578,7 @@ local script = G2L["3b"];
 	
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -2595,7 +2595,7 @@ local script = G2L["3b"];
 	
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
-			pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
 	
 			root.CFrame = saved
 			root.Velocity = Vector3.new()
@@ -2615,7 +2615,7 @@ local script = G2L["3b"];
 			con:Disconnect()
 			con = nil
 		end
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 	
 		if savedpos and root and root.Parent then
 			root.CFrame = savedpos
@@ -2657,7 +2657,7 @@ local script = G2L["3b"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 	end)
 end;
@@ -2735,7 +2735,7 @@ local script = G2L["3e"];
 	
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -2752,7 +2752,7 @@ local script = G2L["3e"];
 	
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
-			pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
 	
 			root.CFrame = saved
 			root.Velocity = Vector3.new()
@@ -2773,7 +2773,7 @@ local script = G2L["3e"];
 			con = nil
 		end
 	
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 	
 		if savedpos and root and root.Parent then
 			root.CFrame = savedpos
@@ -2815,7 +2815,7 @@ local script = G2L["3e"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 	end)
 end;
@@ -2875,7 +2875,7 @@ local script = G2L["41"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if savedpos and root and root.Parent then
@@ -2910,7 +2910,7 @@ local script = G2L["41"];
 	
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -2927,7 +2927,7 @@ local script = G2L["41"];
 	
 			local targetCFrame = tRoot.CFrame * CFrame.new(PO) * RO
 	
-			pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
 	
 			root.CFrame = targetCFrame
 			root.Velocity = Vector3.new()
@@ -2980,7 +2980,7 @@ local script = G2L["41"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 	end)
 end;
@@ -3111,7 +3111,7 @@ local script = G2L["44"];
 	
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -3128,7 +3128,7 @@ local script = G2L["44"];
 	
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
-			pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
 	
 			root.CFrame = saved
 			root.Velocity = Vector3.new()
@@ -3153,7 +3153,7 @@ local script = G2L["44"];
 	
 		StopAnimations()
 	
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 	
 		if savedpos and root and root.Parent then
 			root.CFrame = savedpos
@@ -3195,7 +3195,7 @@ local script = G2L["44"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 		StopAnimations()
 	end)
@@ -3243,7 +3243,7 @@ local script = G2L["47"];
 	local function hardStop()
 		sessionActive = false
 		if con then con:Disconnect() con = nil end
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		restorePosition()
 		isOn = false
 		button.Text = "Jumpscare All"
@@ -3336,7 +3336,7 @@ local script = G2L["47"];
 			local lr = root
 			local lh = humanoid
 			if not lr or not lr.Parent or not lh or not lh.Parent or lh.Health <= 0 then
-				pcall(function() sethiddenproperty(lr, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(lr, "PhysicsRepRootPart", nil) end)
 				hardStop()
 				return
 			end
@@ -3357,7 +3357,7 @@ local script = G2L["47"];
 			if tick() - timeOnTarget >= 1 then
 				local tp = TPList[currentIndex]
 				if tp then doneSet[tp] = true end
-				pcall(function() sethiddenproperty(lr, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(lr, "PhysicsRepRootPart", nil) end)
 	
 				if allDone() then
 					hardStop()
@@ -3371,7 +3371,7 @@ local script = G2L["47"];
 			end
 	
 			local targetCFrame = tRoot.CFrame * CFrame.new(PO) * RO
-			pcall(function() sethiddenproperty(lr, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(lr, "PhysicsRepRootPart", tRoot) end)
 			lr.CFrame = targetCFrame
 			lr.Velocity = Vector3.new()
 			lr.AssemblyLinearVelocity = Vector3.new()
@@ -3408,7 +3408,7 @@ local script = G2L["47"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() con = nil end
 		sessionActive = false
 		savedPos = nil
@@ -3499,7 +3499,7 @@ local script = G2L["4a"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if savedpos and root and root.Parent then
@@ -3534,7 +3534,7 @@ local script = G2L["4a"];
 	
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -3551,7 +3551,7 @@ local script = G2L["4a"];
 	
 			local targetCFrame = tRoot.CFrame * CFrame.new(PO) * RO
 	
-			pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
 	
 			root.CFrame = targetCFrame
 			root.Velocity = Vector3.new()
@@ -3604,7 +3604,7 @@ local script = G2L["4a"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 	end)
 end;
@@ -3682,7 +3682,7 @@ local script = G2L["4f"];
 			camera.CameraSubject = player.Character.Humanoid
 		end
 	
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 	
 		if savedpos and root and root.Parent then
 			root.CFrame = savedpos
@@ -3744,7 +3744,7 @@ local script = G2L["4f"];
 	
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -3779,7 +3779,7 @@ local script = G2L["4f"];
 	
 			local targetCFrame = tRoot.CFrame * CFrame.new(currentPO) * currentRO
 	
-			pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
 	
 			root.CFrame = targetCFrame
 			root.Velocity = Vector3.new()
@@ -3821,7 +3821,7 @@ local script = G2L["4f"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 	end)
 end;
@@ -3883,7 +3883,7 @@ local script = G2L["54"];
 			con = nil
 		end
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 		if savedpos and root and root.Parent then
 			root.CFrame = savedpos
@@ -3938,7 +3938,7 @@ local script = G2L["54"];
 				or not localHumanoid.Parent
 				or localHumanoid.Health <= 0
 			then
-				pcall(function() sethiddenproperty(localRoot, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(localRoot, "PhysicsRepRootPart", nil) end)
 				sessionActive = false
 				hardStop()
 				return
@@ -3946,7 +3946,7 @@ local script = G2L["54"];
 	
 	
 			if not TP or not TP.Parent then
-				pcall(function() sethiddenproperty(localRoot, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(localRoot, "PhysicsRepRootPart", nil) end)
 				sessionActive = false
 				hardStop()
 				return
@@ -3969,7 +3969,7 @@ local script = G2L["54"];
 			end)
 	
 			local targetCFrame = tRoot.CFrame * CFrame.new(PO) * RO
-			pcall(function() sethiddenproperty(localRoot, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(localRoot, "PhysicsRepRootPart", tRoot) end)
 			localRoot.CFrame = targetCFrame
 			localRoot.Velocity = Vector3.new()
 			localRoot.AssemblyLinearVelocity = Vector3.new()
@@ -4021,7 +4021,7 @@ local script = G2L["54"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then
 			con:Disconnect()
 			con = nil
@@ -4192,7 +4192,7 @@ local script = G2L["5c"];
 			if not isOn then return end
 	
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -4215,7 +4215,7 @@ local script = G2L["5c"];
 			local offset = dir * dist
 	
 			pcall(function()
-				sethiddenproperty(root, "PhysicsRepRootRef", tRoot)
+				sethiddenproperty(root, "PhysicsRepRootPart", tRoot)
 			end)
 	
 			root.CFrame = tRoot.CFrame * CFrame.new(offset)
@@ -4227,7 +4227,7 @@ local script = G2L["5c"];
 			con:Disconnect()
 			con = nil
 		end
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 	
 		if savedpos and root and root.Parent then
 			root.CFrame = savedpos
@@ -4258,7 +4258,7 @@ local script = G2L["5c"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 	end)
 end;
@@ -4314,7 +4314,7 @@ local script = G2L["5f"];
 		sessionActive = false
 		if con then con:Disconnect() con = nil end
 		stopMoveDirection()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		restorePosition()
 		isOn = false
 		button.Text = "Fling All"
@@ -4425,7 +4425,7 @@ local script = G2L["5f"];
 			local lr = root
 			local lh = humanoid
 			if not lr or not lr.Parent or not lh or not lh.Parent or lh.Health <= 0 then
-				pcall(function() sethiddenproperty(lr, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(lr, "PhysicsRepRootPart", nil) end)
 				hardStop()
 				return
 			end
@@ -4446,7 +4446,7 @@ local script = G2L["5f"];
 			if tick() - timeOnTarget >= 1.5 then
 				local tp = TPList[currentIndex]
 				if tp then doneSet[tp] = true end
-				pcall(function() sethiddenproperty(lr, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(lr, "PhysicsRepRootPart", nil) end)
 	
 				if allDone() then
 					hardStop()
@@ -4460,7 +4460,7 @@ local script = G2L["5f"];
 			end
 	
 			local targetCFrame = tRoot.CFrame * CFrame.new(PO) * RO
-			pcall(function() sethiddenproperty(lr, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(lr, "PhysicsRepRootPart", tRoot) end)
 			lr.CFrame = targetCFrame
 			lr.Velocity = Vector3.new()
 			lr.AssemblyLinearVelocity = Vector3.new()
@@ -4497,7 +4497,7 @@ local script = G2L["5f"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		stopMoveDirection()
 		if con then con:Disconnect() con = nil end
 		sessionActive = false
