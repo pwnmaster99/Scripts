@@ -5468,7 +5468,7 @@ local script = G2L["94"];
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
 				pcall(function()
-					sethiddenproperty(root, "PhysicsRepRootRef", nil)
+					sethiddenproperty(root, "PhysicsRepRootPart", nil)
 				end)
 	
 				if con then
@@ -5495,7 +5495,7 @@ local script = G2L["94"];
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
 			pcall(function()
-				sethiddenproperty(root, "PhysicsRepRootRef", tRoot)
+				sethiddenproperty(root, "PhysicsRepRootPart", tRoot)
 			end)
 	
 			root.CFrame = saved
@@ -5518,7 +5518,7 @@ local script = G2L["94"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if head then
@@ -5575,7 +5575,7 @@ local script = G2L["94"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if con then
@@ -5685,7 +5685,7 @@ local script = G2L["96"];
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
 				pcall(function()
-					sethiddenproperty(root, "PhysicsRepRootRef", nil)
+					sethiddenproperty(root, "PhysicsRepRootPart", nil)
 				end)
 	
 				if con then
@@ -5712,7 +5712,7 @@ local script = G2L["96"];
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
 			pcall(function()
-				sethiddenproperty(root, "PhysicsRepRootRef", tRoot)
+				sethiddenproperty(root, "PhysicsRepRootPart", tRoot)
 			end)
 	
 			root.CFrame = saved
@@ -5735,7 +5735,7 @@ local script = G2L["96"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if head then
@@ -5792,7 +5792,7 @@ local script = G2L["96"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if con then
@@ -5939,7 +5939,7 @@ local script = G2L["98"];
 	
 			if not root or not root.Parent or humanoid.Health <= 0 then
 				pcall(function()
-					sethiddenproperty(root, "PhysicsRepRootRef", nil)
+					sethiddenproperty(root, "PhysicsRepRootPart", nil)
 				end)
 	
 				if con then
@@ -5966,7 +5966,7 @@ local script = G2L["98"];
 			switchPosition()
 	
 			pcall(function()
-				sethiddenproperty(root, "PhysicsRepRootRef", tRoot)
+				sethiddenproperty(root, "PhysicsRepRootPart", tRoot)
 			end)
 	
 			root.CFrame = tRoot.CFrame * CFrame.new(currentOffset)
@@ -5985,7 +5985,7 @@ local script = G2L["98"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		setHeadAnchored(false)
@@ -6025,7 +6025,7 @@ local script = G2L["98"];
 		setHeadAnchored(false)
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if con then
@@ -6137,7 +6137,7 @@ local script = G2L["9b"];
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
 				pcall(function()
-					sethiddenproperty(root, "PhysicsRepRootRef", nil)
+					sethiddenproperty(root, "PhysicsRepRootPart", nil)
 				end)
 	
 				if con then
@@ -6164,7 +6164,7 @@ local script = G2L["9b"];
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
 			pcall(function()
-				sethiddenproperty(root, "PhysicsRepRootRef", tRoot)
+				sethiddenproperty(root, "PhysicsRepRootPart", tRoot)
 			end)
 	
 			root.CFrame = saved
@@ -6187,7 +6187,7 @@ local script = G2L["9b"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if head then
@@ -6246,7 +6246,7 @@ local script = G2L["9b"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if con then
@@ -6358,7 +6358,7 @@ local script = G2L["9d"];
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
 				pcall(function()
-					sethiddenproperty(root, "PhysicsRepRootRef", nil)
+					sethiddenproperty(root, "PhysicsRepRootPart", nil)
 				end)
 	
 				if con then
@@ -6385,7 +6385,7 @@ local script = G2L["9d"];
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
 			pcall(function()
-				sethiddenproperty(root, "PhysicsRepRootRef", tRoot)
+				sethiddenproperty(root, "PhysicsRepRootPart", tRoot)
 			end)
 	
 			root.CFrame = saved
@@ -6410,7 +6410,7 @@ local script = G2L["9d"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if head then
@@ -6471,7 +6471,7 @@ local script = G2L["9d"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if con then
@@ -6581,7 +6581,7 @@ local script = G2L["9f"];
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
 				pcall(function()
-					sethiddenproperty(root, "PhysicsRepRootRef", nil)
+					sethiddenproperty(root, "PhysicsRepRootPart", nil)
 				end)
 	
 				if con then
@@ -6608,7 +6608,7 @@ local script = G2L["9f"];
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
 			pcall(function()
-				sethiddenproperty(root, "PhysicsRepRootRef", tRoot)
+				sethiddenproperty(root, "PhysicsRepRootPart", tRoot)
 			end)
 	
 			root.CFrame = saved
@@ -6631,7 +6631,7 @@ local script = G2L["9f"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if head then
@@ -6688,7 +6688,7 @@ local script = G2L["9f"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if con then
@@ -6802,7 +6802,7 @@ local script = G2L["a2"];
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
 				pcall(function()
-					sethiddenproperty(root, "PhysicsRepRootRef", nil)
+					sethiddenproperty(root, "PhysicsRepRootPart", nil)
 				end)
 	
 				if con then
@@ -6829,7 +6829,7 @@ local script = G2L["a2"];
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
 			pcall(function()
-				sethiddenproperty(root, "PhysicsRepRootRef", tRoot)
+				sethiddenproperty(root, "PhysicsRepRootPart", tRoot)
 			end)
 	
 			root.CFrame = saved
@@ -6852,7 +6852,7 @@ local script = G2L["a2"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if head then
@@ -6911,7 +6911,7 @@ local script = G2L["a2"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if con then
@@ -7023,7 +7023,7 @@ local script = G2L["a4"];
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
 				pcall(function()
-					sethiddenproperty(root, "PhysicsRepRootRef", nil)
+					sethiddenproperty(root, "PhysicsRepRootPart", nil)
 				end)
 	
 				if con then
@@ -7050,7 +7050,7 @@ local script = G2L["a4"];
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
 			pcall(function()
-				sethiddenproperty(root, "PhysicsRepRootRef", tRoot)
+				sethiddenproperty(root, "PhysicsRepRootPart", tRoot)
 			end)
 	
 			root.CFrame = saved
@@ -7073,7 +7073,7 @@ local script = G2L["a4"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if head then
@@ -7132,7 +7132,7 @@ local script = G2L["a4"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if con then
@@ -7245,7 +7245,7 @@ local script = G2L["a6"];
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
 				pcall(function()
-					sethiddenproperty(root, "PhysicsRepRootRef", nil)
+					sethiddenproperty(root, "PhysicsRepRootPart", nil)
 				end)
 	
 				if con then
@@ -7272,7 +7272,7 @@ local script = G2L["a6"];
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
 			pcall(function()
-				sethiddenproperty(root, "PhysicsRepRootRef", tRoot)
+				sethiddenproperty(root, "PhysicsRepRootPart", tRoot)
 			end)
 	
 			root.CFrame = saved
@@ -7295,7 +7295,7 @@ local script = G2L["a6"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if head then
@@ -7354,7 +7354,7 @@ local script = G2L["a6"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if con then
@@ -7467,7 +7467,7 @@ local script = G2L["a9"];
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
 				pcall(function()
-					sethiddenproperty(root, "PhysicsRepRootRef", nil)
+					sethiddenproperty(root, "PhysicsRepRootPart", nil)
 				end)
 	
 				if con then
@@ -7494,7 +7494,7 @@ local script = G2L["a9"];
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
 			pcall(function()
-				sethiddenproperty(root, "PhysicsRepRootRef", tRoot)
+				sethiddenproperty(root, "PhysicsRepRootPart", tRoot)
 			end)
 	
 			root.CFrame = saved
@@ -7517,7 +7517,7 @@ local script = G2L["a9"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if head then
@@ -7576,7 +7576,7 @@ local script = G2L["a9"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if con then
@@ -7689,7 +7689,7 @@ local script = G2L["ab"];
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
 				pcall(function()
-					sethiddenproperty(root, "PhysicsRepRootRef", nil)
+					sethiddenproperty(root, "PhysicsRepRootPart", nil)
 				end)
 	
 				if con then
@@ -7716,7 +7716,7 @@ local script = G2L["ab"];
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
 			pcall(function()
-				sethiddenproperty(root, "PhysicsRepRootRef", tRoot)
+				sethiddenproperty(root, "PhysicsRepRootPart", tRoot)
 			end)
 	
 			root.CFrame = saved
@@ -7739,7 +7739,7 @@ local script = G2L["ab"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if head then
@@ -7798,7 +7798,7 @@ local script = G2L["ab"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if con then
@@ -7911,7 +7911,7 @@ local script = G2L["ad"];
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
 				pcall(function()
-					sethiddenproperty(root, "PhysicsRepRootRef", nil)
+					sethiddenproperty(root, "PhysicsRepRootPart", nil)
 				end)
 	
 				if con then
@@ -7938,7 +7938,7 @@ local script = G2L["ad"];
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
 	
 			pcall(function()
-				sethiddenproperty(root, "PhysicsRepRootRef", tRoot)
+				sethiddenproperty(root, "PhysicsRepRootPart", tRoot)
 			end)
 	
 			root.CFrame = saved
@@ -7961,7 +7961,7 @@ local script = G2L["ad"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if head then
@@ -8020,7 +8020,7 @@ local script = G2L["ad"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if con then
@@ -11431,7 +11431,7 @@ local script = G2L["179"];
 			theirroot = target.Character and target.Character:FindFirstChild("HumanoidRootPart")
 			if not theirroot then break end
 			hrp.CFrame = theirroot.CFrame
-			pcall(function() sethiddenproperty(hrp, "PhysicsRepRootRef", theirroot) end)
+			pcall(function() sethiddenproperty(hrp, "PhysicsRepRootPart", theirroot) end)
 			local vel = hrp.Velocity
 			hrp.Velocity = vel * 10000 + Vector3.new(0, 10000, 0)
 			RunService.RenderStepped:Wait()
@@ -11441,7 +11441,7 @@ local script = G2L["179"];
 			movel = -movel
 		end
 	
-		pcall(function() sethiddenproperty(hrp, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(hrp, "PhysicsRepRootPart", nil) end)
 		hrp.CFrame = origin
 		hrp.Velocity = Vector3.new()
 		hrp.AssemblyLinearVelocity = Vector3.new()
@@ -11502,12 +11502,12 @@ local script = G2L["17b"];
 			t = t + dt
 			hrp.CFrame = theirroot.CFrame
 			sethiddenproperty(player.Character.Humanoid, "MoveDirectionInternal", Vector3.new(0/0, 0/0, 0/0))
-			pcall(function() sethiddenproperty(hrp, "PhysicsRepRootRef", theirroot) end)
+			pcall(function() sethiddenproperty(hrp, "PhysicsRepRootPart", theirroot) end)
 		end)
 	
 		task.wait(1)
 		c:Disconnect()
-		pcall(function() sethiddenproperty(hrp, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(hrp, "PhysicsRepRootPart", nil) end)
 		hrp.CFrame = origin
 	end
 	
@@ -11661,7 +11661,7 @@ local script = G2L["181"];
 		if tChar then tRoot = tChar:FindFirstChild("HumanoidRootPart") end
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				return
 			end
@@ -11671,7 +11671,7 @@ local script = G2L["181"];
 				if not tRoot then return end
 			end
 			local saved = tRoot.CFrame * CFrame.new(PO) * RO
-			pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", tRoot) end)
+			pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", tRoot) end)
 			root.CFrame = saved
 			root.Velocity = Vector3.new()
 			root.AssemblyLinearVelocity = Vector3.new()
@@ -11688,7 +11688,7 @@ local script = G2L["181"];
 	local function Stop()
 		if con then con:Disconnect() con = nil end
 		StopAnimations()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if savedpos and root and root.Parent then
 			root.CFrame = savedpos
 			root.Velocity = Vector3.new()
@@ -11726,7 +11726,7 @@ local script = G2L["181"];
 	end)
 	
 	player.CharacterRemoving:Connect(function()
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 		StopAnimations()
 	end)
@@ -11958,7 +11958,7 @@ local script = G2L["185"];
 		end
 	
 		pcall(function()
-			sethiddenproperty(root, "PhysicsRepRootRef", nil)
+			sethiddenproperty(root, "PhysicsRepRootPart", nil)
 		end)
 	
 		if savedpos and root and root.Parent then
@@ -12027,7 +12027,7 @@ local script = G2L["185"];
 	
 		con = RunService.Heartbeat:Connect(function()
 			if not root or not root.Parent or humanoid.Health <= 0 then
-				pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+				pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 				if con then con:Disconnect() end
 				setHeadAnchored(false)
 				return
@@ -12073,7 +12073,7 @@ local script = G2L["185"];
 			local targetCFrame = tRoot.CFrame * CFrame.new(currentPO) * currentRO
 	
 			pcall(function()
-				sethiddenproperty(root, "PhysicsRepRootRef", tRoot)
+				sethiddenproperty(root, "PhysicsRepRootPart", tRoot)
 			end)
 	
 			root.CFrame = targetCFrame
@@ -12127,7 +12127,7 @@ local script = G2L["185"];
 	
 	player.CharacterRemoving:Connect(function()
 		setHeadAnchored(false)
-		pcall(function() sethiddenproperty(root, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(root, "PhysicsRepRootPart", nil) end)
 		if con then con:Disconnect() end
 	end)
 end;
@@ -12172,7 +12172,7 @@ local script = G2L["187"];
 			theirroot = target.Character and target.Character:FindFirstChild("HumanoidRootPart")
 			if not theirroot then break end
 			hrp.CFrame = theirroot.CFrame
-			pcall(function() sethiddenproperty(hrp, "PhysicsRepRootRef", theirroot) end)
+			pcall(function() sethiddenproperty(hrp, "PhysicsRepRootPart", theirroot) end)
 			local vel = hrp.Velocity
 			hrp.Velocity = vel * 10000 + Vector3.new(0, 10000, 0)
 			RunService.RenderStepped:Wait()
@@ -12182,7 +12182,7 @@ local script = G2L["187"];
 			movel = -movel
 		end
 	
-		pcall(function() sethiddenproperty(hrp, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(hrp, "PhysicsRepRootPart", nil) end)
 		hrp.CFrame = origin
 		hrp.Velocity = Vector3.new()
 		hrp.AssemblyLinearVelocity = Vector3.new()
@@ -12232,11 +12232,11 @@ local script = G2L["189"];
 				t = t + dt
 				hrp.CFrame = theirroot.CFrame
 				sethiddenproperty(game.Players.LocalPlayer.Character.Humanoid, "MoveDirectionInternal", Vector3.new(0/0, 0/0, 0/0))
-				pcall(function() sethiddenproperty(hrp, "PhysicsRepRootRef", theirroot) end)
+				pcall(function() sethiddenproperty(hrp, "PhysicsRepRootPart", theirroot) end)
 			end)
 			task.wait(1)
 			c:Disconnect()
-			pcall(function() sethiddenproperty(hrp, "PhysicsRepRootRef", nil) end)
+			pcall(function() sethiddenproperty(hrp, "PhysicsRepRootPart", nil) end)
 			hrp.CFrame = origin
 		end)
 end;
@@ -12306,13 +12306,13 @@ local script = G2L["18b"];
 			if not hrp or not hrp.Parent or not theirroot or not theirroot.Parent then return end
 			hrp.CFrame = theirroot.CFrame
 			sethiddenproperty(mychar.Humanoid, "MoveDirectionInternal", Vector3.new(0/0, 0/0, 0/0))
-			pcall(function() sethiddenproperty(hrp, "PhysicsRepRootRef", theirroot) end)
+			pcall(function() sethiddenproperty(hrp, "PhysicsRepRootPart", theirroot) end)
 		end)
 	
 		task.wait(1)
 	
 		c:Disconnect()
-		pcall(function() sethiddenproperty(hrp, "PhysicsRepRootRef", nil) end)
+		pcall(function() sethiddenproperty(hrp, "PhysicsRepRootPart", nil) end)
 	
 		-- teleport back
 		if hrp and hrp.Parent then
