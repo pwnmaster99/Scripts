@@ -1,26 +1,3 @@
---[[
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-gui2lua by uniquadev
-contact me on discord, @pwnmaster99
-
-
---]]
-
-
 
 -- Instances: 97 | Scripts: 32 | Modules: 0 | Tags: 0
 local G2L = {};
